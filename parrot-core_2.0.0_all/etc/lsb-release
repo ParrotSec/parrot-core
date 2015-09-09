@@ -1,4 +1,4 @@
 DISTRIB_ID=Parrot
 DISTRIB_RELEASE=2.0
 DISTRIB_CODENAME=helium
-DISTRIB_DESCRIPTION="Parrot Security 2.0-rc11 - Helium"
+DISTRIB_DESCRIPTION="Parrot Security 2.0 - Helium"
