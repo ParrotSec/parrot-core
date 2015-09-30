@@ -1,7 +1,7 @@
-PRETTY_NAME="Parrot security GNU/Linux 2.0 Helium"
+PRETTY_NAME="Parrot security GNU/Linux 2.0.4 Helium"
 NAME="Parrot GNU/Linux"
-VERSION_ID="2.0"
-VERSION="2.0 (Helium)"
+VERSION_ID="2.0.4"
+VERSION="2.0.4 (Helium)"
 ID=debian
 ANSI_COLOR="1;31"
 HOME_URL="http://www.parrotsec.org/"
