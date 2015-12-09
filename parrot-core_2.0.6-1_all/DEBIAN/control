@@ -1,5 +1,5 @@
 Package: parrot-core
-Version: 2.0.6
+Version: 2.0.6-1
 Architecture: all
 Essential: yes
 Priority: required
@@ -8,7 +8,7 @@ Maintainer: Lorenzo EclipseSpark Faletra <eclipse@frozenbox.org>
 Depends: apt-parrot
 Replaces: bash, base-files, xterm, parrot-skel, dnsmasq
 Breaks: parrot-skel (<< 0.7)
-Recommends: figlet, falconpl, saidar, links2, console-setup, locales, localization-config, resolvconf, dnsmasq, nscd
+Recommends: figlet, falconpl, saidar, links2, console-setup, locales, localization-config, resolvconf, dnsmasq, nscd, zile, mg, nano
 Suggests: parrot-interface | parrot-cloud, parrot-tools | parrot-tools-cloud | parrot-tools-arm | parrot-interface-full, parrot-drivers
 Section: parrot
 Description: Parrot core keychain package
