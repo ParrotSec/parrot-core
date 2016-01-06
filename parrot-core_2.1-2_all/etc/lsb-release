@@ -1,0 +1,4 @@
+DISTRIB_ID=Parrot
+DISTRIB_RELEASE=2.1
+DISTRIB_CODENAME=moriarty
+DISTRIB_DESCRIPTION="Parrot Security 2.1 - Moriarty"
