@@ -8,7 +8,7 @@ case $- in
       *) return;;
 esac
 
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/sbin:/usr/sbin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/sbin:/usr/sbin:/usr/games:/usr/share/games
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
