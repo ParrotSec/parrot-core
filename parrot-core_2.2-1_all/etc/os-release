@@ -1,0 +1,10 @@
+PRETTY_NAME="Parrot security GNU/Linux 2.2 Glitch"
+NAME="Parrot GNU/Linux"
+VERSION_ID="2.2"
+VERSION="2.2 (Glitch)"
+ID=debian
+ANSI_COLOR="1;31"
+HOME_URL="http://www.parrotsec.org/"
+SUPPORT_URL="http://www.parrotsec.org/doc/"
+BUG_REPORT_URL="http://www.parrotsec.org/bugs"
+

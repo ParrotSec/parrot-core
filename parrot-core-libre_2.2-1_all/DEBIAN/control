@@ -1,11 +1,11 @@
-Package: parrot-core
-Version: 2.2
+Package: parrot-core-libre
+Version: 2.2-1
 Architecture: all
 Essential: yes
 Priority: required
 Installed-Size: 64
 Maintainer: Lorenzo EclipseSpark Faletra <eclipse@frozenbox.org>
-Depends: apt-parrot-libre | apt-parrot
+Depends: apt-parrot-libre
 Replaces: bash, base-files, xterm, parrot-skel, dnsmasq
 Breaks: parrot-skel (<< 0.7)
 Recommends: figlet, falconpl, saidar, htop, lshw, usbutils, links2, console-setup, locales, localization-config, resolvconf, dnsmasq, nscd, zile, mg, nano
