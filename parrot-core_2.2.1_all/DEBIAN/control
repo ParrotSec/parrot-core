@@ -1,5 +1,5 @@
 Package: parrot-core
-Version: 2.2-1
+Version: 2.2.1
 Architecture: all
 Essential: yes
 Priority: required
