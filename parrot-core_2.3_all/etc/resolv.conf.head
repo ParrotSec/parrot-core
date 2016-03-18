@@ -1,7 +1,6 @@
 # FrozenDNS
 nameserver 92.222.97.144
 nameserver 92.222.97.145
-nameserver 199.175.54.136
 
 # OpenDNS
 nameserver 208.67.222.222

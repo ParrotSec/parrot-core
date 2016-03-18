@@ -1,10 +1,10 @@
 Package: parrot-core
-Version: 2.2.1
+Version: 2.3
 Architecture: all
 Essential: yes
 Priority: required
 Installed-Size: 64
-Maintainer: Lorenzo EclipseSpark Faletra <eclipse@frozenbox.org>
+Maintainer: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
 Depends: apt-parrot | apt-parrot-libre
 Replaces: bash, base-files, xterm, parrot-skel, dnsmasq
 Breaks: parrot-skel (<< 0.7)
