@@ -1,0 +1,7 @@
+parrot-core (3.0) testing; urgency=high
+
+  * Update for Parrot 3
+  * Debianized package source
+  * Import from previous source style
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>  Sat, 09 Apr 2016 16:57:01 +0200

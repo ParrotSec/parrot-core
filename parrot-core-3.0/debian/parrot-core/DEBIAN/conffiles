@@ -1,0 +1,12 @@
+/etc/debian_version
+/etc/dnsmasq.conf
+/etc/dpkg/origins/parrot
+/etc/issue
+/etc/issue.net
+/etc/lsb-release
+/etc/motd
+/etc/os-release
+/etc/resolv.conf.head
+/etc/resolvconf/resolv.conf.d/tail
+/etc/skel/.bashrc
+/etc/systemd/99-parrot.preset

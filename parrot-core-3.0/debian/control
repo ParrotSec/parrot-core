@@ -1,0 +1,23 @@
+Source: parrot-core
+Section: parrot
+Priority: required
+Maintainer: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
+Uploaders: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>,
+           Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
+Standards-Version: 3.9.6
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: pkg-config
+Homepage: http://www.parrotsec.org/
+
+Package: parrot-core
+Architecture: all
+Depends: apt-parrot
+Recommends: sysv-rc, figlet, falconpl, saidar, htop, lshw, usbutils, links2, console-setup, locales, localization-config, resolvconf, dnsmasq, nscd, zile, mg, nano
+Suggests: parrot-interface | parrot-cloud, parrot-tools-libre | parrot-tools | parrot-tools-cloud | parrot-tools-arm | parrot-interface-full, parrot-drivers
+Replaces: bash, base-files, xterm, parrot-skel, dnsmasq
+Description: Parrot core keychain package
+ Keychain package for Parrot security OS
+ .
+ this package is also needed in order to select and install new essential packages
+ during the system upgrade in order to provide the best upgrade experience during
+ critical upgrades
