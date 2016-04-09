@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Sat, 09 Apr 2016 16:57:01 +0200
+Source: parrot-core
+Binary: parrot-core
+Architecture: source all
+Version: 3.0
+Distribution: testing
+Urgency: high
+Maintainer: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
+Changed-By: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
+Description:
+ parrot-core - Parrot core keychain package
+Changes:
+ parrot-core (3.0) testing; urgency=high
+ .
+   * Update for Parrot 3
+   * Debianized package source
+   * Import from previous source style
+Checksums-Sha1:
+ 0878db5134695af554e03914e79ba9dc0b5a004e 723 parrot-core_3.0.dsc
+ a771a1ffd007ad5c1282743168f5b923e2244799 23332 parrot-core_3.0.tar.xz
+ 712cd01dd7d2e027acbc1be9a31e2da4a3b7bf08 23874 parrot-core_3.0_all.deb
+Checksums-Sha256:
+ b2a159d4ba1c34cdcba1f18620ffcc57bbbcde405bc13dee58740b70b5b3c6f6 723 parrot-core_3.0.dsc
+ 22a092d449b2a7c8bfd7e8d21331ceb68f11bbb3db56fa796580e7a7e873e340 23332 parrot-core_3.0.tar.xz
+ d7f7e91fdf65fb84dd2dbab7cfb1742b056a076e0739b967b4988fce2c12f62e 23874 parrot-core_3.0_all.deb
+Files:
+ 38851aab176438bdd4c53b3a5549a87f 723 parrot required parrot-core_3.0.dsc
+ 4323835ab1bbde1482f0bc2e38c0904d 23332 parrot required parrot-core_3.0.tar.xz
+ 5d31b9a49fd90c07d49767f2e31824a1 23874 parrot required parrot-core_3.0_all.deb

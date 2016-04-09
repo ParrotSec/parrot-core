@@ -1,0 +1,84 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: source package parrot-core
+dpkg-buildpackage: source version 3.0
+dpkg-buildpackage: source distribution testing
+dpkg-buildpackage: source changed by Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
+ dpkg-source --before-build parrot-core-3.0
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b parrot-core-3.0
+dpkg-source: info: using source format '3.0 (native)'
+dpkg-source: info: building parrot-core in parrot-core_3.0.tar.xz
+dpkg-source: info: building parrot-core in parrot-core_3.0.dsc
+ debian/rules build
+dh build
+   dh_testdir
+   dh_update_autotools_config
+   dh_auto_configure
+   dh_auto_build
+	make -j1
+make[1]: ingresso nella directory "/home/eclipse/Desktop/repo-new/parrot-core-3.0"
+make[1]: Nessuna operazione da eseguire per "all".
+make[1]: uscita dalla directory "/home/eclipse/Desktop/repo-new/parrot-core-3.0"
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_auto_install
+	make -j1 install DESTDIR=/home/eclipse/Desktop/repo-new/parrot-core-3.0/debian/parrot-core AM_UPDATE_INFO_DIR=no
+make[1]: ingresso nella directory "/home/eclipse/Desktop/repo-new/parrot-core-3.0"
+chmod -R 0644 parrot-core/*
+chown root:root parrot-core/*
+cp -rf parrot-core/* /home/eclipse/Desktop/repo-new/parrot-core-3.0/debian/parrot-core/
+make[1]: uscita dalla directory "/home/eclipse/Desktop/repo-new/parrot-core-3.0"
+   dh_installdocs
+   dh_installchangelogs
+   dh_installdebconf
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: package parrot-core: unused substitution variable ${misc:Depends}
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: generazione del pacchetto "parrot-core" in "../parrot-core_3.0_all.deb".
+ dpkg-genchanges  >../parrot-core_3.0_amd64.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build parrot-core-3.0
+dpkg-buildpackage: full upload; Debian-native package (full source is included)
+Now running lintian...
+command failed with error code 2 at /usr/share/lintian/collection/unpacked line 215.
+warning: collect info unpacked about package parrot-core failed
+warning: skipping check of binary package parrot-core
+E: parrot-core source: source-contains-unsafe-symlink parrot-core/etc/systemd/system-preset/99-parrot.preset
+E: parrot-core source: source-contains-unsafe-symlink parrot-core/lib/systemd/system-preset/99-parrot.preset
+E: parrot-core source: source-contains-unsafe-symlink parrot-core/usr/lib/systemd/system-preset/99-parrot.preset
+W: parrot-core source: debhelper-but-no-misc-depends parrot-core
+W: parrot-core source: maintainer-also-in-uploaders
+W: parrot-core source: out-of-date-standards-version 3.9.6 (current is 3.9.7)
+/bin/rm: cannot remove '/tmp/temp-lintian-lab-bE7HT8l_kS/pool/p/parrot-core/parrot-core_3.0_all_binary/unpacked/root/.bashrc': Permission denied
+/bin/rm: cannot remove '/tmp/temp-lintian-lab-bE7HT8l_kS/pool/p/parrot-core/parrot-core_3.0_all_binary/unpacked/lib/systemd': Permission denied
+/bin/rm: cannot remove '/tmp/temp-lintian-lab-bE7HT8l_kS/pool/p/parrot-core/parrot-core_3.0_all_binary/unpacked/etc/os-release': Permission denied
+/bin/rm: cannot remove '/tmp/temp-lintian-lab-bE7HT8l_kS/pool/p/parrot-core/parrot-core_3.0_all_binary/unpacked/etc/dpkg': Permission denied
+/bin/rm: cannot remove '/tmp/temp-lintian-lab-bE7HT8l_kS/pool/p/parrot-core/parrot-core_3.0_all_binary/unpacked/etc/issue': Permission denied
+/bin/rm: cannot remove '/tmp/temp-lintian-lab-bE7HT8l_kS/pool/p/parrot-core/parrot-core_3.0_all_binary/unpacked/etc/debian_version': Permission denied
+/bin/rm: cannot remove '/tmp/temp-lintian-lab-bE7HT8l_kS/pool/p/parrot-core/parrot-core_3.0_all_binary/unpacked/etc/systemd': Permission denied
+/bin/rm: cannot remove '/tmp/temp-lintian-lab-bE7HT8l_kS/pool/p/parrot-core/parrot-core_3.0_all_binary/unpacked/etc/skel': Permission denied
+/bin/rm: cannot remove '/tmp/temp-lintian-lab-bE7HT8l_kS/pool/p/parrot-core/parrot-core_3.0_all_binary/unpacked/etc/resolv.conf.head': Permission denied
+/bin/rm: cannot remove '/tmp/temp-lintian-lab-bE7HT8l_kS/pool/p/parrot-core/parrot-core_3.0_all_binary/unpacked/etc/lsb-release': Permission denied
+/bin/rm: cannot remove '/tmp/temp-lintian-lab-bE7HT8l_kS/pool/p/parrot-core/parrot-core_3.0_all_binary/unpacked/etc/motd': Permission denied
+/bin/rm: cannot remove '/tmp/temp-lintian-lab-bE7HT8l_kS/pool/p/parrot-core/parrot-core_3.0_all_binary/unpacked/etc/issue.net': Permission denied
+/bin/rm: cannot remove '/tmp/temp-lintian-lab-bE7HT8l_kS/pool/p/parrot-core/parrot-core_3.0_all_binary/unpacked/etc/dnsmasq.conf': Permission denied
+/bin/rm: cannot remove '/tmp/temp-lintian-lab-bE7HT8l_kS/pool/p/parrot-core/parrot-core_3.0_all_binary/unpacked/etc/resolvconf': Permission denied
+/bin/rm: cannot remove '/tmp/temp-lintian-lab-bE7HT8l_kS/pool/p/parrot-core/parrot-core_3.0_all_binary/unpacked/usr/share': Permission denied
+/bin/rm: cannot remove '/tmp/temp-lintian-lab-bE7HT8l_kS/pool/p/parrot-core/parrot-core_3.0_all_binary/unpacked/usr/lib': Permission denied
+delete_dir ($contents): No child processes at /usr/share/lintian/commands/lintian line 802.
+Finished running lintian.

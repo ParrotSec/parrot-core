@@ -12,8 +12,8 @@ Build-Depends-Indep: pkg-config
 Package-List:
  parrot-core deb parrot required arch=all
 Checksums-Sha1:
- bfca318fc0170f0f4dde3fe225d70afd699d1dff 13948 parrot-core_3.0.tar.xz
+ a771a1ffd007ad5c1282743168f5b923e2244799 23332 parrot-core_3.0.tar.xz
 Checksums-Sha256:
- 98babd7f71f1d61662a886bee04864b502e1aa9a1e087ed1dc2b51aa7dba8c0e 13948 parrot-core_3.0.tar.xz
+ 22a092d449b2a7c8bfd7e8d21331ceb68f11bbb3db56fa796580e7a7e873e340 23332 parrot-core_3.0.tar.xz
 Files:
- 299954d4b975640886d2cdbbb68a2417 13948 parrot-core_3.0.tar.xz
+ 4323835ab1bbde1482f0bc2e38c0904d 23332 parrot-core_3.0.tar.xz
