@@ -1,3 +1,9 @@
+parrot-core (3.0.160512) testing; urgency=medium
+
+  * fix conffiles
+
+ -- Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>  Wed, 11 May 2016 00:30:02 +0200
+
 parrot-core (3.0.160511) testing; urgency=medium
 
   * Fix ID_LIKE directive in /etc/os-release

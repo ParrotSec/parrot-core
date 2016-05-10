@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+cat /var/lib/parrot-core/debian_version > /etc/debian_version
+cat /var/lib/parrot-core/issue > /etc/issue
+cat /var/lib/parrot-core/issue.net > /etc/issue.net
+cat /var/lib/parrot-core/lsb-release > /etc/lsb-release
+cat /var/lib/parrot-core/os-release > /etc/os-release
+cat /var/lib/parrot-core/resolv.conf.head > /etc/resolv.conf.head
