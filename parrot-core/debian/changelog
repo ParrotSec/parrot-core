@@ -1,4 +1,4 @@
-parrot-core (3.0.160524) testing; urgency=high
+parrot-core (3.0.160524+1) testing; urgency=high
 
   * Fix locales fallback
   * Fix keyboard layouts

@@ -1,0 +1,9 @@
+6639246534f919cd23bdf8a40ad2ce0f  root/.bashrc
+f82c53cba5c3f44a7c271f4649463b34  usr/share/doc/parrot-core/changelog.gz
+d32239bcb673463ab874e80d47fae504  usr/share/doc/parrot-core/copyright
+93adfe0f412392210fc44a9bca9189b8  var/lib/parrot-core/debian_version
+bb176bfff9df52e00f4e2ee11c026ce7  var/lib/parrot-core/issue
+93adfe0f412392210fc44a9bca9189b8  var/lib/parrot-core/issue.net
+195f376726a5cd543ca4f3d3b40c2ca1  var/lib/parrot-core/lsb-release
+7aeec232524ca86a06f305cec53ca184  var/lib/parrot-core/os-release
+0d5af70675118d34a56e0f8058707c0d  var/lib/parrot-core/resolv.conf.head
