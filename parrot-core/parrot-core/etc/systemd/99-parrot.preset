@@ -22,4 +22,3 @@ disable tor.service
 disable winbind.service
 disable tinyproxy.service
 disable pure-ftpd.service
-disable *

@@ -1,3 +1,11 @@
+parrot-core (3.0.160524) testing; urgency=high
+
+  * Fix locales fallback
+  * Fix keyboard layouts
+  * Fix forensic behavior on Gnome3
+
+ -- Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>  Tue, 24 May 2016 00:49:26 +0200
+
 parrot-core (3.0.160512) testing; urgency=medium
 
   * fix conffiles
