@@ -2,7 +2,7 @@ Format: 3.0 (native)
 Source: parrot-core
 Binary: parrot-core
 Architecture: all
-Version: 3.0.160524+1
+Version: 3.1
 Maintainer: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>, Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
 Homepage: http://www.parrotsec.org/
@@ -12,8 +12,8 @@ Build-Depends-Indep: pkg-config
 Package-List:
  parrot-core deb parrot required arch=all
 Checksums-Sha1:
- 827fbab025c266fbe3c23e99694c471f4e488b60 25804 parrot-core_3.0.160524+1.tar.xz
+ 9379f1d573c57d2b608726bab1998e76438b9d8b 23900 parrot-core_3.1.tar.xz
 Checksums-Sha256:
- b1fa30d33e6617c439e7a821aa4912241e4954bce18064fb95629482aa9f5d0f 25804 parrot-core_3.0.160524+1.tar.xz
+ 5e8df53853704630444845a6ae0479ae085ddb0001e2ec72a1247a0c05dec92c 23900 parrot-core_3.1.tar.xz
 Files:
- 61660d0b5eec320759884e478494680f 25804 parrot-core_3.0.160524+1.tar.xz
+ 740ce768f60caa23c7ea8bce58a97770 23900 parrot-core_3.1.tar.xz

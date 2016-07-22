@@ -1,3 +1,9 @@
+parrot-core (3.1) testing; urgency=medium
+
+  * Update for parrot 3.1
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 22 Jul 2016 18:04:09 +0200
+
 parrot-core (3.0.160524+1) testing; urgency=high
 
   * Fix locales fallback
