@@ -1,3 +1,10 @@
+parrot-core (3.1.160724) testing; urgency=medium
+
+  * Add whois dependency
+  * Add init-system-helpers dependency
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 24 Jul 2016 02:38:21 +0200
+
 parrot-core (3.1) testing; urgency=medium
 
   * Update for parrot 3.1
