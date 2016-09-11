@@ -1,3 +1,10 @@
+parrot-core (3.2.1609212) testing; urgency=medium
+
+  * Add sbin support in .bashrc
+  * Update for parrot 3.2
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 12 Sep 2016 00:00:57 +0200
+
 parrot-core (3.1.160724) testing; urgency=medium
 
   * Add whois dependency

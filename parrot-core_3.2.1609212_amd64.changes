@@ -1,0 +1,50 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sun, 12 Sep 2016 00:00:57 +0200
+Source: parrot-core
+Binary: parrot-core
+Architecture: source all
+Version: 3.2.1609212
+Distribution: testing
+Urgency: medium
+Maintainer: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
+Changed-By: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+Description:
+ parrot-core - Parrot core keychain package
+Changes:
+ parrot-core (3.2.1609212) testing; urgency=medium
+ .
+   * Add sbin support in .bashrc
+   * Update for parrot 3.2
+Checksums-Sha1:
+ 1afd7fceffb85d9fdc8770a78e027c43d1178cde 1624 parrot-core_3.2.1609212.dsc
+ c29ab69cb1335096a15eb69a598d7e414ab561eb 23952 parrot-core_3.2.1609212.tar.xz
+ 02c13c5304bd26ad7e3640acf9ac6b537f5d3f51 24750 parrot-core_3.2.1609212_all.deb
+Checksums-Sha256:
+ b458efec18bfa0f6297af47ac1b38a86cab8c0a024a9a2a86fd5e3ae7b54051a 1624 parrot-core_3.2.1609212.dsc
+ ad6669ffe3d3c72971e065a8ee986e5051c477ce8ebd781b39996553f475d373 23952 parrot-core_3.2.1609212.tar.xz
+ 2cf8f6277e97fcd10956a8a2d37d7e2aa8ff96e043cd38ac2b1e28dcf3d415a7 24750 parrot-core_3.2.1609212_all.deb
+Files:
+ c7e2f97d5bb1f315060e02449bece695 1624 parrot required parrot-core_3.2.1609212.dsc
+ b8a3dd7515900cf261042e9132680324 23952 parrot required parrot-core_3.2.1609212.tar.xz
+ 53902ea3823af53c5ed9e1e59fcbd15e 24750 parrot required parrot-core_3.2.1609212_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBCgAGBQJX1curAAoJEHGs4WSSiv5qJjYQAJXBA5LGC5aSJMQTDRNoi/Jw
+uV19lDDuivrMBBHFnqRuIzAhOa14ljsObMnlO/1BlToCgl9bXIJ1rjcy2eqoZJYb
+uL0rWwDdPd6qWiRXLCkfjXSgrW6v1ODSvxME5wB6qdeVxCqV1HdUzQELwQmsbiRg
+CiBRh4+x8UZpOJAv5ACVzG16j7rHgoX5lDMZzTxS6NtYTpNQCU4EEufdfZN40PK6
+XWEJDZp7olczHoZkSKjZG/t5Dh+oXdYer7kMZX8FNo6LjLFBNF3GFm/qTIvtbS9q
+pZ1PmfMAVVtWHdEK0zBUly390AaLEan0xmNDORdJVWAZ3yDJQaqclMeC0w0aLIpu
+yvVTYRhuovGumoDKzq3m2ghb6Huy5XNtJdKzSMhKnbuPG22I7DD9+CB4DxGy+nIU
+1mYz20kYcBM1A5e5Nu2lU2FeoPzSqnhiUu3/dFIZjeL3loOd2EGecRo9HNsOBR7K
+vxO0+RcpOyxGypiRm1l5qXLHzoN3uGUgN0czTRVfjy58kW90hpCNDvAj6KvBlyiu
+/+pUMVqMTzXwaHn3LhUsXyQ35WuiWGqqk3kgzjByJyO4/X4e0eskr8axnojJWUbB
+CiAydQ/Hi2fFnQ93d+TTt28hmo0QOV+f9oYdJsz9aIWuaD3GhdVSNacxWdlptcVL
+w1FVnZHr09NnyaUcm9cw
+=3dZE
+-----END PGP SIGNATURE-----
