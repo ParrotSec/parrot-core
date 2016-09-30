@@ -1,0 +1,22 @@
+Format: 1.8
+Date: Sat, 01 Oct 2016 00:48:09 +0200
+Source: parrot-core
+Binary: parrot-core
+Architecture: all
+Version: 3.2.161001
+Distribution: testing
+Urgency: medium
+Maintainer: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+Changed-By: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+Description:
+ parrot-core - Parrot core keychain package
+Changes:
+ parrot-core (3.2.161001) testing; urgency=medium
+ .
+   * Update to parrot 3.2 cybersloop
+Checksums-Sha1:
+ 5df2206453a142389457e134453ff19075c3da36 24784 parrot-core_3.2.161001_all.deb
+Checksums-Sha256:
+ 97a70ad71ae9859ce06e6873512b0b232c63f2de4b94e29f6bb97b7cca4be739 24784 parrot-core_3.2.161001_all.deb
+Files:
+ 1dd248ea8f441d7a62e88b9b9cc60d3f 24784 parrot required parrot-core_3.2.161001_all.deb

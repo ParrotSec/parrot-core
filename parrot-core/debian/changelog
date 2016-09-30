@@ -1,3 +1,9 @@
+parrot-core (3.2.161001) testing; urgency=medium
+
+  * Update to parrot 3.2 cybersloop
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 01 Oct 2016 00:48:09 +0200
+
 parrot-core (3.2.1609212) testing; urgency=medium
 
   * Add sbin support in .bashrc

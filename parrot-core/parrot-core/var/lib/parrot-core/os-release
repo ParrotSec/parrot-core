@@ -1,11 +1,11 @@
-PRETTY_NAME="Parrot GNU/Linux 3.1 Defcon"
+PRETTY_NAME="Parrot GNU/Linux 3.2 CyberSloop"
 NAME="Parrot GNU/Linux"
 ID=parrot
-VERSION_ID="3.1"
-VERSION="3.1"
+VERSION_ID="3.2"
+VERSION="3.2"
 ID_LIKE=debian
 ANSI_COLOR="1;31"
-HOME_URL="http://www.parrotsec.org/"
-SUPPORT_URL="http://www.parrotsec.org/doc/"
-BUG_REPORT_URL="http://www.parrotsec.org/bugs"
+HOME_URL="https://www.parrotsec.org/"
+SUPPORT_URL="https://www.parrotsec.org/doc/"
+BUG_REPORT_URL="https://www.parrotsec.org/bugs"
 
