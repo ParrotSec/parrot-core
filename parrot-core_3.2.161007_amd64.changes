@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Fri, 07 Oct 2016 20:48:55 +0200
+Source: parrot-core
+Binary: parrot-core
+Architecture: source all
+Version: 3.2.161007
+Distribution: testing
+Urgency: medium
+Maintainer: Parrot Devs <parrot-devel@lists.parrotsec.org>
+Changed-By: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+Description:
+ parrot-core - Parrot core keychain package
+Changes:
+ parrot-core (3.2.161007) testing; urgency=medium
+ .
+   * Include locate as recommended package
+Checksums-Sha1:
+ 3c8e2efcd94230854a7968c912a5ffe1d3e932a1 746 parrot-core_3.2.161007.dsc
+ 7e52aa665365b8eb2251c6dfe382ac93fd0b8729 24048 parrot-core_3.2.161007.tar.xz
+ 718d265205b8c444049cd261beff4b95c820c729 24832 parrot-core_3.2.161007_all.deb
+Checksums-Sha256:
+ 79d8c1bcd396099560930f41d42c41fb809a96d859ccfe77ab67b7ba37d1073c 746 parrot-core_3.2.161007.dsc
+ 9ef7677d01ae4fe75add5e28b9ce65b0cfd52213fe10c8723febde18eff79986 24048 parrot-core_3.2.161007.tar.xz
+ 22b664970648d9ab6e49912c657f79a6784e4be5584451111dc12a79f5c378a1 24832 parrot-core_3.2.161007_all.deb
+Files:
+ 2cfe2aab1da4f582ae568a36bbbabd6f 746 parrot required parrot-core_3.2.161007.dsc
+ d241c5e3e8bd6de8ad91914e47581200 24048 parrot required parrot-core_3.2.161007.tar.xz
+ d4af84ea0ff573067181628e68b24ac8 24832 parrot required parrot-core_3.2.161007_all.deb
