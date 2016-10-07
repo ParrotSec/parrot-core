@@ -15,14 +15,14 @@ Changes:
  .
    * Change bashrc for root
 Checksums-Sha1:
- 9dfb7b575750b472e9bdbfcf7f2a1e26528b51de 746 parrot-core_3.2.161008.dsc
- db0a9322f517820c41b1f4a6a24484f105a6d789 24108 parrot-core_3.2.161008.tar.xz
- 2248b30382a1dc6a58fc4e86182b60b6b512573f 24868 parrot-core_3.2.161008_all.deb
+ 164d5780f36a0b1efd67c70af69e5ea10394ddac 746 parrot-core_3.2.161008.dsc
+ 1f484d059bd4256e71ad01650e836fff94a3e431 24092 parrot-core_3.2.161008.tar.xz
+ 3678936a545ebfb86ec7206fa57e0c2133b84141 24872 parrot-core_3.2.161008_all.deb
 Checksums-Sha256:
- 6445759cde3829f5bfdc962d47ead990c3dbf7d03a8a0504a656c8c74a902bad 746 parrot-core_3.2.161008.dsc
- 36bc3b48814edd25da16046ead08e633482c0d7f7e5053f28aa988f52e62fae9 24108 parrot-core_3.2.161008.tar.xz
- 5662dfe7c6df6264f1c24366592fef6de3a36e3635a80b81180be6edbc222a48 24868 parrot-core_3.2.161008_all.deb
+ 2a263ce5a1535095250ae2df1ba606b9fd92299ccc415bb972b075d959713c9a 746 parrot-core_3.2.161008.dsc
+ ac127303c581a7898f1cba0476a52c80a7756b250107caf3441e856ac3cfce42 24092 parrot-core_3.2.161008.tar.xz
+ d04594535ce7bda2f543b9f5e0b5082aba10f8fa5b840bf3e57973a19b6d7c4c 24872 parrot-core_3.2.161008_all.deb
 Files:
- e9f384e850773096908ca9329e6497cb 746 parrot required parrot-core_3.2.161008.dsc
- 1e36f62e82004dcf2989d7cd463d7226 24108 parrot required parrot-core_3.2.161008.tar.xz
- 46f355c6b2c18f227bc454550b145651 24868 parrot required parrot-core_3.2.161008_all.deb
+ b8b8323d8f5a5f3f9a365a4701511aef 746 parrot required parrot-core_3.2.161008.dsc
+ 793cf40fa1514e62473c1130bfb8b50c 24092 parrot required parrot-core_3.2.161008.tar.xz
+ bc16b634bec903f3926cfdb269f37ddd 24872 parrot required parrot-core_3.2.161008_all.deb
