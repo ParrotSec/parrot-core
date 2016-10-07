@@ -1,3 +1,9 @@
+parrot-core (3.2.161008) testing; urgency=medium
+
+  * Change bashrc for root
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 08 Oct 2016 01:14:34 +0200
+
 parrot-core (3.2.161007) testing; urgency=medium
 
   * Include locate as recommended package
