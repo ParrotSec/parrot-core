@@ -1,0 +1,88 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: info: source package parrot-core
+dpkg-buildpackage: info: source version 3.2.161014
+dpkg-buildpackage: info: source distribution testing
+dpkg-buildpackage: info: source changed by Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+ dpkg-source --before-build parrot-core
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b parrot-core
+dpkg-source: info: using source format '3.0 (native)'
+dpkg-source: info: building parrot-core in parrot-core_3.2.161014.tar.xz
+dpkg-source: info: building parrot-core in parrot-core_3.2.161014.dsc
+ debian/rules build
+dh build
+   dh_testdir
+   dh_update_autotools_config
+   dh_auto_configure
+   dh_auto_build
+	make -j1
+make[1]: ingresso nella directory "/home/palinuro/Desktop/repo/parrot-core/parrot-core"
+make[1]: Nessuna operazione da eseguire per "all".
+make[1]: uscita dalla directory "/home/palinuro/Desktop/repo/parrot-core/parrot-core"
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_auto_install
+	make -j1 install DESTDIR=/home/palinuro/Desktop/repo/parrot-core/parrot-core/debian/parrot-core AM_UPDATE_INFO_DIR=no
+make[1]: ingresso nella directory "/home/palinuro/Desktop/repo/parrot-core/parrot-core"
+chown root:root parrot-core/*
+cp -rf parrot-core/* /home/palinuro/Desktop/repo/parrot-core/parrot-core/debian/parrot-core/
+chmod 750 /home/palinuro/Desktop/repo/parrot-core/parrot-core/debian/parrot-core/root/.bashrc
+make[1]: uscita dalla directory "/home/palinuro/Desktop/repo/parrot-core/parrot-core"
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'parrot-core' in '../parrot-core_3.2.161014_all.deb'.
+ dpkg-genchanges  >../parrot-core_3.2.161014_amd64.changes
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source --after-build parrot-core
+dpkg-buildpackage: info: full upload; Debian-native package (full source is included)
+Now running lintian...
+E: parrot-core source: source-contains-unsafe-symlink parrot-core/etc/systemd/network/99-default.link
+E: parrot-core source: source-contains-unsafe-symlink parrot-core/etc/systemd/system-preset/99-parrot.preset
+E: parrot-core source: source-contains-unsafe-symlink parrot-core/etc/udev/rules.d/73-usb-net-by-mac.rules
+E: parrot-core source: source-contains-unsafe-symlink parrot-core/lib/systemd/system-preset/99-parrot.preset
+E: parrot-core source: source-contains-unsafe-symlink parrot-core/usr/lib/systemd/system-preset/99-parrot.preset
+W: parrot-core source: debhelper-but-no-misc-depends parrot-core
+W: parrot-core source: maintainer-script-lacks-debhelper-token debian/parrot-core.postinst
+W: parrot-core source: changelog-should-mention-nmu
+W: parrot-core source: source-nmu-has-incorrect-version-number 3.2.161014
+E: parrot-core: copyright-file-contains-full-gpl-license
+E: parrot-core: copyright-should-refer-to-common-license-file-for-gpl
+W: parrot-core: extended-description-line-too-long
+W: parrot-core: extended-description-line-too-long
+W: parrot-core: unknown-section parrot
+E: parrot-core: depends-on-essential-package-without-using-version recommends: init-system-helpers
+E: parrot-core: udev-rule-in-etc etc/udev/rules.d/73-usb-net-by-mac.rules
+E: parrot-core: dir-or-file-in-home root/.bashrc
+W: parrot-core: binary-without-manpage usr/bin/sihup
+W: parrot-core: executable-not-elf-or-script root/.bashrc
+E: parrot-core: file-in-root-and-usr lib/systemd/system-preset/99-parrot.preset usr/lib/systemd/system-preset/99-parrot.preset
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile parrot-core_3.2.161014.dsc Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+gpg: using subkey C3ECE9953E9EF801 instead of primary key 97CAA129F4C6B9A4
+gpg: writing to '/tmp/debsign.uIsJJRDA/parrot-core_3.2.161014.dsc.asc'
+gpg: RSA/SHA512 signature from: "C3ECE9953E9EF801 Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>"
+
+ signfile parrot-core_3.2.161014_amd64.changes Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+gpg: using subkey C3ECE9953E9EF801 instead of primary key 97CAA129F4C6B9A4
+gpg: writing to '/tmp/debsign.uIsJJRDA/parrot-core_3.2.161014_amd64.changes.asc'
+gpg: RSA/SHA512 signature from: "C3ECE9953E9EF801 Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>"
+
+Successfully signed dsc and changes files
