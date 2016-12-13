@@ -1,3 +1,9 @@
+parrot-core (3.3.161213) testing; urgency=medium
+
+  * Include bash-completion
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 13 Dec 2016 02:20:09 +0100
+
 parrot-core (3.2.161014) testing; urgency=low
 
   * minor fixes
