@@ -1,8 +1,8 @@
-PRETTY_NAME="Parrot GNU/Linux 3.3 CyberBrig"
+PRETTY_NAME="Parrot GNU/Linux 3.4 CyberFrigate"
 NAME="Parrot GNU/Linux"
 ID=parrot
-VERSION_ID="3.3"
-VERSION="3.3"
+VERSION_ID="3.4"
+VERSION="3.4"
 ID_LIKE=debian
 ANSI_COLOR="1;31"
 HOME_URL="https://www.parrotsec.org/"

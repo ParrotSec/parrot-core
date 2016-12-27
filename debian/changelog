@@ -1,3 +1,10 @@
+parrot-core (3.4.161227) testing; urgency=medium
+
+  * add _ alias to sudo
+  * update for parrot 3.4 CyberFrigate
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 27 Dec 2016 20:50:19 +0100
+
 parrot-core (3.3.161216) testing; urgency=medium
 
   * Update for Parrot 3.3
