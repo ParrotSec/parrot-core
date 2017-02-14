@@ -1,4 +1,4 @@
 DISTRIB_ID=Parrot
-DISTRIB_RELEASE=3.4
-DISTRIB_CODENAME=cyberfrigate
-DISTRIB_DESCRIPTION="Parrot Security 3.4 - CyberFrigate"
+DISTRIB_RELEASE=3.5
+DISTRIB_CODENAME=cybergalleon
+DISTRIB_DESCRIPTION="Parrot Security 3.5 - CyberGalleon"
