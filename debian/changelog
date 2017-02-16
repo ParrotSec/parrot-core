@@ -1,3 +1,9 @@
+parrot-core (3.5.170217+p1) testing; urgency=medium
+
+  * Fix bashrc conflict with debootstrap
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 16 Feb 2017 16:27:35 +0100
+
 parrot-core (3.5.170217) testing; urgency=medium
 
   * Remove all files already provided by base-files
