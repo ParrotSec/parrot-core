@@ -1,3 +1,9 @@
+parrot-core (3.5.170217) testing; urgency=medium
+
+  * Remove all files already provided by base-files
+
+ -- Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>  Fri, 17 Feb 2017 03:04:49 +1100
+
 parrot-core (3.5.170216) testing; urgency=medium
 
   * Remove /etc/dpkg/origins/parrot as moved to base-files
