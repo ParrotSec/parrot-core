@@ -3,3 +3,4 @@
 set -e
 
 cat /etc/bashrc > /etc/skel/.bashrc
+cat /etc/bashrc > /usr/lib/parrot-skel/.bashrc

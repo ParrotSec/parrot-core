@@ -1,3 +1,16 @@
+parrot-core (3.5.170220) testing; urgency=medium
+
+  * Fix bashrc in skel
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 20 Feb 2017 01:11:24 +0100
+
+parrot-core (3.5.170217+p2) testing; urgency=medium
+
+  * Add net-tools dependency
+  * Add moreutils dependency
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 17 Feb 2017 17:24:16 +0100
+
 parrot-core (3.5.170217+p1) testing; urgency=medium
 
   * Fix bashrc conflict with debootstrap
