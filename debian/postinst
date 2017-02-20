@@ -2,5 +2,7 @@
 
 set -e
 
+mkdir -p /etc/skel
+mkdir -p /usr/lib/parrot-skel/etc/skel
 cat /etc/bashrc > /etc/skel/.bashrc
-cat /etc/bashrc > /usr/lib/parrot-skel/.bashrc
+cat /etc/bashrc > /usr/lib/parrot-skel/etc/skel/.bashrc
