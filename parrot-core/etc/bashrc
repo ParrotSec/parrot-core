@@ -91,6 +91,7 @@ alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
 alias em='emacs -nw'
+alias dd='dd status=progress'
 alias _='sudo'
 
 # Alias definitions.
