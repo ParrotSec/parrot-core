@@ -1,3 +1,16 @@
+parrot-core (3.7.170705) testing; urgency=medium
+
+  * Add udev rules for hyperfino u2f devices.
+  * Update parrot dns servers.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 05 Jul 2017 14:06:51 +0200
+
+parrot-core (3.7.170628) testing; urgency=medium
+
+  * Update for parrot 3.7.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 28 Jun 2017 19:42:01 +0200
+
 parrot-core (3.5.170220) testing; urgency=medium
 
   * Fix bashrc in skel

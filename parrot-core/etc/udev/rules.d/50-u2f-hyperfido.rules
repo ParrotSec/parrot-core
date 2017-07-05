@@ -1,0 +1,2 @@
+# HyperFIDO U2F Key
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="2ccf|096e", ATTRS{idProduct}=="0880", OWNER="root", GROUP="plugdev", MODE:="0660"
