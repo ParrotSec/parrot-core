@@ -6,3 +6,6 @@ mkdir -p /etc/skel
 mkdir -p /usr/lib/parrot-skel/etc/skel
 cat /etc/bashrc > /etc/skel/.bashrc
 cat /etc/bashrc > /usr/lib/parrot-skel/etc/skel/.bashrc
+
+mkdir -p /etc/resolvconf/resolv.conf.d/
+cat /etc/resolv.conf.head > /etc/resolvconf/resolv.conf.d/head || true
