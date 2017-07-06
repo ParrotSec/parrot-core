@@ -1,3 +1,9 @@
+parrot-core (3.7.170706.1) testing; urgency=medium
+
+  * Clean resolvconf configurations.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 06 Jul 2017 08:43:42 +0200
+
 parrot-core (3.7.170706) testing; urgency=medium
 
   * Fix postinst rules for resolvconf.
