@@ -1,13 +1,13 @@
 Source: parrot-core
 Section: parrot
 Priority: standard
-Maintainer: Parrot Dev Team <parrot-devel@lists.parrotsec.org>
+Maintainer: Parrot Dev Team <team@parrotsec.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>,
-           Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
-Standards-Version: 3.9.8
-Build-Depends: debhelper (>= 9)
+           Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>
+Standards-Version: 4.0.0
+Build-Depends: debhelper (>= 10)
 Build-Depends-Indep: pkg-config
-Homepage: http://www.parrotsec.org/
+Homepage: https://www.parrotsec.org/
 
 Package: parrot-core
 Architecture: all
