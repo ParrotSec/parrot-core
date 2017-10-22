@@ -8,4 +8,4 @@ cat /etc/bashrc > /etc/skel/.bashrc
 cat /etc/bashrc > /usr/lib/parrot-skel/etc/skel/.bashrc
 
 mkdir -p /etc/resolvconf/resolv.conf.d/
-cat /etc/resolv.conf.head > /etc/resolvconf/resolv.conf.d/head || true
+cat /etc/resolv.conf.head > /etc/resolvconf/resolv.conf.d/tail || true

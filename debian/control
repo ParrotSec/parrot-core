@@ -2,16 +2,16 @@ Source: parrot-core
 Section: parrot
 Priority: standard
 Maintainer: Parrot Dev Team <team@parrotsec.org>
-Uploaders: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>,
+Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>,
            Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>
-Standards-Version: 4.0.0
+Standards-Version: 4.1.1
 Build-Depends: debhelper (>= 10)
 Build-Depends-Indep: pkg-config
 Homepage: https://www.parrotsec.org/
 
 Package: parrot-core
 Architecture: all
-Depends: apt-parrot, net-tools, moreutils, figlet, saidar, htop, iotop, resolvconf, zile, mg, nano, lolcat, whois, bash-completion, screen, dnsutils
+Depends: apt-parrot, net-tools, moreutils, figlet, firejail, saidar, htop, iotop, resolvconf, zile, mg, nano, lolcat, whois, bash-completion, screen, dnsutils
 Recommends: sysv-rc, falconpl, lshw, usbutils, links2, console-setup, locales, localization-config, init-system-helpers, locate
 Suggests: parrot-interface | parrot-cloud, parrot-tools-libre | parrot-tools | parrot-tools-cloud | parrot-tools-arm | parrot-interface-full, parrot-drivers
 Replaces: bash, base-files, xterm, parrot-skel, dnsmasq, parrot-interface-common, resolvconf
