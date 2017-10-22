@@ -1,3 +1,12 @@
+parrot-core (3.9.171022.1) testing; urgency=medium
+
+  * Add full firejail sandboxing features and auto symlinks creation.
+  * Include apparmor suport plus extra profiles.
+  * Include selinux support.
+  * Include tomoyo support.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 22 Oct 2017 21:56:35 +0200
+
 parrot-core (3.9.171022) testing; urgency=medium
 
   * Bump standard-version 4.1.1
