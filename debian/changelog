@@ -1,3 +1,9 @@
+parrot-core (3.9.171022.2) testing; urgency=medium
+
+  * Don't break dpkg if firecfg fails. 
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 22 Oct 2017 23:29:08 +0200
+
 parrot-core (3.9.171022.1) testing; urgency=medium
 
   * Add full firejail sandboxing features and auto symlinks creation.

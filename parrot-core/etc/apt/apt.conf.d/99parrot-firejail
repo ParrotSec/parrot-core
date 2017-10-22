@@ -1,1 +1,1 @@
-DPkg::Post-Invoke { "[ ! -x /usr/bin/firecfg ] || /usr/bin/firecfg"; }
+DPkg::Post-Invoke { "[ ! -x /usr/bin/firecfg ] || /usr/bin/firecfg || true"; }
