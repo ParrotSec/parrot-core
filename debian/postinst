@@ -2,10 +2,15 @@
 
 set -e
 
+#configure bashrc
 mkdir -p /etc/skel
 mkdir -p /usr/lib/parrot-skel/etc/skel
 cat /etc/bashrc > /etc/skel/.bashrc
 cat /etc/bashrc > /usr/lib/parrot-skel/etc/skel/.bashrc
 
+#configure resolvconf aliases
 mkdir -p /etc/resolvconf/resolv.conf.d/
 cat /etc/resolv.conf.head > /etc/resolvconf/resolv.conf.d/tail || true
+
+#configure firejail sandboxes
+[ ! -x /usr/bin/firecfg ] || /usr/bin/firecfg || true
