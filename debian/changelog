@@ -1,3 +1,9 @@
+parrot-core (3.9.171031) testing; urgency=medium
+
+  * Add dedicated apt post-invoke script for firejail sandbox profiles.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 31 Oct 2017 22:40:36 +0100
+
 parrot-core (3.9.171030) testing; urgency=medium
 
   * Move firecfg trigger to postinst.
