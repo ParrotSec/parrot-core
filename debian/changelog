@@ -1,3 +1,9 @@
+parrot-core (3.9.171102) testing; urgency=medium
+
+  * Fix apt path.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 02 Nov 2017 10:37:25 +0100
+
 parrot-core (3.9.171031) testing; urgency=medium
 
   * Add dedicated apt post-invoke script for firejail sandbox profiles.
