@@ -14,3 +14,6 @@ cat /etc/resolv.conf.head > /etc/resolvconf/resolv.conf.d/tail || true
 
 #configure firejail sandboxes
 [ ! -x /usr/bin/firecfg ] || /usr/bin/firecfg || true
+
+#configure plymouth theme
+[ ! -x /usr/sbin/plymouth-set-default-theme ] || /usr/sbin/plymouth-set-default-theme parrot || true

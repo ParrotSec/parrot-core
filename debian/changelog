@@ -1,3 +1,9 @@
+parrot-core (4.0.180511.2) testing; urgency=medium
+
+  * Set parrot as default plymouth theme.
+
+ -- Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>  Fri, 11 May 2018 05:32:35 +0200
+
 parrot-core (4.0.180511.1) testing; urgency=medium
 
   * Add plymouth dependency.
