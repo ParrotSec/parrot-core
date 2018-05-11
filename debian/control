@@ -28,7 +28,7 @@ Depends:
          screen,
          whois,
          zile
-Recommends: firejail, firejail-profiles, apparmor, apparmor-profiles, apparmor-profiles-extra, apparmor-utils, selinux-policy-default, selinux-utils, sysv-rc, falconpl, lshw, usbutils, links2, console-setup, locales, localization-config, init-system-helpers, locate
+Recommends: plymouth, plymouth-themes, firejail, firejail-profiles, apparmor, apparmor-profiles, apparmor-profiles-extra, apparmor-utils, selinux-policy-default, selinux-utils, sysv-rc, falconpl, lshw, usbutils, links2, console-setup, locales, localization-config, init-system-helpers, locate
 Suggests: parrot-interface | parrot-cloud, parrot-tools-libre | parrot-tools | parrot-tools-cloud | parrot-tools-arm | parrot-interface-full, parrot-drivers
 Replaces: bash, base-files, xterm, parrot-skel, dnsmasq, parrot-interface-common, resolvconf
 Breaks: tomoyo-tools (= 2.5.0-20170102-3)
