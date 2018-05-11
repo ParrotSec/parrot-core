@@ -2,24 +2,24 @@ if [ "$LANG" = "C" ]; then
     if [ -e /etc/default/locale ]; then
 	. /etc/default/locale
     else
-	LANG="en_US.UTF-8"
+	    LANG="en_US.UTF-8"
     fi
 fi
 
 if [ -r /proc/cmdline ]; then
     if grep -q -E "\keyboard=it\b" /proc/cmdline 2>/dev/null; then
-	setxkbmap it
+	    setxkbmap it
     fi
-    if grep -q -E "\keyboard=en\b" /proc/cmdline 2>/dev/null; then
-	setxkbmap en
+    if grep -q -E "\keyboard=us\b" /proc/cmdline 2>/dev/null; then
+	    setxkbmap us
     fi
     if grep -q -E "\keyboard=fr\b" /proc/cmdline 2>/dev/null; then
-	setxkbmap fr
+	    setxkbmap fr
     fi
     if grep -q -E "\keyboard=de\b" /proc/cmdline 2>/dev/null; then
-	setxkbmap de
+	    setxkbmap de
     fi
     if grep -q -E "\keyboard=es\b" /proc/cmdline 2>/dev/null; then
-	setxkbmap es
+	    setxkbmap es
     fi
 fi

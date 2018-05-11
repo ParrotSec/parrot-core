@@ -17,4 +17,9 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 # MA 02110-1301, USA.
 #
-nohup $@ &>/dev/null &
+
+if [ -p /dev/stdin ]; then
+  nohup $@ $(cat) &>/dev/null &
+else
+  nohup $@ &>/dev/null &
+fi
