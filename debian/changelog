@@ -1,3 +1,9 @@
+parrot-core (4.0.180514) testing; urgency=medium
+
+  * Remove plymouth from Recommends, it hangs on boot.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 14 May 2018 16:20:00 +0200
+
 parrot-core (4.0.180511.3) testing; urgency=medium
 
   * Use GRUB_CMDLINE_LINUX instead of GRUB_CMDLINE_LINUX_DEFAULT in grub config.
