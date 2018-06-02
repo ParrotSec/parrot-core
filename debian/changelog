@@ -1,3 +1,9 @@
+parrot-core (4.1.180602) testing; urgency=medium
+
+  * Update for parrot 4.1.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 02 Jun 2018 02:23:20 +0200
+
 parrot-core (4.0.180514) testing; urgency=medium
 
   * Remove plymouth from Recommends, it hangs on boot.
