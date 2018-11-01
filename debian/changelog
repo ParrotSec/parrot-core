@@ -1,3 +1,9 @@
+parrot-core (4.3.181101) testing; urgency=medium
+
+  * Update bashrc.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 01 Nov 2018 21:39:35 +0100
+
 parrot-core (4.3.181013) testing; urgency=medium
 
   * Update for Parrot 4.3.
