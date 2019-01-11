@@ -1,3 +1,10 @@
+parrot-core (4.5.190111) testing; urgency=medium
+
+  * Update for Parrot 4.5.
+  * Add custom grub.d/10_linux menu entries for nouveau and acpi).
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 11 Jan 2019 23:19:04 +0100
+
 parrot-core (4.3.181101) testing; urgency=medium
 
   * Update bashrc.

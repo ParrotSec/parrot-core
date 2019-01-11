@@ -2,18 +2,21 @@
 
 set -e
 
-#configure bashrc
+# configure bashrc
 mkdir -p /etc/skel
 mkdir -p /usr/lib/parrot-skel/etc/skel
 cat /etc/bashrc > /etc/skel/.bashrc
 cat /etc/bashrc > /usr/lib/parrot-skel/etc/skel/.bashrc
 
-#configure resolvconf aliases
+# configure resolvconf aliases
 mkdir -p /etc/resolvconf/resolv.conf.d/
 cat /etc/resolv.conf.head > /etc/resolvconf/resolv.conf.d/tail || true
 
 #configure firejail sandboxes
 [ ! -x /usr/bin/firecfg ] || /usr/bin/firecfg || true
 
-#configure plymouth theme
+# configure plymouth theme
 [ ! -x /usr/sbin/plymouth-set-default-theme ] || /usr/sbin/plymouth-set-default-theme parrot || true
+
+# configure grub menu
+cat /usr/lib/parrot-core/10_linux > /etc/grub.d/10_linux || true
