@@ -1,3 +1,9 @@
+parrot-core (4.6.190320) testing; urgency=medium
+
+  * Update for Parrot 4.6.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 20 Mar 2019 00:00:42 +0100
+
 parrot-core (4.5.190111) testing; urgency=medium
 
   * Update for Parrot 4.5.

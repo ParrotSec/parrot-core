@@ -130,10 +130,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-# check if local bin folder exist
-# $HOME/bin
-# prepend it to $PATH if so
-if [ -d $HOME/bin ]; then
-    export PATH=$HOME/bin:$PATH
-fi
