@@ -1,7 +1,7 @@
 # ParrotDNS/OpenNIC
-nameserver 139.99.96.146
-nameserver 37.59.40.15
 nameserver 185.121.177.177
+nameserver 169.239.202.202
+nameserver 89.36.210.176
 
 # Round Robin
 options rotate
