@@ -1,3 +1,15 @@
+parrot-core (4.6.190408) testing; urgency=medium
+
+  * Remove grub menu hooks, menu patch is integrated in grub package now.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 08 Apr 2019 03:13:06 +0200
+
+parrot-core (4.6.190402) testing; urgency=medium
+
+  * Update DNS configuration using new Parrot AnyCast IPs.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 02 Apr 2019 23:35:02 +0200
+
 parrot-core (4.6.190328) testing; urgency=medium
 
   * Update OpenNIC DNS servers.
