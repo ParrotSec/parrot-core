@@ -1,3 +1,9 @@
+parrot-core (4.6.190414) testing; urgency=medium
+
+  * Remove resolv.conf customizations (moved to anonsurf as autonomous feature).
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 14 Apr 2019 06:04:55 +0200
+
 parrot-core (4.6.190408) testing; urgency=medium
 
   * Remove grub menu hooks, menu patch is integrated in grub package now.
