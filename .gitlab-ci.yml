@@ -1,0 +1,19 @@
+tag: deb
+
+stages:
+  - build
+
+
+before_script:
+  - cd $CI_PROJECT_NAME
+  - ls -lh
+  - gbp export-orig
+  - apt-source -b .
+
+build:
+  script:
+    - sbuild --arch=amd64 --dist=parrot --no-run-lintian --arch-all --arch-any
+    - sbuild --arch=i386 --dist=parrot --no-arch-all --arch-any --no-run-lintian --no-source
+    - sbuild --arch=arm64 --dist=parrot --no-arch-all --arch-any --no-run-lintian --no-source
+    - sbuild --arch=armhf --dist=parrot --no-arch-all --arch-any --no-run-lintian --no-source
+    - rsync -Pahv ../*.{deb,udeb,,dsc,xz,gz,bz2,zip} /srv/repo-lts/incoming/
