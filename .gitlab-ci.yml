@@ -13,7 +13,7 @@ prepare:
   script:
     - ls -lh
     - gbp export-orig
-    - apt-source -b .
+    - dpkg-source -b .
 
 build:
   stage: build
