@@ -1,14 +1,15 @@
-tag: deb
-
 stages:
+  - prepare
   - build
 
 
-before_script:
-  - cd $CI_PROJECT_NAME
-  - ls -lh
-  - gbp export-orig
-  - apt-source -b .
+prepare:
+  tag: deb
+  script:
+    - cd $CI_PROJECT_NAME
+    - ls -lh
+    - gbp export-orig
+    - apt-source -b .
 
 build:
   script:
