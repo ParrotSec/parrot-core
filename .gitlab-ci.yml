@@ -4,6 +4,7 @@ stages:
 
 
 prepare:
+  stage: prepare
   tags:
     - deb
   script:
@@ -13,6 +14,7 @@ prepare:
     - apt-source -b .
 
 build:
+  stage: build
   tags:
     - deb
   script:
