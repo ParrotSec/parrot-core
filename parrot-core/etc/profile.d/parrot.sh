@@ -7,9 +7,3 @@ fi
 if ! echo "$PATH" | tr : '\n' | grep -q "^/snap$"; then
     PATH="/snap/bin:$PATH"
 fi
-
-
-
-
-
-
