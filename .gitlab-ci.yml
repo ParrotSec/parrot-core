@@ -4,7 +4,7 @@ stages:
 
 
 prepare:
-  tag: deb
+  tags: deb
   script:
     - cd $CI_PROJECT_NAME
     - ls -lh
