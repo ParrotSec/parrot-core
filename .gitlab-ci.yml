@@ -4,7 +4,8 @@ stages:
 
 
 prepare:
-  tags: deb
+  tags:
+    - deb
   script:
     - cd $CI_PROJECT_NAME
     - ls -lh
@@ -12,6 +13,8 @@ prepare:
     - apt-source -b .
 
 build:
+  tags:
+    - deb
   script:
     - sbuild --arch=amd64 --dist=parrot --no-run-lintian --arch-all --arch-any
     - sbuild --arch=i386 --dist=parrot --no-arch-all --arch-any --no-run-lintian --no-source
