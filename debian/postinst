@@ -8,8 +8,12 @@ mkdir -p /usr/lib/parrot-skel/etc/skel
 cat /etc/bashrc > /etc/skel/.bashrc
 cat /etc/bashrc > /usr/lib/parrot-skel/etc/skel/.bashrc
 
-#configure firejail sandboxes
+# Configure firejail sandboxes
 [ ! -x /usr/bin/firecfg ] || /usr/bin/firecfg || true
 
-# configure plymouth theme
+# Configure plymouth theme
 [ ! -x /usr/sbin/plymouth-set-default-theme ] || /usr/sbin/plymouth-set-default-theme parrot || true
+
+
+# Apply remediations to disable unwanted services that may have ben re-enabled by software updates
+systemctl disable redsocks redis-server postgresql mariadb openvas-scanner openvas-manager greenbone-security-assistant apt-daily beef-xss strongswan bettercap phpsessionclean.timer couchdb miredo dradis || true

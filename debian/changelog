@@ -1,3 +1,9 @@
+parrot-core (4.7.190609) testing; urgency=medium
+
+  * Apply some remediations and disable some unwanted services.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 09 Jun 2019 13:52:21 +0200
+
 parrot-core (4.6.190414) testing; urgency=medium
 
   * Remove resolv.conf customizations (moved to anonsurf as autonomous feature).
