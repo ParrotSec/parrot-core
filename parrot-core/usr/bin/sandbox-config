@@ -18,5 +18,5 @@
 # MA 02110-1301, USA.
 #
 echo "Configuring sandbox profiles...."
-[ ! -x /usr/bin/firecfg ] || /usr/bin/firecfg --bindir=/usr/sandbox/ > /dev/null || true
+[ ! -x /usr/bin/firecfg ] || /usr/bin/firecfg > /dev/null || true
 echo "Sandbox profiles updated!"
