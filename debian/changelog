@@ -1,3 +1,11 @@
+parrot-core (4.7.190703) testing; urgency=medium
+
+  * Fix PS1 in bashrc
+    + https://github.com/ParrotSec/parrot-core/issues/4
+    + https://github.com/ParrotSec/parrot-core/pull/5
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 03 Jul 2019 16:01:32 +0200
+
 parrot-core (4.7.190610) testing; urgency=medium
 
   * Revert experimental sandbox code.
