@@ -5,7 +5,7 @@ Maintainer: Parrot Dev Team <team@parrotsec.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>,
            Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>
 Standards-Version: 4.2.0
-Build-Depends: debhelper (>= 10)
+Build-Depends: debhelper (>= 10), golang-go
 Build-Depends-Indep: pkg-config
 Homepage: https://www.parrotsec.org/
 
@@ -22,6 +22,7 @@ Depends: apt-parrot,
          resolvconf,
          screen,
          whois,
+         curl,
 Recommends: firejail,
             firejail-profiles,
             apparmor,
@@ -29,10 +30,6 @@ Recommends: firejail,
             apparmor-profiles-extra,
             apparmor-utils,
             sysv-rc,
-            lshw,
-            locales,
-            localization-config,
-            init-system-helpers,
             locate
 Suggests: parrot-interface, parrot-tools | parrot-tools-cloud | parrot-tools-arm | parrot-interface-full, parrot-drivers, plymouth, plymouth-themes
 Replaces: bash, base-files, xterm, parrot-skel, dnsmasq, parrot-interface-common, resolvconf

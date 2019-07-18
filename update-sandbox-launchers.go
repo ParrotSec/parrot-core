@@ -46,7 +46,7 @@ func main() {
 
 	// create new launchers
 	for _, jj := range launchers {
-		content := fmt.Sprintf("#!/usr/bin/env xdg-open\n[Desktop Entry]\nEncoding=UTF-8\nIcon=parrot-menu.png\nStartupNotify=false\nType=Application\nCategories=sandbox\nTerminal=true\nName=%s\nExec=%s\n", jj.name, jj.exec)
+		content := fmt.Sprintf("#!/usr/bin/env xdg-open\n[Desktop Entry]\nEncoding=UTF-8\nIcon=parrot-menu.png\nStartupNotify=false\nType=Application\nCategories=sandbox\nTerminal=true\nName=%s (sandboxed)\nExec=%s\n", jj.name, jj.exec)
 
 		f, err := os.Create(jj.filename)
 		if err != nil {

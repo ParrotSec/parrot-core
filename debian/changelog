@@ -1,3 +1,9 @@
+parrot-core (4.7.190718) rolling-testing; urgency=medium
+
+  * Move sandbox launchers from /usr/local/bin to /sandbox.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 18 Jul 2019 11:49:27 +0200
+
 parrot-core (4.7.190703) testing; urgency=medium
 
   * Fix PS1 in bashrc
