@@ -1,1 +1,1 @@
-DPkg::Post-Invoke { "[ ! -x /usr/bin/sandbox-config ] || /usr/bin/sandbox-config || true"; }
+DPkg::Post-Invoke { "[ ! -x /usr/bin/update-sandbox-launchers ] || /usr/bin/update-sandbox-launchers || true"; }

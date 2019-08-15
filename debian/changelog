@@ -1,3 +1,21 @@
+parrot-core (4.7.190723) rolling-testing; urgency=medium
+
+  * Fix go program.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 23 Jul 2019 02:57:14 +0200
+
+parrot-core (4.7.190722) rolling-testing; urgency=medium
+
+  * Fix go build command.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 22 Jul 2019 03:12:26 +0200
+
+parrot-core (4.7.190721) rolling-testing; urgency=medium
+
+  * Fix makefile.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 21 Jul 2019 05:10:26 +0200
+
 parrot-core (4.7.190718) rolling-testing; urgency=medium
 
   * Move sandbox launchers from /usr/local/bin to /sandbox.

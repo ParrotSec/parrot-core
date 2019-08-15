@@ -22,7 +22,8 @@ func main() {
 	}
 
 	// run firecfg
-	if _, err := os.Stat("/usr/bin/firecfg"); os.IsNotExist(err) {
+	_, err := os.Stat("/usr/bin/firecfg")
+	if err == nil {
 		exec.Command("/usr/bin/firecfg", "--bindir=/sandbox").Output()
 	}
 
@@ -38,7 +39,7 @@ func main() {
 	for i, ii := range aliases {
 		launchers[i].exec = fmt.Sprintf("/sandbox/%s", ii.Name())
 		launchers[i].name = ii.Name()
-		launchers[i].filename = fmt.Sprintf("_sandbox-%s.desktop", ii.Name())
+		launchers[i].filename = fmt.Sprintf("/usr/share/applications/_sandbox-%s.desktop", ii.Name())
 	}
 
 	// remove old launchers

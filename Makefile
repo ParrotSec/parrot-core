@@ -10,9 +10,9 @@ install:
 	mkdir -p $(DESTDIR)/sandbox
 	cp grub.default $(DESTDIR)/etc/default/grub.d/parrot.cfg
 	chown root:root $(DESTDIR)/etc/default/grub.d/parrot.cfg
-	chown root:root /sandbox
+	chown root:root $(DESTDIR)/sandbox
 	chmod 644 $(DESTDIR)/etc/default/grub.d/parrot.cfg
-	chmod 755 /sandbox
-	go build update-sandbox-launchers.go -o $(DESTDIR)/usr/bin/update-sandbox-launchers
+	chmod 755 $(DESTDIR)/sandbox
+	go build -o $(DESTDIR)/usr/bin/update-sandbox-launchers update-sandbox-launchers.go
 	strip $(DESTDIR)/usr/bin/update-sandbox-launchers
 	
