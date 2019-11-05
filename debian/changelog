@@ -1,6 +1,6 @@
-parrot-core (4.8.191105) rolling-testing; urgency=medium
+parrot-core (4.8.191105.1) rolling-testing; urgency=medium
 
-  * Fix typo in Makefile.
+  * Update Makefile.
 
  -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 05 Nov 2019 05:41:44 +0100
 

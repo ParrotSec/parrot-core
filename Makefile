@@ -20,21 +20,6 @@ install:
 	chmod 755 $(DESTDIR)/sandbox
 	chmod 644 $(DESTDIR)/lib/systemd/system/postgresql@.service.d/*
 	chmod 644 $(DESTDIR)/lib/systemd/system-preset/*
-	ifeq ($(DEB_TARGET_ARCH)x, amd64x)
-		GOARCH=amd64
-	endif
-	ifeq ($(DEB_TARGET_ARCH)x, i386x)
-		GOARCH=386
-	endif
-	ifeq ($(DEB_TARGET_ARCH)x, armhfx)
-		GOARCH=arm
-	endif
-	ifeq ($(DEB_TARGET_ARCH)x, armelx)
-		GOARCH=arm
-	endif
-	ifeq ($(DEB_TARGET_ARCH)x, arm64x)
-		GOARCH=arm64
-	endif
 	go build -o $(DESTDIR)/usr/bin/update-sandbox-launchers update-sandbox-launchers.go
 	strip $(DESTDIR)/usr/bin/update-sandbox-launchers
 	
