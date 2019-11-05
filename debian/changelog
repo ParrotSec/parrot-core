@@ -1,3 +1,17 @@
+parrot-core (4.8.191105) rolling-testing; urgency=medium
+
+  * Fix typo in Makefile.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 05 Nov 2019 05:41:44 +0100
+
+parrot-core (4.8.191021) rolling-testing; urgency=medium
+
+  * Move systemd postgres hook from parrot-interface. 
+  * Fix build architecture of sandbox launchers updater.
+  * Add systemd presets to disable network services autostart.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 21 Oct 2019 14:59:17 +0200
+
 parrot-core (4.7.190723) rolling-testing; urgency=medium
 
   * Fix go program.

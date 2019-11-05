@@ -1,0 +1,52 @@
+# Parrot-specific service presets
+# Maintainer: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+# Last-Updated: 2019-10-21 16:28 UTC+1
+
+# We don't need that shit
+disable systemd-timesyncd.service
+disable systemd-resolved.service
+
+# Network services to disable
+disable apache2.service
+disable avahi-daemon.*
+disable couchdb.service
+disable clamav-*
+disable cups.service
+disable dictd.service
+disable dhcpcd.service
+disable dradis.service
+disable exim4.service
+disable greenbone-*
+disable iodined.service
+disable mariadb.service
+disable mysql*
+disable minissdpd.service
+disable nfs-common.service
+disable nginx.service
+disable nmbd.service
+disable openbsd-inetd.service
+disable openvas-*
+disable polipo.service
+disable postfix.service
+disable postgresql.service
+disable pppd-dns.service
+disable procmail.service
+disable redis.service
+disable redis-server.service
+disable redsocks.service
+disable rpcbind.service
+disable saned.service
+disable snmpd.service
+disable ssh.service
+disable stunnel*
+disable winbind.service
+disable thin.service
+disable tinyproxy.service
+disable tor.service
+disable udftools.service
+disable python-faraday.service
+disable pure-ftpd.service
+
+
+# Make sure these services are enabled
+enable resolvconf.service
