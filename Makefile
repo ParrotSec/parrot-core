@@ -7,7 +7,8 @@ install:
 	cp -rf parrot-core/* $(DESTDIR)/
 	chmod 750 $(DESTDIR)/root/.bashrc
 	mkdir -p $(DESTDIR)/etc/default/grub.d
-	mkdir -p $(DESTDIR)/lib/systemd/{system/postgresql@.service.d,system-preset}
+	mkdir -p $(DESTDIR)/lib/systemd/system/postgresql@.service.d
+	mkdir -p $(DESTDIR)/lib/systemd/system-preset
 	mkdir -p $(DESTDIR)/sandbox
 	cp grub.default $(DESTDIR)/etc/default/grub.d/parrot.cfg
 	cp -r systemd/parrot_postgresql.conf $(DESTDIR)/lib/systemd/system/postgresql@.service.d/
@@ -19,19 +20,19 @@ install:
 	chmod 755 $(DESTDIR)/sandbox
 	chmod 644 $(DESTDIR)/lib/systemd/system/postgresql@.service.d/*
 	chmod 644 $(DESTDIR)/lib/systemd/system-preset/*
-	ifeq ($(DEB_TARGET_ARCH), amd64)
+	ifeq ($(DEB_TARGET_ARCH)x, amd64x)
 		GOARCH=amd64
 	endif
-	ifeq ($(DEB_TARGET_ARCH), i386)
+	ifeq ($(DEB_TARGET_ARCH)x, i386x)
 		GOARCH=386
 	endif
-	ifeq ($(DEB_TARGET_ARCH), armhf)
+	ifeq ($(DEB_TARGET_ARCH)x, armhfx)
 		GOARCH=arm
 	endif
-	ifeq ($(DEB_TARGET_ARCH), armel)
+	ifeq ($(DEB_TARGET_ARCH)x, armelx)
 		GOARCH=arm
 	endif
-	ifeq ($(DEB_TARGET_ARCH), arm64)
+	ifeq ($(DEB_TARGET_ARCH)x, arm64x)
 		GOARCH=arm64
 	endif
 	go build -o $(DESTDIR)/usr/bin/update-sandbox-launchers update-sandbox-launchers.go
