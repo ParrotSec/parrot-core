@@ -1,4 +1,4 @@
-parrot-core (4.8.191105.1) rolling-testing; urgency=medium
+parrot-core (4.8.191106) rolling-testing; urgency=medium
 
   * Update Makefile.
 

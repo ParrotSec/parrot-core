@@ -5,12 +5,11 @@ Maintainer: Parrot Dev Team <team@parrotsec.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>,
            Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>
 Standards-Version: 4.2.0
-Build-Depends: debhelper (>= 10), golang-go
-Build-Depends-Indep: pkg-config
+Build-Depends: debhelper (>= 10), golang
 Homepage: https://www.parrotsec.org/
 
 Package: parrot-core
-Architecture: all
+Architecture: any
 Depends: apt-parrot,
          bash-completion,
          dnsutils,

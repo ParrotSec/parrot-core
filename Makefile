@@ -1,3 +1,16 @@
+GO_BUILD = go build
+GO_FLAGS = -v
+
+REPO = $(shell pwd)
+BUILDDIR = $(REPO)/build
+GO_BUILD = go build
+GO_FLAGS = -v
+ARCH := $(shell go version|awk -F'/' '{print $$NF}')
+
+ifeq ($(ARCH), amd64)
+	ARCH = x86_64
+endif
+
 all:
 
 clean:
@@ -17,9 +30,10 @@ install:
 	chown root:root $(DESTDIR)/sandbox
 	chown -R root:root $(DESTDIR)/lib/
 	chmod 644 $(DESTDIR)/etc/default/grub.d/parrot.cfg
+	chmod 644 $(DESTDIR)/etc/used/rules.d/*
 	chmod 755 $(DESTDIR)/sandbox
 	chmod 644 $(DESTDIR)/lib/systemd/system/postgresql@.service.d/*
 	chmod 644 $(DESTDIR)/lib/systemd/system-preset/*
-	go build -o $(DESTDIR)/usr/bin/update-sandbox-launchers update-sandbox-launchers.go
+	mkdir -p $(BUILDDIR)
+	GOPATH=$(BUILDDIR) GOCACHE=$(BUILDDIR) $(GO_BUILD) $(GO_FLAGS) -o $(DESTDIR)/usr/bin/update-sandbox-launchers update-sandbox-launchers.go
 	strip $(DESTDIR)/usr/bin/update-sandbox-launchers
-	
