@@ -30,7 +30,7 @@ install:
 	chown root:root $(DESTDIR)/sandbox
 	chown -R root:root $(DESTDIR)/lib/
 	chmod 644 $(DESTDIR)/etc/default/grub.d/parrot.cfg
-	chmod 644 $(DESTDIR)/etc/used/rules.d/*
+	chmod 644 $(DESTDIR)/etc/udev/rules.d/*
 	chmod 755 $(DESTDIR)/sandbox
 	chmod 644 $(DESTDIR)/lib/systemd/system/postgresql@.service.d/*
 	chmod 644 $(DESTDIR)/lib/systemd/system-preset/*
