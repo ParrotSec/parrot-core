@@ -1,3 +1,9 @@
+parrot-core (4.8.191110) rolling-testing; urgency=medium
+
+  * Fix firejail configuration.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 10 Nov 2019 19:40:07 +0100
+
 parrot-core (4.8.191106) rolling-testing; urgency=medium
 
   * Update Makefile.

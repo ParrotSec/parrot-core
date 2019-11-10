@@ -24,6 +24,7 @@ func main() {
 	// run firecfg
 	_, err := os.Stat("/usr/bin/firecfg")
 	if err == nil {
+		exec.Command("/usr/bin/firecfg", "--clean").Output()
 		exec.Command("/usr/bin/firecfg", "--bindir=/sandbox").Output()
 	}
 

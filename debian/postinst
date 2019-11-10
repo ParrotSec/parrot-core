@@ -8,8 +8,5 @@ mkdir -p /usr/lib/parrot-skel/etc/skel
 cat /etc/bashrc > /etc/skel/.bashrc
 cat /etc/bashrc > /usr/lib/parrot-skel/etc/skel/.bashrc
 
-# Configure firejail sandboxes
-[ ! -x /usr/bin/firecfg ] || /usr/bin/firecfg || true
-
 # Configure plymouth theme
 [ ! -x /usr/sbin/plymouth-set-default-theme ] || /usr/sbin/plymouth-set-default-theme parrot || true
