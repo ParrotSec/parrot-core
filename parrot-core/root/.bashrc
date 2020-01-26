@@ -2,6 +2,47 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# Text Layouts:
+    Default='\e[0m'       	# Reset to default (also reset colors)
+    Bold='\e[1m'          	# Bold
+    Italic='\e[3m'        	# Italic
+    Underline='\e[4m'    	# Underline
+    Strikethrough='\e[9m'	# Strikethrough
+# Text Colors:
+    Black='\e[30m'		# Black
+    Red='\e[31m'        	# Red
+    Green='\e[32m'		# Green
+    Yellow='\e[33m'     	# Yellow
+    Blue='\e[34m'       	# Blue
+    Purple='\e[35m'       	# Purple
+    Cyan='\e[36m'         	# Cyan
+    White='\e[37m'        	# White
+    Grey='\e[90m'		# Grey
+    LRed='\e[91m' 	        # Light red
+    LGreen='\e[92m'		# Light green
+    LYellow='\e[93m'      	# Light yellow
+    LBlue='\e[94m'        	# Light blue
+    LPurple='\e[95m'      	# Light purple
+    LCyan='\e[96m'        	# Light cyan
+    Whiter='\e[97m'       	# More white
+# Text Backgrounds:
+    On_Black='\e[40m'		# Black
+    On_Red='\e[41m'         	# Red
+    On_Green='\e[42m'       	# Green
+    On_Yellow='\e[43m'      	# Yellow
+    On_Blue='\e[44m'        	# Blue
+    On_Purple='\e[45m'      	# Purple
+    On_Cyan='\e[46m'        	# Cyan
+    On_White='\e[47m'       	# White
+    On_Grey='\e[100m'       	# Grey
+    On_LRed='\e[101m'       	# Light red
+    On_LGreen='\e[102m'     	# Light green
+    On_LYellow='\e[103m'    	# Light yellow
+    On_LBlue='\e[104m'      	# Light blue
+    On_LPurple='\e[105m'    	# Light purple
+    On_LCyan='\e[106m'      	# Light cyan
+    On_Whiter='\e[107m'     	# More white
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -59,7 +100,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1="\[\033[0;31m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[0;31m\]\342\234\227]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]root\[\033[01;33m\]@\[\033[01;96m\]\h'; else echo '\[\033[0;39m\]\u\[\033[01;33m\]@\[\033[01;96m\]\h'; fi)\[\033[0;31m\]]\342\224\200[\[\033[0;32m\]\w\[\033[0;31m\]]\n\[\033[0;31m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]\[\e[01;33m\]\\$\[\e[0m\]"
+    PS1="\[$Default\]\[$Red\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[$Default\]\[$Red\]\342\234\227\[$Default\]\[$Red\]]\342\224\200\")[\$([[ \[$EUID\] == 0 ]] && echo \"\[$Bold\]\[$Red\]root\[$Bold\]\[$Yellow\]@\[$Bold\]\[$LCyan\]\h\" || echo \"\[$Default\]\[$White\]\u\[$Bold\]\[$Yellow\]@\[$Bold\]\[$LCyan\]\h\")\[$Default\]\[$Red\]]\342\224\200[\[$Default\]\[$Green\]\w\[$Default\]\[$Red\]]\n\[$Default\]\[$Red\]\342\224\224\342\224\200\342\224\200\342\225\274 \[$Bold\]\[$Yellow\]\\\$\[$Default\]"
 else
     PS1='┌──[\u@\h]─[\w]\n└──╼ \$ '
 fi
@@ -84,7 +125,7 @@ unset color_prompt force_color_prompt
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
-    PS1="\[\033[0;31m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[0;31m\]\342\234\227]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]root\[\033[01;33m\]@\[\033[01;96m\]\h'; else echo '\[\033[0;39m\]\u\[\033[01;33m\]@\[\033[01;96m\]\h'; fi)\[\033[0;31m\]]\342\224\200[\[\033[0;32m\]\w\[\033[0;31m\]]\n\[\033[0;31m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]\[\e[01;33m\]\\$\[\e[0m\]"
+    PS1="\[$Default\]\[$Red\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[$Default\]\[$Red\]\342\234\227\[$Default\]\[$Red\]]\342\224\200\")[\$([[ \[$EUID\] == 0 ]] && echo \"\[$Bold\]\[$Red\]root\[$Bold\]\[$Yellow\]@\[$Bold\]\[$LCyan\]\h\" || echo \"\[$Default\]\[$White\]\u\[$Bold\]\[$Yellow\]@\[$Bold\]\[$LCyan\]\h\")\[$Default\]\[$Red\]]\342\224\200[\[$Default\]\[$Green\]\w\[$Default\]\[$Red\]]\n\[$Default\]\[$Red\]\342\224\224\342\224\200\342\224\200\342\225\274 \[$Bold\]\[$Yellow\]\\\$\[$Default\]"
     ;;
 *)
     ;;
