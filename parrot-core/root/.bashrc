@@ -100,7 +100,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1="${Default}${Red}\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[${Default}${Red}\342\234\227${Default}${Red}]\342\224\200\")[\$([[ ${EUID} == 0 ]] && echo \"${Bold}${Red}root${Bold}${Yellow}@${Bold}${LCyan}\h\" || echo \"${Default}${White}\u${Bold}${Yellow}@${Bold}${LCyan}\h\")${Default}${Red}]\342\224\200[${Default}${Green}\w${Default}${Red}]\n${Default}${Red}\342\224\224\342\224\200\342\224\200\342\225\274 ${Bold}${Yellow}\\\$${Default}"
+    PS1="\[$Default\]\[$Red\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[$Default\]\[$Red\]\342\234\227\[$Default\]\[$Red\]]\342\224\200\")[\$([[ \[$EUID\] == 0 ]] && echo \"\[$Bold\]\[$Red\]root\[$Bold\]\[$Yellow\]@\[$Bold\]\[$LCyan\]\h\" || echo \"\[$Default\]\[$White\]\u\[$Bold\]\[$Yellow\]@\[$Bold\]\[$LCyan\]\h\")\[$Default\]\[$Red\]]\342\224\200[\[$Default\]\[$Green\]\w\[$Default\]\[$Red\]]\n\[$Default\]\[$Red\]\342\224\224\342\224\200\342\224\200\342\225\274 \[$Bold\]\[$Yellow\]\\\$\[$Default\]"
 else
     PS1='┌──[\u@\h]─[\w]\n└──╼ \$ '
 fi
@@ -125,7 +125,7 @@ unset color_prompt force_color_prompt
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
-    PS1="${Default}${Red}\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[${Default}${Red}\342\234\227${Default}${Red}]\342\224\200\")[\$([[ ${EUID} == 0 ]] && echo \"${Bold}${Red}root${Bold}${Yellow}@${Bold}${LCyan}\h\" || echo \"${Default}${White}\u${Bold}${Yellow}@${Bold}${LCyan}\h\")${Default}${Red}]\342\224\200[${Default}${Green}\w${Default}${Red}]\n${Default}${Red}\342\224\224\342\224\200\342\224\200\342\225\274 ${Bold}${Yellow}\\\$${Default}"
+    PS1="\[$Default\]\[$Red\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[$Default\]\[$Red\]\342\234\227\[$Default\]\[$Red\]]\342\224\200\")[\$([[ \[$EUID\] == 0 ]] && echo \"\[$Bold\]\[$Red\]root\[$Bold\]\[$Yellow\]@\[$Bold\]\[$LCyan\]\h\" || echo \"\[$Default\]\[$White\]\u\[$Bold\]\[$Yellow\]@\[$Bold\]\[$LCyan\]\h\")\[$Default\]\[$Red\]]\342\224\200[\[$Default\]\[$Green\]\w\[$Default\]\[$Red\]]\n\[$Default\]\[$Red\]\342\224\224\342\224\200\342\224\200\342\225\274 \[$Bold\]\[$Yellow\]\\\$\[$Default\]"
     ;;
 *)
     ;;
