@@ -1,3 +1,9 @@
+parrot-core (4.8.200129) rolling-testing; urgency=medium
+
+  * Import bashrc updates from github.com/ParrotSec/parrot-core/pull/7
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 29 Jan 2020 19:30:28 +0100
+
 parrot-core (4.8.191110) rolling-testing; urgency=medium
 
   * Fix firejail configuration.

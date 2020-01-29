@@ -29,6 +29,7 @@ disable openvas-*
 disable polipo.service
 disable postfix.service
 disable postgresql.service
+disable postgres.service
 disable pppd-dns.service
 disable procmail.service
 disable redis.service
