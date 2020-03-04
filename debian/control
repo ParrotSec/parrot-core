@@ -22,15 +22,13 @@ Depends: apt-parrot,
          screen,
          whois,
          curl,
-Recommends: firejail,
-            firejail-profiles,
-            apparmor,
+Recommends: apparmor,
             apparmor-profiles,
             apparmor-profiles-extra,
             apparmor-utils,
             sysv-rc,
             locate
-Suggests: parrot-interface, parrot-tools | parrot-tools-cloud | parrot-tools-arm | parrot-interface-full, parrot-drivers, plymouth, plymouth-themes
+Suggests: firejail, firejail-profiles, parrot-interface, parrot-tools | parrot-tools-cloud | parrot-tools-arm | parrot-interface-full, parrot-drivers, plymouth, plymouth-themes
 Replaces: bash, base-files, xterm, parrot-skel, dnsmasq, parrot-interface-common, resolvconf
 Breaks: tomoyo-tools (= 2.5.0-20170102-3)
 Description: keychain package and hardening configs provider

@@ -29,6 +29,8 @@ disable openvas-*
 disable polipo.service
 disable postfix.service
 disable postgresql.service
+disable postgresql@11-main.service
+disable postgresql@12-main.service
 disable postgres.service
 disable pppd-dns.service
 disable procmail.service
