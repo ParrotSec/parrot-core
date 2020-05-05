@@ -18,6 +18,7 @@ disable dradis.service
 disable exim4.service
 disable greenbone-*
 disable iodined.service
+disable ipsec.service
 disable kismet.service
 disable mariadb.service
 disable mysql*
