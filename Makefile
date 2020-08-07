@@ -25,7 +25,7 @@ install:
 	mkdir -p $(DESTDIR)/sandbox
 	mkdir -p $(DESTDIR)/usr/local/bin
 	cp grub.default $(DESTDIR)/etc/default/grub.d/parrot.cfg
-	cp snap $(DESTDIR)/usr/local/bin/snap
+	cp snap $(DESTDIR)/usr/local/bin/
 	cp -r systemd/parrot_postgresql.conf $(DESTDIR)/lib/systemd/system/postgresql@.service.d/
 	cp systemd/80-parrot.preset $(DESTDIR)/lib/systemd/system-preset/
 	chown root:root $(DESTDIR)/etc/default/grub.d/parrot.cfg
