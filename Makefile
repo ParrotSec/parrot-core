@@ -23,7 +23,9 @@ install:
 	mkdir -p $(DESTDIR)/lib/systemd/system/postgresql@.service.d
 	mkdir -p $(DESTDIR)/lib/systemd/system-preset
 	mkdir -p $(DESTDIR)/sandbox
+	mkdir -p $(DESTDIR)/usr/local/bin
 	cp grub.default $(DESTDIR)/etc/default/grub.d/parrot.cfg
+	cp snap $(DESTDIR)/usr/local/bin/snap
 	cp -r systemd/parrot_postgresql.conf $(DESTDIR)/lib/systemd/system/postgresql@.service.d/
 	cp systemd/80-parrot.preset $(DESTDIR)/lib/systemd/system-preset/
 	chown root:root $(DESTDIR)/etc/default/grub.d/parrot.cfg
@@ -32,6 +34,8 @@ install:
 	chmod 644 $(DESTDIR)/etc/default/grub.d/parrot.cfg
 	chmod 644 $(DESTDIR)/etc/udev/rules.d/*
 	chmod 755 $(DESTDIR)/sandbox
+	chown root:root $(DESTDIR)/usr/local/bin/snap
+	chmod 755 $(DESTDIR)/usr/local/bin/snap
 	chmod 644 $(DESTDIR)/lib/systemd/system/postgresql@.service.d/*
 	chmod 644 $(DESTDIR)/lib/systemd/system-preset/*
 	mkdir -p $(BUILDDIR)
