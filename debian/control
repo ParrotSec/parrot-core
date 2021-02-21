@@ -5,7 +5,7 @@ Maintainer: Parrot Dev Team <team@parrotsec.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>,
            Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>
 Standards-Version: 4.2.0
-Build-Depends: debhelper (>= 10), golang
+Build-Depends: debhelper (>= 11), golang-go
 Homepage: https://www.parrotsec.org/
 
 Package: parrot-core
@@ -29,7 +29,8 @@ Recommends: apparmor,
             apparmor-utils,
             parrot-hardened,
             sysv-rc,
-            locate
+            locate,
+            neovim
 Suggests: firejail, firejail-profiles, parrot-interface, parrot-tools | parrot-tools-cloud | parrot-tools-arm | parrot-interface-full, parrot-drivers, plymouth, plymouth-themes
 Replaces: bash, base-files, xterm, parrot-skel, dnsmasq, parrot-interface-common, resolvconf
 Breaks: tomoyo-tools (= 2.5.0-20170102-3)
