@@ -1,3 +1,9 @@
+parrot-core (4.11.210221) rolling-testing; urgency=medium
+
+  * Use /usr/bin/python3 to provide /usr/bin/python
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 21 Feb 2021 01:02:24 +0100
+
 parrot-core (4.10.200807) rolling-testing; urgency=medium
 
   * Add Snap wrapper.

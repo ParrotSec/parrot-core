@@ -2,7 +2,7 @@ if [ "$LANG" = "C" ]; then
     if [ -e /etc/default/locale ]; then
 	. /etc/default/locale
     else
-	    LANG="en_US.UTF-8"
+	    export LANG="en_US.UTF-8"
     fi
 fi
 

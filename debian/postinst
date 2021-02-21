@@ -10,3 +10,8 @@ cat /etc/bashrc > /usr/lib/parrot-skel/etc/skel/.bashrc
 
 # Configure plymouth theme
 [ ! -x /usr/sbin/plymouth-set-default-theme ] || /usr/sbin/plymouth-set-default-theme parrot || true
+
+# Install python alias
+if [ ! $(update-alternatives --list python | grep python3) ]; then
+    update-alternatives --install /usr/bin/python python /usr/bin/python3 50
+fi

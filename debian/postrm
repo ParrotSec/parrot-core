@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+# Delete python alias
+update-alternatives --remove python /usr/bin/python3
