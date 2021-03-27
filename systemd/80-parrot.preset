@@ -11,13 +11,13 @@ disable anonsurfd.service
 disable apache2.service
 disable apt-daily-upgrade.timer
 disable apt-daily.time
-disable avahi-daemon.*
+disable avahi-daemon*
 disable beef-xss.service
 disable bettercap.service
 disable colord-sane.service
 disable couchdb.service
 disable clamav-*f
-disable cups.service
+disable cups*
 disable dictd.service
 disable dhcpcd.service
 disable dradis.service
@@ -33,6 +33,7 @@ disable iodined.service
 disable ipsec.service
 disable king-phisher.service
 disable kismet.service
+disable lighttpd.service
 disable mariadb.service
 disable mariadb@*
 disable mysql*

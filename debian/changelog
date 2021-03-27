@@ -1,3 +1,11 @@
+parrot-core (4.11.210328) rolling; urgency=medium
+
+  * Disable lighttpd.
+  * Disable cups.
+  * Disable avahi-daemon.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 28 Mar 2021 00:33:19 +0100
+
 parrot-core (4.11.210327.2) rolling; urgency=medium
 
   * Disable king-phisher.
