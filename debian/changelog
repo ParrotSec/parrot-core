@@ -1,3 +1,11 @@
+parrot-core (4.11.210327.2) rolling; urgency=medium
+
+  * Disable king-phisher.
+  * Disable beef-xss.
+  * Disable i2p.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 27 Mar 2021 18:27:16 +0100
+
 parrot-core (4.11.210327.1) rolling; urgency=medium
 
   * Disable faraday daemon in systemd presets.

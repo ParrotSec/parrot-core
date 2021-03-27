@@ -12,8 +12,9 @@ disable apache2.service
 disable apt-daily-upgrade.timer
 disable apt-daily.time
 disable avahi-daemon.*
+disable beef-xss.service
 disable bettercap.service
-disable colord-sane.servic
+disable colord-sane.service
 disable couchdb.service
 disable clamav-*f
 disable cups.service
@@ -26,9 +27,11 @@ disable freeradius.service
 disable greenbone-*
 disable gvmd.service
 disable hostapd.service
+disable i2p.service
 disable inetd@*
 disable iodined.service
 disable ipsec.service
+disable king-phisher.service
 disable kismet.service
 disable mariadb.service
 disable mariadb@*
