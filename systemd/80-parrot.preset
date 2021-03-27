@@ -15,12 +15,13 @@ disable avahi-daemon.*
 disable bettercap.service
 disable colord-sane.servic
 disable couchdb.service
-disable clamav-*
+disable clamav-*f
 disable cups.service
 disable dictd.service
 disable dhcpcd.service
 disable dradis.service
 disable exim4.service
+disable faraday.service
 disable freeradius.service
 disable greenbone-*
 disable gvmd.service
