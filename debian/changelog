@@ -1,3 +1,9 @@
+parrot-core (4.11.210327) rolling; urgency=medium
+
+  * Update systemd presets.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 27 Mar 2021 15:31:07 +0100
+
 parrot-core (4.11.210223) rolling-testing; urgency=medium
 
   * Move snap wrapper to apt-parrot.

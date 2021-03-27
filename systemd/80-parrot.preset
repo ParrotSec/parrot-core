@@ -7,8 +7,13 @@ disable systemd-timesyncd.service
 disable systemd-resolved.service
 
 # Network services to disable
+disable anonsurfd.service
 disable apache2.service
+disable apt-daily-upgrade.timer
+disable apt-daily.time
 disable avahi-daemon.*
+disable bettercap.service
+disable colord-sane.servic
 disable couchdb.service
 disable clamav-*
 disable cups.service
@@ -16,31 +21,42 @@ disable dictd.service
 disable dhcpcd.service
 disable dradis.service
 disable exim4.service
+disable freeradius.service
 disable greenbone-*
+disable gvmd.service
+disable hostapd.service
+disable inetd@*
 disable iodined.service
 disable ipsec.service
 disable kismet.service
 disable mariadb.service
+disable mariadb@*
 disable mysql*
 disable minissdpd.service
+disable miredo.service
 disable nfs-common.service
 disable nginx.service
 disable nmbd.service
 disable openbsd-inetd.service
 disable openvas-*
+disable ospd-openvas.service
+disable packagekit.service
+disable packagekitd.service
 disable polipo.service
 disable postfix.service
 disable postgresql.service
-disable postgresql@11-main.service
-disable postgresql@12-main.service
-disable postgres.service
+disable postgresql@*
 disable pppd-dns.service
 disable procmail.service
 disable redis.service
 disable redis-server.service
+disable redis-server@*
 disable redsocks.service
 disable rpcbind.service
+disable rsyslog.service
+disable samba.service
 disable saned.service
+disable smbd.service
 disable snmpd.service
 disable ssh.service
 disable stunnel*
@@ -51,6 +67,7 @@ disable tor.service
 disable udftools.service
 disable python-faraday.service
 disable pure-ftpd.service
+disable xplico.service
 
 
 # Make sure these services are enabled
