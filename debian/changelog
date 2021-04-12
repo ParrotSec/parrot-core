@@ -1,3 +1,9 @@
+parrot-core (4.11.210412) rollling; urgency=medium
+
+  * Update root bashrc.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 12 Apr 2021 13:48:23 +0200
+
 parrot-core (4.11.210328) rolling; urgency=medium
 
   * Disable lighttpd.
