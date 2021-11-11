@@ -1,5 +1,4 @@
-Welcome to Parrot GNU/Linux
-
+Welcome to Parrot OS
 
 Copyright 2013-2020 Lorenzo Faletra <palinuro@parrotsec.org>
 Copyright 2020-2021 Parrot Security CIC  <director@parrotsec.org>
@@ -7,23 +6,18 @@ Copyright 2020-2021 Parrot Security CIC  <director@parrotsec.org>
 
 This operating system is composed by several programs, each of them
 includes its own license. The GNU/GPL v3 license applies to those
-components developed by the Parrot Project without an explicit license.
-
-The system includes many other programs with their own license.
-It is your responsibility to aknowledge and respect all
-the licenses of the programs you use.
-
+components developed by Parrot Security without an explicit license.
 
 By using this system, you accept all the legal constraints and
 license agreements of every single software provided with it,
-and you confirm that you have read and understood the following disclaimer.
+and you confirm that you have read and understood the following disclaimer:
 
 PARROT SECURITY OS INCLUDES SOME SOFTWARE (E.G. MEDIA CODECS ETC.) FOR COUNTRIES
 WHOSE LEGISLATION DOESN'T ALLOW SOFTWARE PATENTS TO BE ENFORCED.
 
 IT IS YOUR RESPONSIBILITY TO KNOW YOUR OWN COUNTRY'S LEGISLATION.
 
-IF YOU LIVE IN A COUNTRY WHERE THE LEGISLATION RECOGNIZES SOFTWARES PATENTS,
+IF YOU LIVE IN A COUNTRY WHERE THE LEGISLATION RECOGNIZES SOFTWARE PATENTS,
 WE ASK YOU NOT TO DOWNLOAD AND/OR USE THIS SOFTWARE.
 
 THIS IS EXPERIMENTAL SOFTWARE PROVIDED WITHOUT ANY WARRANTY FOR TESTING PURPOSES.
@@ -31,9 +25,9 @@ USE AT YOUR OWN RISK AND RESPONSIBILITY.
 
 THE PARROT TEAM AND ANY OTHER RELATED PERSON, TEAM, SPONSOR OR PROVIDER CAN NOT
 BE HELD LIABLE UNDER ANY CIRCUMSTANCES FOR DAMAGE TO HARDWARE OR SOFTWARE,
-LOST DATA, OR OTHER DIRECT OR INDIRECT DAMAGE RESULTING FROM THE USE OF
-THIS SYSTEM, THE SOFTWARE PROVIDED IN IT AND ANY OTHER SOFTWARE AVAILABLE IN ITS
-REPOSITORIES OR INSTALLABLE ON IT.
+LOST DATA, CYBERCRIME ACTIVITY OR OTHER DIRECT OR INDIRECT DAMAGE RESULTING
+FROM THE USE OF THIS SYSTEM, THE SOFTWARE PROVIDED IN IT AND ANY OTHER
+SOFTWARE AVAILABLE IN ITS REPOSITORIES OR INSTALLABLE ON IT.
 
 IN SOME COUNTRIES THE CRYPTOGRAPHIC SOFTWARE AND OTHER COMPONENTS ON THE SYSTEM
 ARE GOVERNED BY EXPORT REGULATIONS AND THUS MAY NOT BE FREELY COPIED AS

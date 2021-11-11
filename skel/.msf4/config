@@ -1,0 +1,5 @@
+[framework/core]
+Prompt=[%grnmsf%clr](%yelJobs%clr:%whi%J%clr %cyaAgents%clr:%whi%S%clr)
+PromptChar=%bld%whi>>%clr
+MeterpreterPrompt=(%grnMeterpreter %bld%blu%S%clr)(%whi%D%clr)
+
