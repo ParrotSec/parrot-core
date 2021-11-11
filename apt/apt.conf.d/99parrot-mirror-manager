@@ -1,0 +1,2 @@
+DPkg::Pre-Invoke { "[ ! -x /usr/bin/parrot-mirror-manager ] || /usr/bin/parrot-mirror-manager start || true"; }
+DPkg::Post-Invoke { "[ ! -x /usr/bin/parrot-mirror-manager ] || /usr/bin/parrot-mirror-manager stop || true"; }

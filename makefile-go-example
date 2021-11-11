@@ -1,0 +1,21 @@
+GO_BUILD = go build
+GO_FLAGS = -v
+
+REPO = $(shell pwd)
+BUILDDIR = $(REPO)/build
+GO_BUILD = go build
+GO_FLAGS = -v
+ARCH := $(shell go version|awk -F'/' '{print $$NF}')
+
+ifeq ($(ARCH), amd64)
+	ARCH = x86_64
+endif
+
+all:
+
+clean:
+
+build:
+	mkdir -p $(BUILDDIR)
+	GOPATH=$(BUILDDIR) GOCACHE=$(BUILDDIR) $(GO_BUILD) $(GO_FLAGS) -o $(DESTDIR)/usr/bin/update-sandbox-launchers update-sandbox-launchers.go
+	strip $(DESTDIR)/usr/bin/update-sandbox-launchers

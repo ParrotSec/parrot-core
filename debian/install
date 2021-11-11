@@ -1,0 +1,10 @@
+bashrc root/
+bashrc etc/skel/
+grub.default etc/default/grub.d/
+apt/* etc/apt/
+profile.d/* etc/profile.d/
+udev-rules/* etc/udev/rules.d/
+Xsession.d/* etc/X11/Xsession.d/
+bin/* usr/bin/
+dconf usr/lib/parrot-skel/etc/
+skel usr/lib/parrot-skel/etc/

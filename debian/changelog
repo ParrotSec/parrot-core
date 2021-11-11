@@ -1,3 +1,20 @@
+parrot-core (5.0) lts-updates; urgency=medium
+
+  * Update package structure.
+  * Merge parrot-skel.
+  * Merge apt-parrot.
+  * Merge parrot-drivers.
+  * Remove old sandbox manager (no longer in use).
+  * Replace some Makefile rules with a proper d/install file.
+  * Clean d/postrm and d/postinst.
+  * Include new apt list repositories for Parrot 5.0.
+  * Update apt pinning rules.
+  * Update apt preferences for future use.
+  * Add missing realtek drivers.
+  * Move systemd presets to base-system package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 11 Nov 2021 01:49:41 +0100
+
 parrot-core (4.11.210412) rollling; urgency=medium
 
   * Update root bashrc.

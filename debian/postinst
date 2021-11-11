@@ -2,16 +2,16 @@
 
 set -e
 
-# configure bashrc
-mkdir -p /etc/skel
-mkdir -p /usr/lib/parrot-skel/etc/skel
-cat /etc/bashrc > /etc/skel/.bashrc
-cat /etc/bashrc > /usr/lib/parrot-skel/etc/skel/.bashrc
-
-# Configure plymouth theme
-[ ! -x /usr/sbin/plymouth-set-default-theme ] || /usr/sbin/plymouth-set-default-theme parrot || true
-
 # Install python alias
 if [ ! $(update-alternatives --list python | grep python3) ]; then
     update-alternatives --install /usr/bin/python python /usr/bin/python3 50
 fi
+
+mkdir -p /etc/dconf/db/local.d/
+cp -r /usr/lib/parrot-skel/etc/dconf/db/local.d/parrot-skel /etc/dconf/db/local.d/parrot-skel
+
+dconf compile /etc/dconf/db/local /etc/dconf/db/local.d/
+dconf compile /etc/skel/.config/dconf/user /etc/dconf/db/local.d/
+
+rsync -a --delete /usr/lib/parrot-skel/etc/skel/ /etc/skel/
+rsync -a /etc/skel/ /root/

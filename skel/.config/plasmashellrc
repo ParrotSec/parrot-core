@@ -1,0 +1,12 @@
+[KPropertiesDialog]
+Virtual-1 Height 768=458
+Virtual-1 Width 1024=410
+
+[PlasmaTransientsConfig]
+PreloadWeight=0
+
+[ScreenConnectors]
+0=Virtual-1
+
+[Updates]
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/desktop-base.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/maintain_existing_desktop_icon_sizes.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/obsolete_kickoffrc.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js

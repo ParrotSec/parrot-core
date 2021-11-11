@@ -1,0 +1,8 @@
+[Favorites-org.kde.plasma.kickoff.favorites.instance-19-3d13b8fe-96bf-4993-985a-ecc27e09956c]
+ordering=applications:firefox.desktop,applications:org.kde.konsole.desktop,applications:org.kde.kwrite.desktop,applications:org.kde.dolphin.desktop,applications:vlc.desktop,applications:libreoffice-startcenter.desktop,applications:geany.desktop,applications:systemsettings.desktop
+
+[Favorites-org.kde.plasma.kickoff.favorites.instance-19-b0ba2a31-bec2-4f7e-bb4f-b5c657488e4a]
+ordering=applications:firefox.desktop,applications:org.kde.dolphin.desktop,applications:org.kde.konsole.desktop,applications:org.kde.kwrite.desktop,applications:libreoffice-startcenter.desktop,applications:vlc.desktop,applications:systemsettings.desktop
+
+[Favorites-org.kde.plasma.kickoff.favorites.instance-19-global]
++ordering=applications:firefox.desktop,applications:org.kde.dolphin.desktop,applications:org.kde.konsole.desktop,applications:org.kde.kwrite.desktop,applications:libreoffice-startcenter.desktop,applications:vlc.desktop,applications:systemsettings.desktop

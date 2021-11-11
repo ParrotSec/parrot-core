@@ -2,16 +2,14 @@ Source: parrot-core
 Section: parrot
 Priority: standard
 Maintainer: Parrot Dev Team <team@parrotsec.org>
-Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>,
-           Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>
+Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
 Standards-Version: 4.2.0
-Build-Depends: debhelper (>= 11), golang-go
+Build-Depends: debhelper (>= 11)
 Homepage: https://www.parrotsec.org/
 
 Package: parrot-core
 Architecture: any
-Depends: apt-parrot,
-         bash-completion,
+Depends: bash-completion,
          dnsutils,
          figlet,
          htop,
@@ -31,14 +29,72 @@ Recommends: apparmor,
             sysv-rc,
             locate,
             neovim
-Suggests: firejail, firejail-profiles, parrot-interface, parrot-tools | parrot-tools-cloud | parrot-tools-arm | parrot-interface-full, parrot-drivers, plymouth, plymouth-themes
-Replaces: bash, base-files, xterm, parrot-skel, dnsmasq, parrot-interface-common, resolvconf
-Breaks: tomoyo-tools (= 2.5.0-20170102-3)
-Description: keychain package and hardening configs provider
- Keychain package for Parrot GNU/Linux.
+Suggests: parrot-interface, parrot-tools | parrot-tools-cloud | parrot-tools-embedded, parrot-drivers, plymouth, plymouth-themes
+Replaces: bash, base-files, xterm, parrot-skel, dnsmasq, parrot-interface-common, resolvconf, apt-parrot
+Breaks: apt-parrot, parrot-skel
+Conflicts: apt-parrot, parrot-skel
+Description: Core package for Parrot OS
+ Core package for the Parrot Debian distribution.
  .
- This package is needed in order to select and install new essential packages
- during the system setup and upgrade in order to provide the best upgrade experience during
- critical updates.
- .
- This package also provides hardening profiles to make the system more secure.
+ This package provides essential configuration files and base dependencies for
+ the Parrot Security operating system and its flavors.
+
+
+Package: parrot-drivers
+Architecture: all
+Depends: firmware-linux-free, firmware-linux
+Recommends: alsa-firmware-loaders,
+            b43-fwcutter,
+            bluez-firmware,
+            bcmwl-kernel-sources,
+            broadcom-sta-dkms,
+            btrfs-tools, 
+            dosfstools,
+            e2fsprogs,
+            exfat-fuse,
+            exfat-utils,
+            firmware-adi,
+            firmware-atheros,
+            firmware-b43-installer,
+            firmware-b43legacy-installer,
+            firmware-b43-lpphy-installer,
+            firmware-bnx2, firmware-bnx2x,
+            firmware-brcm80211,
+            firmware-intelwimax,
+            firmware-iwlwifi,
+            firmware-libertas,
+            firmware-linux,
+            firmware-linux-free,
+            firmware-linux-nonfree,
+            firmware-misc-nonfree,
+            firmware-myricom,
+            firmware-netxen,
+            firmware-nexten,
+            firmware-qlogic,
+            firmware-ralink,
+            firmware-realtek,
+            firmware-ti-connectivity,
+            r8168-dkms,
+            realtek-rtl88xxau-dkms,
+            realtek-rtl8188eus-dkms,
+            realtek-rtl8814au-dkms,
+            gobi-loader,
+            hfsprogs,
+            hfsutils,
+            jfsutils,
+            libertas-firmware, 
+            linux-wlan-ng-firmware,
+            lshw-gtk,
+            mtools,
+            prism2-usb-firmware-installer,
+            reiser4progs,
+            reiserfsprogs,
+            wmaloader,
+            xfsdump,
+            xfsprogs,
+            zd1211-firmware
+Suggests: firmware-ipw2x00
+Priority: optional
+Description: Parrot drivers metapackage.
+ This metapackage installs all the free and non-free drivers to make Parrot OS
+ run on as many hardware combinations as possible.
