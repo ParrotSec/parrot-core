@@ -4,7 +4,7 @@ Priority: standard
 Maintainer: Parrot Dev Team <team@parrotsec.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
 Standards-Version: 4.2.0
-Build-Depends: debhelper (>= 11)
+Build-Depends: debhelper (>= 11), dconf-cli
 Homepage: https://www.parrotsec.org/
 
 Package: parrot-core
@@ -21,6 +21,9 @@ Depends: bash-completion,
          screen,
          whois,
          curl,
+         xvkbd,
+         dconf-cli,
+         rsync
 Recommends: apparmor,
             apparmor-profiles,
             apparmor-profiles-extra,

@@ -6,7 +6,7 @@ all:
 clean:
 
 install:
-	mkdir -p skel/.config/dconf || true
+	mkdir -p skel/.config/dconf
 	dconf compile skel/.config/dconf/user dconf/db/local.d/
 	mkdir -p $(DESTDIR)/usr/lib/parrot-skel/etc
 	chmod 755 update-skel
