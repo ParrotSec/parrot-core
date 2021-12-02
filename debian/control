@@ -1,6 +1,6 @@
 Source: parrot-core
 Section: parrot
-Priority: standard
+Priority: optional
 Maintainer: Parrot Dev Team <team@parrotsec.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
 Standards-Version: 4.2.0

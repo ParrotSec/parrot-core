@@ -3,9 +3,12 @@
 set -e
 
 # Install python alias
-if [ ! $(update-alternatives --list python | grep python3) ]; then
-    update-alternatives --install /usr/bin/python python /usr/bin/python3 50
+if [ $(which python3); then
+    if [ ! $(update-alternatives --list python | grep python3) ]; then
+        update-alternatives --install /usr/bin/python python /usr/bin/python3 50
+    fi
 fi
+
 
 mkdir -p /etc/dconf/db/local.d/
 cp -r /usr/lib/parrot-skel/etc/dconf/db/local.d/parrot-skel /etc/dconf/db/local.d/parrot-skel
