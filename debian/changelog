@@ -1,3 +1,9 @@
+parrot-core (5.0.2) lts-updates; urgency=medium
+
+  * Remove rtl8188 from parrot-driver dependencies.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 07 Dec 2021 11:33:20 +0100
+
 parrot-core (5.0.1) lts-updates; urgency=medium
 
   * Don't fail if python3 is not installed.
