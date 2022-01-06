@@ -15,19 +15,19 @@ Pin: release o=Parrot a=lts-security
 Pin-Priority: 600
 
 Package: *
-Pin: release o=Parrot a=stable
+Pin: release o=Parrot a=parrot
 Pin-Priority: 600
 
 Package: *
-Pin: release o=Parrot a=stable-backports
+Pin: release o=Parrot a=parrot-backports
 Pin-Priority: 599
 
 Package: *
-Pin: release o=Parrot a=stable-updates
+Pin: release o=Parrot a=parrot-updates
 Pin-Priority: 600
 
 Package: *
-Pin: release o=Parrot a=stable-security
+Pin: release o=Parrot a=parrot-security
 Pin-Priority: 600
 
 Package: *

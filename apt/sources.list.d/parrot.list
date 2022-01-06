@@ -1,11 +1,11 @@
 ## Parrot Repos
-deb https://deb.parrot.sh/parrot lts main contrib non-free
-deb https://deb.parrot.sh/parrot lts-security main contrib non-free
-#deb https://deb.parrot.sh/parrot lts-backports main contrib non-free
-#deb https://deb.parrot.sh/parrot lts-updates main contrib non-free
+deb https://deb.parrot.sh/parrot parrot main contrib non-free
+deb https://deb.parrot.sh/parrot parrot-security main contrib non-free
+#deb https://deb.parrot.sh/parrot parrot-backports main contrib non-free
+#deb https://deb.parrot.sh/parrot parrot-updates main contrib non-free
 
 ## Parrot Source Repos
-#deb-src https://deb.parrot.sh/parrot lts main contrib non-free
-#deb-src https://deb.parrot.sh/parrot lts-security main contrib non-free
-#deb-src https://deb.parrot.sh/parrot lts-backports main contrib non-free
-#deb-src https://deb.parrot.sh/parrot lts-updates main contrib non-free
+#deb-src https://deb.parrot.sh/parrot parrot main contrib non-free
+#deb-src https://deb.parrot.sh/parrot parrot-security main contrib non-free
+#deb-src https://deb.parrot.sh/parrot parrot-backports main contrib non-free
+#deb-src https://deb.parrot.sh/parrot parrot-updates main contrib non-free

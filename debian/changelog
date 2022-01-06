@@ -1,3 +1,9 @@
+parrot-core (5.0.3) lts-updates; urgency=medium
+
+  * Update Parrot repository.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 06 Jan 2022 19:40:06 +0100
+
 parrot-core (5.0.2) lts-updates; urgency=medium
 
   * Remove rtl8188 from parrot-driver dependencies.
