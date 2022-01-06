@@ -3,7 +3,7 @@
 set -e
 
 # Install python alias
-if [ $(which python3); then
+if [ $(which python3) ]; then
     if [ ! $(update-alternatives --list python | grep python3) ]; then
         update-alternatives --install /usr/bin/python python /usr/bin/python3 50
     fi
@@ -18,3 +18,179 @@ dconf compile /etc/skel/.config/dconf/user /etc/dconf/db/local.d/
 
 rsync -a --delete /usr/lib/parrot-skel/etc/skel/ /etc/skel/
 rsync -a /etc/skel/ /root/
+
+if [ "$1" = "configure" ] && dpkg --compare-versions "$2" le "5.0.3"; then
+    cat /etc/apt/sources.list.d/parrot.list > /etc/apt/sources.list.d/parrot.list.old || true
+	echo -e "## This file provides the default APT repositories for Parrot Security
+## These repositories are used to fetch new software and system updates
+
+###############################
+## Default Parrot Repository ##
+###############################
+## The 'parrot' repository provides all the Parrot software considered
+## stable and tested.
+##
+## the main suite provides the base system plus all the software released
+## under a free and open source license compatible with the Debian guidelines.
+##
+## the contrib suite provides additional free software that depends on third
+## party software not provided by the main suite. it usually means that such
+## packages depend on non-free software.
+##
+## the non-free suite provides additional packages that don't comply with
+## the Debian Free Software Guidelines. They are mostly proprietary software.
+deb https://deb.parrot.sh/parrot parrot main contrib non-free
+
+######################
+## Security Updates ##
+######################
+## The 'parrot-security' repository provides time sensitive security updates
+## that have to be delivered to end users as fast as possible
+##
+## this repo should always be enabled in your system
+##
+## we strongly recommend to NOT use mirrors for this repo, but only
+## access security updates from our official domains or CDNs.
+##
+## a mirror server could take too much time to fetch an important update,
+## leaving you without security updates for a timespan outside of our control
+deb https://deb.parrot.sh/parrot parrot-security main contrib non-free
+
+###############
+## Backports ##
+###############
+## The stable repository contains software that is considered stable the day of
+## the release. such packages receive only security and stability updates that
+## don't introduce new features and don't drop old ones.
+##
+## the 'backports' repository provides feature updates to many packages, and
+## even external software that was originally excluded from the stable release.
+##
+## disable it if you prefer stability and reliability over bleeding edge features
+ deb https://deb.parrot.sh/parrot parrot-backports main contrib non-free
+
+#######################
+## Updates / Testing ##
+#######################
+## The 'parrot-updates' repository provides updates before they are made available
+## to 'parrot'. this repo is mostly meant to be used by developers and beta testers 
+## to extensively test updates before they are migrated to the main repository
+##
+## we suggest not to enable it, as it may introduce untested bugs and make the
+## system unstable. updates are delivered as fast as possible (within a week)
+## so you are not missing anything important with this disabled (unless you are a dev)
+# deb https://deb.parrot.sh/parrot parrot-updates main contrib non-free
+
+
+##############################
+## Source Code Repositories ##
+##############################
+## These repositories provide the debian source artifacts of the packages
+## in the corresponding repos in the form of dsc files and the corresponding
+## tarballs
+##
+## you only need these repositories if you intend to download the source code
+## of a package and re-compile it yourself with debian-compliant build tools
+# deb-src https://deb.parrot.sh/parrot parrot main contrib non-free
+# deb-src https://deb.parrot.sh/parrot parrot-security main contrib non-free
+# deb-src https://deb.parrot.sh/parrot parrot-backports main contrib non-free
+# deb-src https://deb.parrot.sh/parrot parrot-updates main contrib non-free
+
+
+
+##########################################################
+## How to configure mirror servers for faster downloads ##
+##########################################################
+## The Parrot system is configured by default to use the central
+## parrot archive directors. The Parrot directors are special servers that
+## collect all the requests of the users and redirect them to the nearest
+## download server available for the user who made the request.
+##
+## The Parrot Mirror Network is secured by centralized digital signatures
+## and the mirrors can't inject fake updates. If an evil mirror tries to inject
+## a fake package, Parrot OS will automatically refuse to download and install it.
+##
+## To configure a mirror, you have to replace the original URL with the URL
+## Provided by the mirror
+##
+## Example:
+## If you live in Italy and you want to take advantage of the GARR mirror,
+## Replace
+##  deb https://deb.parrot.sh/parrot parrot main contrib non-free
+## With
+##  deb https://parrot.mirror.garr.it/mirrors/parrot parrot main contrib non-free
+##
+## IMPORTANT NOTES:
+## do NOT use mirrors for the parrot-security repository. use them
+## exclusively for 'parrot', 'parrot-backports' and 'parrot-updates'
+##
+## LIST:
+## A full and updated list of official mirrors is available here:
+##      https://www.parrotsec.org/docs/mirrors-list.html
+##
+##
+
+##########################
+## Some popular mirrors ##
+##########################
+## This is a non-comprehensive, and not-updated list of mirrors
+## that we leave here a a quick reference. some of them are
+## worldwide, meaning that they have several nodes around the world
+## and the fastest one is picked automatically (CDN).
+## others are tight to a specific region of the world.
+
+## Worldwide - Parrot - automatically redirects to the fastest of all the mirrors
+## deb https://deb.parrot.sh/parrot/ parrot main contrib non-free
+
+## Wordlwide - Azure - Uses the Azure CDN platform
+## deb https://edge1.parrot.run/parrot/ parrot main contrib non-free
+
+## Wordlwide - Aliyun - Uses the AlibabaCloud mirrors behind their worldwide CDN
+## deb deb https://mirrors.aliyun.com/parrot parrot main contrib non-free
+
+## US Massachussetts - SIPB MIT University
+## deb http://mirrors.mit.edu/parrot/ parrot main contrib non-free
+
+## US California - OCF Berkekey University
+## deb https://mirrors.ocf.berkeley.edu/parrot/ parrot main contrib non-free
+
+## Germany - Halifax RWTH-Aachen University
+## deb https://ftp.halifax.rwth-aachen.de/parrotsec/ parrot main contrib non-free
+
+## Italy - GARR Consortium
+## deb https://parrot.mirror.garr.it/mirrors/parrot/ parrot main contrib non-free
+
+## Singapore - 0x
+## deb https://mirror.0x.sg/parrot/ parrot main contrib non-free
+
+## China - USTC University
+## deb http://mirrors.ustc.edu.cn/parrot parrot main contrib non-free
+
+
+## We strongly invite you to visit https://www.parrotsec.org/docs/mirrors-list.html
+## to find the mirror that better fits your needs" > /etc/apt/sources.list.d/parrot.list
+    cat /etc/apt/sources.list > /etc/apt/sources.list.old || true
+    echo -e "# This file is empty, feel free to
+# add here your custom APT repositories
+
+
+#############
+#  WARNING  #
+#############
+
+# ADDING EXTERNAL REPOSITORIES MAY HARM YOUR SYSTEM,
+# MAY INTRODUCE MALWARE, CAUSE INSTABILITY OR
+# CAUSE PERMANENT DATA LOSS
+#    DO IT WISELY
+
+# The default Parrot repositories
+# are NOT here. If you want to
+# edit them, take a look into
+#    /etc/apt/sources.list.d/parrot.list
+
+# if the default servers are too slow
+# open /etc/apt/sources.list.d/parrot.list
+# and follow the instructions to choose faster servers
+# or read https://www.parrotsec.org/docs/mirrors-list.html for more info
+" > /etc/apt/sources.list
+fi

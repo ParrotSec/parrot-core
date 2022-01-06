@@ -1,0 +1,30 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+    install)
+    echo -e "# This file is empty, feel free to
+# add here your custom APT repositories
+
+
+#############
+#  WARNING  #
+#############
+
+# ADDING EXTERNAL REPOSITORIES MAY HARM YOUR SYSTEM,
+# MAY INTRODUCE MALWARE, CAUSE INSTABILITY OR
+# CAUSE PERMANENT DATA LOSS
+#    DO IT WISELY
+
+# The default Parrot repositories
+# are NOT here. If you want to
+# edit them, take a look into
+#    /etc/apt/sources.list.d/parrot.list
+
+# if the default servers are too slow
+# open /etc/apt/sources.list.d/parrot.list
+# and follow the instructions to choose faster servers
+# or read https://www.parrotsec.org/docs/mirrors-list.html for more info
+" > /etc/apt/sources.list
+        ;;
+esac

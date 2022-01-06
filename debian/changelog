@@ -1,3 +1,16 @@
+parrot-core (5.0.5) lts-updates; urgency=medium
+
+  * Add extensive comments to apt repo setup.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 07 Jan 2022 00:25:43 +0100
+
+parrot-core (5.0.4) lts-updates; urgency=medium
+
+  * Fix typo in postinst.
+  * Migrate to LTS repos if coming from previous generation.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 06 Jan 2022 23:05:42 +0100
+
 parrot-core (5.0.3) lts-updates; urgency=medium
 
   * Update Parrot repository.
