@@ -1,3 +1,10 @@
+parrot-core (5.0.9) parrot-updates; urgency=medium
+
+  * Add apt option to retry 3 times on failed downloads.
+  * Make sure the all the dconf folders exist before attempting build.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 08 Jan 2022 00:46:14 +0100
+
 parrot-core (5.0.8) lts-updates; urgency=medium
 
   * Fix bashrc path.

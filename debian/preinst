@@ -3,7 +3,7 @@ set -e
 
 case "$1" in
     install)
-    echo -e "# This file is empty, feel free to
+    echo "# This file is empty, feel free to
 # add here your custom APT repositories
 
 

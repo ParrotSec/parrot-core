@@ -11,6 +11,7 @@ fi
 
 
 mkdir -p /etc/dconf/db/local.d/
+mkdir -p /etc/skel/.config/dconf/
 cp -r /usr/lib/parrot-skel/etc/dconf/db/local.d/parrot-skel /etc/dconf/db/local.d/parrot-skel
 
 dconf compile /etc/dconf/db/local /etc/dconf/db/local.d/
@@ -20,7 +21,7 @@ rsync -a --delete /usr/lib/parrot-skel/etc/skel/ /etc/skel/
 rsync -a /etc/skel/ /root/
 
 if [ "$1" = "configure" ] && dpkg --compare-versions "$2" le "5.0.3"; then
-	echo -e "## This file provides the default APT repositories for Parrot Security
+	echo "## This file provides the default APT repositories for Parrot Security
 ## These repositories are used to fetch new software and system updates
 
 ###############################
@@ -184,7 +185,7 @@ deb https://deb.parrot.sh/parrot parrot-backports main contrib non-free
 ## We strongly invite you to visit https://www.parrotsec.org/docs/mirrors-list.html
 ## to find the mirror that better fits your needs" > /etc/apt/sources.list.d/parrot.list
     cat /etc/apt/sources.list > /etc/apt/sources.list.old || true
-    echo -e "# This file is empty, feel free to
+    echo "# This file is empty, feel free to
 # add here your custom APT repositories
 
 
