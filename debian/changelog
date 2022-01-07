@@ -1,3 +1,9 @@
+parrot-core (5.0.6) lts-update; urgency=medium
+
+  * Update repo config.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 07 Jan 2022 01:45:16 +0100
+
 parrot-core (5.0.5) lts-updates; urgency=medium
 
   * Add extensive comments to apt repo setup.

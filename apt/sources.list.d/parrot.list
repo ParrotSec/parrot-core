@@ -31,7 +31,7 @@ deb https://deb.parrot.sh/parrot parrot main contrib non-free
 ##
 ## a mirror server could take too much time to fetch an important update,
 ## leaving you without security updates for a timespan outside of our control
-deb https://deb.parrot.sh/parrot parrot-security main contrib non-free
+deb https://deb.parrot.sh/direct/parrot parrot-security main contrib non-free
 
 ###############
 ## Backports ##
@@ -44,7 +44,7 @@ deb https://deb.parrot.sh/parrot parrot-security main contrib non-free
 ## even external software that was originally excluded from the stable release.
 ##
 ## disable it if you prefer stability and reliability over bleeding edge features
- deb https://deb.parrot.sh/parrot parrot-backports main contrib non-free
+deb https://deb.parrot.sh/parrot parrot-backports main contrib non-free
 
 #######################
 ## Updates / Testing ##
@@ -56,7 +56,7 @@ deb https://deb.parrot.sh/parrot parrot-security main contrib non-free
 ## we suggest not to enable it, as it may introduce untested bugs and make the
 ## system unstable. updates are delivered as fast as possible (within a week)
 ## so you are not missing anything important with this disabled (unless you are a dev)
-# deb https://deb.parrot.sh/parrot parrot-updates main contrib non-free
+#deb https://deb.parrot.sh/parrot parrot-updates main contrib non-free
 
 
 ##############################
@@ -68,10 +68,10 @@ deb https://deb.parrot.sh/parrot parrot-security main contrib non-free
 ##
 ## you only need these repositories if you intend to download the source code
 ## of a package and re-compile it yourself with debian-compliant build tools
-# deb-src https://deb.parrot.sh/parrot parrot main contrib non-free
-# deb-src https://deb.parrot.sh/parrot parrot-security main contrib non-free
-# deb-src https://deb.parrot.sh/parrot parrot-backports main contrib non-free
-# deb-src https://deb.parrot.sh/parrot parrot-updates main contrib non-free
+#deb-src https://deb.parrot.sh/parrot parrot main contrib non-free
+#deb-src https://deb.parrot.sh/parrot parrot-security main contrib non-free
+#deb-src https://deb.parrot.sh/parrot parrot-backports main contrib non-free
+#deb-src https://deb.parrot.sh/parrot parrot-updates main contrib non-free
 
 
 
@@ -117,31 +117,46 @@ deb https://deb.parrot.sh/parrot parrot-security main contrib non-free
 ## others are tight to a specific region of the world.
 
 ## Worldwide - Parrot - automatically redirects to the fastest of all the mirrors
-## deb https://deb.parrot.sh/parrot/ parrot main contrib non-free
+#deb https://deb.parrot.sh/parrot/ parrot main contrib non-free
+
+## Worldwide - Parrot - core servers with no redirection
+#deb https://deb.parrot.sh/direct/parrot/ parrot main contrib non-free
 
 ## Wordlwide - Azure - Uses the Azure CDN platform
-## deb https://edge1.parrot.run/parrot/ parrot main contrib non-free
+#deb https://edge1.parrot.run/parrot/ parrot main contrib non-free
 
 ## Wordlwide - Aliyun - Uses the AlibabaCloud mirrors behind their worldwide CDN
-## deb deb https://mirrors.aliyun.com/parrot parrot main contrib non-free
+#deb deb https://mirrors.aliyun.com/parrot parrot main contrib non-free
 
 ## US Massachussetts - SIPB MIT University
-## deb http://mirrors.mit.edu/parrot/ parrot main contrib non-free
+#deb http://mirrors.mit.edu/parrot/ parrot main contrib non-free
 
 ## US California - OCF Berkekey University
-## deb https://mirrors.ocf.berkeley.edu/parrot/ parrot main contrib non-free
+#deb https://mirrors.ocf.berkeley.edu/parrot/ parrot main contrib non-free
+
+## US Virginia - Leaseweb
+#deb https://mirror.wdc1.us.leaseweb.net/parrot parrot main contrib non-free
 
 ## Germany - Halifax RWTH-Aachen University
-## deb https://ftp.halifax.rwth-aachen.de/parrotsec/ parrot main contrib non-free
+#deb https://ftp.halifax.rwth-aachen.de/parrotsec/ parrot main contrib non-free
 
 ## Italy - GARR Consortium
-## deb https://parrot.mirror.garr.it/mirrors/parrot/ parrot main contrib non-free
+#deb https://parrot.mirror.garr.it/mirrors/parrot/ parrot main contrib non-free
+
+## Netherlands - Nluug
+#deb https://ftp.nluug.nl/os/Linux/distr/parrot/ parrot main contrib non-free
+
+## Russia - Yandex
+#deb https://mirror.yandex.ru/mirrors/parrot/ parrot main contrib non-free
+
+## Brazil - Sao Paulo University
+#deb http://sft.if.usp.br/parrot/ parrot main contrib non-free
 
 ## Singapore - 0x
-## deb https://mirror.0x.sg/parrot/ parrot main contrib non-free
+#deb https://mirror.0x.sg/parrot/ parrot main contrib non-free
 
 ## China - USTC University
-## deb http://mirrors.ustc.edu.cn/parrot parrot main contrib non-free
+#deb http://mirrors.ustc.edu.cn/parrot parrot main contrib non-free
 
 
 ## We strongly invite you to visit https://www.parrotsec.org/docs/mirrors-list.html
