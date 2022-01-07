@@ -1,5 +1,5 @@
-bashrc root/
-bashrc etc/skel/
+.bashrc root/
+.bashrc etc/skel/
 grub.default etc/default/grub.d/
 apt/* etc/apt/
 profile.d/* etc/profile.d/

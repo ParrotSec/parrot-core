@@ -1,3 +1,9 @@
+parrot-core (5.0.8) lts-updates; urgency=medium
+
+  * Fix bashrc path.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 07 Jan 2022 14:22:43 +0100
+
 parrot-core (5.0.7) lts-updates; urgency=medium
 
   * Add parrot-upgrade.
