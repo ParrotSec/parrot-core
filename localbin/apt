@@ -1,0 +1,55 @@
+#!/bin/bash
+
+case $1 in
+	upgrade)
+			echo -e "
+APT on Parrot behaves differently than Debian.
+apt upgrade is equivalent to apt full-upgrade in Debian,
+and performs a complete system update.
+
+Use apt safe-upgrade to perform a partial upgrade.
+
+
+
+
+"
+	/usr/bin/apt full-upgrade
+	;;
+	safe-upgrade)
+	    /usr/bin/apt upgrade
+	;;
+	dup)
+		/usr/bin/apt dist-upgrade
+		exit
+	;;
+	u|up)
+		/usr/bin/apt update
+		exit
+	;;
+	i|in)
+		/usr/bin/apt install ${@:2}
+		exit
+	;;
+	r|rm)
+		/usr/bin/apt remove ${@:2}
+		exit
+	;;
+	list-updates|lu|l)
+		/usr/bin/apt list --upgradable
+		exit
+	;;
+	s|se)
+		/usr/bin/apt search ${@:2}
+		exit
+	;;
+	p|po|pol)
+		/usr/bin/apt policy ${@:2}
+		exit
+	;;
+	sh)
+		/usr/bin/apt show ${@:2}
+		exit
+	;;
+esac
+
+/usr/bin/apt $@

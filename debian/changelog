@@ -1,3 +1,10 @@
+parrot-core (5.0.7) lts-updates; urgency=medium
+
+  * Add parrot-upgrade.
+  * Add apt wrapper.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 07 Jan 2022 13:18:08 +0100
+
 parrot-core (5.0.6) lts-update; urgency=medium
 
   * Update repo config.
