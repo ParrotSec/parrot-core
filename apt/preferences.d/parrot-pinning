@@ -1,33 +1,33 @@
 Package: *
-Pin: release o=Parrot a=lts
+Pin: release a=lts
 Pin-Priority: 600
 
 Package: *
-Pin: release o=Parrot a=lts-backports
+Pin: release a=lts-backports
 Pin-Priority: 599
 
 Package: *
-Pin: release o=Parrot a=lts-updates
+Pin: release a=lts-updates
 Pin-Priority: 600
 
 Package: *
-Pin: release o=Parrot a=lts-security
+Pin: release a=lts-security
 Pin-Priority: 600
 
 Package: *
-Pin: release o=Parrot a=parrot
+Pin: release a=parrot
 Pin-Priority: 600
 
 Package: *
-Pin: release o=Parrot a=parrot-backports
+Pin: release a=parrot-backports
 Pin-Priority: 599
 
 Package: *
-Pin: release o=Parrot a=parrot-updates
+Pin: release a=parrot-updates
 Pin-Priority: 600
 
 Package: *
-Pin: release o=Parrot a=parrot-security
+Pin: release a=parrot-security
 Pin-Priority: 600
 
 Package: *
@@ -40,8 +40,4 @@ Pin-Priority: 50
 
 Package: *
 Pin: release o=Ubuntu
-Pin-Priority: 50
-
-Package: *
-Pin: release o=vscode stable
 Pin-Priority: 50

@@ -1,3 +1,9 @@
+parrot-core (5.0.10) parrot-updates; urgency=medium
+
+  * Update apt pinning properties.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 12 Jan 2022 18:59:08 +0100
+
 parrot-core (5.0.9) parrot-updates; urgency=medium
 
   * Add apt option to retry 3 times on failed downloads.
