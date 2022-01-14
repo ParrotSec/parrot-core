@@ -54,7 +54,7 @@ remove-old-temp-files=true
 remove-old-trash-files=true
 
 [org/gnome/desktop/interface]
-icon-theme='maia'
+icon-theme='ara'
 gtk-theme='ARK-Dark'
 
 [org/gnome/desktop/sound]
@@ -202,7 +202,7 @@ col-13-width=0
 gtk-decoration-layout='close,maximize,minimize:menu'
 gtk-color-scheme='fg_color:#EEEEEE\nbg_color:#2d2d2d\ntext_color:#BBBBBB\nbase_color:#292929\nselected_fg_color:#f9f9f9\nselected_bg_color:#5179a6\ntooltip_fg_color:#dedede\ntooltip_bg_color:#2d2d2d'
 menubar-detachable=true
-icon-theme='maia'
+icon-theme='ara'
 gtk-theme='ARK-Dark'
 
 [org/mate/desktop/keybindings/custom2]
