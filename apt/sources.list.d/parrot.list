@@ -116,14 +116,14 @@ deb https://deb.parrot.sh/parrot parrot-backports main contrib non-free
 ## and the fastest one is picked automatically (CDN).
 ## others are tight to a specific region of the world.
 
-## Worldwide - Parrot - automatically redirects to the fastest of all the mirrors
+## Worldwide - Parrot - automatically redirects to the best mirrors available
 #deb https://deb.parrot.sh/parrot/ parrot main contrib non-free
 
 ## Worldwide - Parrot - core servers with no redirection
 #deb https://deb.parrot.sh/direct/parrot/ parrot main contrib non-free
 
 ## Wordlwide - Azure - Uses the Azure CDN platform
-#deb https://edge1.parrot.run/parrot/ parrot main contrib non-free
+#deb https://azure.deb.parrot.sh/parrot/ parrot main contrib non-free
 
 ## Wordlwide - Aliyun - Uses the AlibabaCloud mirrors behind their worldwide CDN
 #deb deb https://mirrors.aliyun.com/parrot parrot main contrib non-free

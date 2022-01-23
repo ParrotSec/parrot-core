@@ -1,3 +1,9 @@
+parrot-core (5.0.12) parrot-updates; urgency=medium
+
+  * Add missing realtek-rtl8188eus-dkms dependency to parrot-drivers
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 23 Jan 2022 18:25:45 +0100
+
 parrot-core (5.0.11) parrot-updates; urgency=medium
 
   * Use new ara icon theme.
