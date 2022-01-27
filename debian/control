@@ -31,7 +31,6 @@ Recommends: apparmor,
             neovim,
             resolvconf,
             figlet,
-            xvkbd,
             rsync,
             plymouth,
             plymouth-themes
