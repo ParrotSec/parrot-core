@@ -11,28 +11,31 @@ Package: parrot-core
 Architecture: any
 Depends: bash-completion,
          dnsutils,
-         figlet,
          htop,
          nload,
          moreutils,
          nano,
          net-tools,
-         resolvconf,
-         screen,
          whois,
          curl,
-         xvkbd,
+         wget,
          dconf-cli,
-         rsync
 Recommends: apparmor,
             apparmor-profiles,
             apparmor-profiles-extra,
             apparmor-utils,
             parrot-hardened,
+            screen,
             sysv-rc,
             locate,
-            neovim
-Suggests: parrot-interface, parrot-tools | parrot-tools-cloud | parrot-tools-embedded, parrot-drivers, plymouth, plymouth-themes
+            neovim,
+            resolvconf,
+            figlet,
+            xvkbd,
+            rsync,
+            plymouth,
+            plymouth-themes
+Suggests: parrot-drivers
 Replaces: bash, base-files, xterm, parrot-skel, dnsmasq, parrot-interface-common, resolvconf, apt-parrot
 Breaks: apt-parrot, parrot-skel
 Conflicts: apt-parrot, parrot-skel
