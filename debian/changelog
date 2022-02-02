@@ -1,3 +1,9 @@
+parrot-core (5.0.16) parrot-updates; urgency=medium
+
+  * Use ara icon theme and ARA-Dark gtk theme where possible.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 02 Feb 2022 19:31:01 +0100
+
 parrot-core (5.0.15) parrot-updates; urgency=medium
 
   * Move rsync back to dependencies (used in postinst).

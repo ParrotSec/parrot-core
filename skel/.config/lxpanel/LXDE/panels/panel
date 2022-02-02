@@ -16,7 +16,7 @@ Global {
   usefontcolor=1
   fontcolor=#ffffff
   background=0
-  backgroundfile=/usr/share/lxpanel/images/background.png
+  backgroundfile=/usr/share/backgrounds/default.jpg
 }
 Plugin {
   type=space
@@ -27,7 +27,7 @@ Plugin {
 Plugin {
   type=menu
   Config {
-    image=/usr/share/icons/parrot-logo-100.png
+    image=/usr/share/icons/parrot-logo.png
     system {
     }
     separator {
@@ -50,7 +50,7 @@ Plugin {
       id=pcmanfm.desktop
     }
     Button {
-      id=menu://applications/Internet/iceweasel.desktop
+      id=menu://applications/Internet/firefox.desktop
     }
     Button {
       id=menu://applications/System/lxterminal.desktop

@@ -1,4 +1,4 @@
-favorites=update-reminder.desktop,mousepad.desktop,encryptpad.desktop,anon-gui.desktop,codium.desktop,org.remmina.Remmina.desktop,htop.desktop
+favorites=mousepad.desktop,encryptpad.desktop,anon-gui.desktop,codium.desktop
 button-title=Menu
 button-icon=view-list
 button-single-row=false
