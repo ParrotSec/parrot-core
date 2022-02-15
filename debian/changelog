@@ -1,3 +1,11 @@
+parrot-core (5.0.17) parrot-updates; urgency=medium
+
+  * Remove duplicate mod+t terminal shortcut.
+  * Resize panels to 30px.
+  * Adjust system usage indicators to the center.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 15 Feb 2022 18:14:23 +0100
+
 parrot-core (5.0.16) parrot-updates; urgency=medium
 
   * Use ara icon theme and ARA-Dark gtk theme where possible.
