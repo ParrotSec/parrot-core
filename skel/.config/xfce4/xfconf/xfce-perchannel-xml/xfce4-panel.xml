@@ -49,7 +49,7 @@
   </property>
   <property name="plugins" type="empty">
     <property name="plugin-1" type="string" value="applicationsmenu">
-      <property name="button-icon" type="string" value="emblem-parrot"/>
+      <property name="button-icon" type="string" value="distributor-logo-parrot"/>
       <property name="button-title" type="string" value="Applications"/>
       <property name="custom-menu" type="bool" value="false"/>
       <property name="show-generic-names" type="bool" value="false"/>
