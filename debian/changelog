@@ -1,3 +1,9 @@
+parrot-core (5.0.19) parrot-updates; urgency=medium
+
+  * Fix file and folder permissions inside skel.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 02 May 2022 18:22:15 +0200
+
 parrot-core (5.0.18) parrot-updates; urgency=medium
 
   * Remove resolvconf dependency.
