@@ -46,6 +46,12 @@ Description: Core package for Parrot OS
 
 Package: parrot-core-lite
 Architecture: all
+Depends: parrot-core
+Description: Lightweight MATE settings for Parrot Core
+  Core package for the Parrot Debian distribution.
+  .
+  This package provides additional configuration for
+  low power and memory constrained systemd.
 
 
 Package: parrot-drivers
