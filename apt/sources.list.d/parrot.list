@@ -122,8 +122,8 @@ deb https://deb.parrot.sh/parrot parrot-backports main contrib non-free
 ## Worldwide - Parrot - core servers with no redirection
 #deb https://deb.parrot.sh/direct/parrot/ parrot main contrib non-free
 
-## Wordlwide - Azure - Uses the Azure CDN platform
-#deb https://azure.deb.parrot.sh/parrot/ parrot main contrib non-free
+## Wordlwide - Bunny CDN - Uses the Bunny CDN platform
+#deb https://bunny.deb.parrot.sh/parrot/ parrot main contrib non-free
 
 ## Wordlwide - Aliyun - Uses the AlibabaCloud mirrors behind their worldwide CDN
 #deb deb https://mirrors.aliyun.com/parrot parrot main contrib non-free

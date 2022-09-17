@@ -1,3 +1,17 @@
+parrot-core (5.1.1) parrot-updates; urgency=medium
+
+  * Update firefox launcher path.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 17 Sep 2022 18:01:26 +0200
+
+parrot-core (5.1.0) parrot-updates; urgency=medium
+
+  * Remove azure cdn.
+  * Add bunny cdn.
+  * Add parrot-core-lite for low power devices.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 11 Jul 2022 18:58:39 +0200
+
 parrot-core (5.0.20) parrot-updates; urgency=medium
 
   * Provide the parrot version in grub menu.

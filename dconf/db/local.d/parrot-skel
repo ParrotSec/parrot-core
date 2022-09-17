@@ -489,7 +489,7 @@ object-type='applet'
 panel-right-stick=true
 
 [org/mate/panel/objects/object_7]
-launcher-location='/usr/share/applications/firefox.desktop'
+launcher-location='/usr/share/applications/firefox-esr.desktop'
 toplevel-id='top'
 position=251
 object-type='launcher'
