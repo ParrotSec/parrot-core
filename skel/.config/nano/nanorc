@@ -1,0 +1,38 @@
+# https://www.nano-editor.org/dist/latest/nanorc.5.html
+# EDITOR CONFIG
+# Default basic configs
+set linenumbers # display line number (left column)
+set mouse # Enable mouse (similar to Vim)
+set autoindent # Auto tabs / spaces in new line
+set tabsize 4 # Display tab by 4 spaces (no replacing)
+#set tabstospaces # Convert tabs to space. Comment only. User uncomment if needed
+#set minibar # Nano >= 5.5 only.
+# More custom configs
+set locking # Only 1 nano process is allowed to access file (similar to Vim)
+set softwrap # Text wrapping for very long lines
+set constantshow # Show line column, ... in status bar
+
+# Set brackets. User can use `Alt + ]` or `Esc` then `]` to jump to close / open brackets. Comment because it's as same as default settings
+#set brackets ""')>]}"
+#set matchbrackets "(<[{)>]}"
+
+# CUSTOMIZE MENU
+# Remove some binding keys
+unbind ^J main # Remove justify
+unbind F4 main # Remove justify
+unbind F3 main # Unbind writeout (save as)
+unbind F11 main # Unbind F11 for location.
+unbind ^C main # Unbind Ctrl + C for location
+unbind M-\ main # Unbind Alt + \ for go to first line of file. Use secondary binding instead (Ctrl + Home)
+unbind M-/ main # Unbind Alt + / for go to last line of file. Use secondary binding instead (Ctrl + End)
+
+# Customized binding keys
+bind ^F whereis all # Use Ctrl + F to search string
+bind ^Z undo all # Use Ctrl + Z to undo
+bind ^Y redo all # Use Ctrl + Y to redo
+bind ^H help all # Use Ctrl + H for help menu
+bind ^G gotoline all # Use Ctrl + G to go to line
+bind ^R replace all # Use Ctrl + R to replace strings
+bind ^O insert all # Use Ctrl + O to open new file
+bind ^V paste main # Use Ctrl + V to paste instead of Ctrl + U. Text in buffer will use Ctrl + Shift + V
+bind ^/ comment main # Use Ctrl + / to comment / uncomment current line
