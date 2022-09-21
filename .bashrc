@@ -146,3 +146,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+trap 'echo -ne "\033]0;$BASH_COMMAND - Parrot Terminal\007" > /dev/stderr' DEBUG
