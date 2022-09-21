@@ -379,17 +379,6 @@ opacity=31575
 color='#262A33'
 type='color'
 
-[org/mate/panel/toplevels/toplevel_1]
-enable-buttons=true
-orientation='right'
-enable-arrows=true
-size=30
-
-[org/mate/panel/toplevels/toplevel_1/background]
-opacity=41704
-color='#008080'
-type='color'
-
 [org/mate/panel/toplevels/top]
 expand=true
 orientation='top'
@@ -401,19 +390,13 @@ opacity=48853
 color='#262A33'
 type='color'
 
-[org/mate/panel/toplevels/toplevel_0]
-enable-buttons=true
-orientation='right'
-enable-arrows=true
-size=36
-
-[org/mate/panel/objects/object_3]
+[org/mate/panel/objects/classic_menu]
 toplevel-id='top'
 position=0
 object-type='menu-bar'
 panel-right-stick=false
 
-[org/mate/panel/objects/workspace-switcher]
+[org/mate/panel/objects/workspace_switcher]
 applet-iid='WnckletFactory::WorkspaceSwitcherApplet'
 locked=false
 toplevel-id='bottom'
@@ -421,11 +404,11 @@ position=1
 object-type='applet'
 panel-right-stick=true
 
-[org/mate/panel/objects/workspace-switcher/prefs]
+[org/mate/panel/objects/workspace_switcher/prefs]
 display-all-workspaces=true
 num-rows=1
 
-[org/mate/panel/objects/object_10]
+[org/mate/panel/objects/sleep_applet]
 applet-iid='InhibitAppletFactory::InhibitApplet'
 toplevel-id='bottom'
 position=20
@@ -444,7 +427,7 @@ panel-right-stick=true
 format='24-hour'
 custom-format=''
 
-[org/mate/panel/objects/object_1]
+[org/mate/panel/objects/brisk_menu]
 locked=true
 applet-iid='BriskMenuFactory::BriskMenu'
 toplevel-id='bottom'
@@ -452,14 +435,14 @@ position=0
 object-type='applet'
 panel-right-stick=false
 
-[org/mate/panel/objects/object_2]
+[org/mate/panel/objects/sys_mon]
 applet-iid='MultiLoadAppletFactory::MultiLoadApplet'
 toplevel-id='top'
 position=800
 object-type='applet'
 panel-right-stick=false
 
-[org/mate/panel/objects/object_2/prefs]
+[org/mate/panel/objects/sys_mon/prefs]
 view-memload=true
 cpuload-color0='#00FF00'
 cpuload-color1='#FF0000'
@@ -480,7 +463,7 @@ diskload-color1='#FF0000'
 view-netload=true
 view-diskload=false
 
-[org/mate/panel/objects/notification-area]
+[org/mate/panel/objects/notification_area]
 applet-iid='NotificationAreaAppletFactory::NotificationArea'
 locked=true
 toplevel-id='top'
@@ -488,28 +471,28 @@ position=50
 object-type='applet'
 panel-right-stick=true
 
-[org/mate/panel/objects/object_7]
-launcher-location='/usr/share/applications/parrot-firefox-esr.desktop'
+[org/mate/panel/objects/launcher_firefox]
+launcher-location='/usr/share/applications/firefox-esr.desktop'
 toplevel-id='top'
 position=251
 object-type='launcher'
 panel-right-stick=false
 
-[org/mate/panel/objects/object_8]
+[org/mate/panel/objects/launcher_mate_terminal]
 launcher-location='/usr/share/applications/mate-terminal.desktop'
 toplevel-id='top'
 position=278
 object-type='launcher'
 panel-right-stick=false
 
-[org/mate/panel/objects/object_9]
+[org/mate/panel/objects/launcher_pluma]
 launcher-location='/usr/share/applications/pluma.desktop'
 toplevel-id='top'
 position=306
 object-type='launcher'
 panel-right-stick=false
 
-[org/mate/panel/objects/window-list]
+[org/mate/panel/objects/window_list]
 applet-iid='WnckletFactory::WindowListApplet'
 locked=true
 toplevel-id='bottom'
