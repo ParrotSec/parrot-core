@@ -1,3 +1,4 @@
+#!/bin/bash
 # Make sure PATH includes sbin support
 if ! echo "$PATH" | tr : '\n' | grep -q "^/sbin$"; then
     PATH="/usr/local/sbin:/usr/sbin:/sbin:$PATH"

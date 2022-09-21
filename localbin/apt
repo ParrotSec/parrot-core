@@ -16,7 +16,7 @@ Use apt safe-upgrade to perform a partial upgrade.
 	/usr/bin/apt full-upgrade
 	;;
 	safe-upgrade)
-	    /usr/bin/apt upgrade
+		/usr/bin/apt upgrade
 	;;
 	dup)
 		/usr/bin/apt dist-upgrade
@@ -27,11 +27,11 @@ Use apt safe-upgrade to perform a partial upgrade.
 		exit
 	;;
 	i|in)
-		/usr/bin/apt install ${@:2}
+		/usr/bin/apt install "${@:2}"
 		exit
 	;;
 	r|rm)
-		/usr/bin/apt remove ${@:2}
+		/usr/bin/apt remove "${@:2}"
 		exit
 	;;
 	list-updates|lu|l)
@@ -39,17 +39,17 @@ Use apt safe-upgrade to perform a partial upgrade.
 		exit
 	;;
 	s|se)
-		/usr/bin/apt search ${@:2}
+		/usr/bin/apt search "${@:2}"
 		exit
 	;;
 	p|po|pol)
-		/usr/bin/apt policy ${@:2}
+		/usr/bin/apt policy "${@:2}"
 		exit
 	;;
 	sh)
-		/usr/bin/apt show ${@:2}
+		/usr/bin/apt show "${@:2}"
 		exit
 	;;
 esac
 
-/usr/bin/apt $@
+/usr/bin/apt "$@"
