@@ -9,3 +9,4 @@ bin/* usr/bin/
 localbin/* usr/local/bin/
 dconf usr/lib/parrot-skel/etc/
 skel usr/lib/parrot-skel/etc/
+etc/NetworkManager/conf.d/90-dns-none.conf etc/NetworkManager/conf.d/
