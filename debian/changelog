@@ -1,3 +1,21 @@
+parrot-core (5.1.3) parrot-updates; urgency=medium
+
+  [ Nong Hoang Tu ]
+  * Add trap to show title. Close #12
+  * Improve bash syntax. Close #10
+  * Restore firefox launcher and clean the dconf. Close #13
+  * Do not import plugins if file doesn't exist
+  * Add Custom nanorc
+  * Add a hook script for NetworkManager to stop refreshing DNS
+  * Add network manager hookscript to installation
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * Temporarily comment NetworkManager patch (2 extra tests need to be done)
+  * Don't show line numbers on nano to allow copy-pasting code (might change in the future)
+  * Don't wrap long lines in nano (some users may complain about it, let's wait a bit)
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 23 Sep 2022 00:11:38 +0200
+
 parrot-core (5.1.2) parrot-updates; urgency=medium
 
   * Update firefox launcher path.
