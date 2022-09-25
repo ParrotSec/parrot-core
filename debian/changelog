@@ -1,3 +1,9 @@
+parrot-core (5.1.5) parrot-updates; urgency=medium
+
+  * Use firefox-esr.desktop instead of firefox.desktop in MATE.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 25 Sep 2022 11:23:37 +0200
+
 parrot-core (5.1.4) parrot-updates; urgency=medium
 
   [ Nong Hoang Tu ]
