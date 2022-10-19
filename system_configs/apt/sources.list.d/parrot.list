@@ -111,19 +111,23 @@ deb https://deb.parrot.sh/parrot parrot-backports main contrib non-free
 ## Some popular mirrors ##
 ##########################
 ## This is a non-comprehensive, and not-updated list of mirrors
-## that we leave here a a quick reference. some of them are
+## that we leave here as a quick reference. some of them are
 ## worldwide, meaning that they have several nodes around the world
 ## and the fastest one is picked automatically (CDN).
-## others are tight to a specific region of the world.
+## others are bound to a specific region of the world.
 
-## Worldwide - Parrot - automatically redirects to the best mirrors available
-#deb https://deb.parrot.sh/parrot/ parrot main contrib non-free
 
-## Worldwide - Parrot - core servers with no redirection
+## Worldwide - Parrot - nearest parrot server with no redirection
 #deb https://deb.parrot.sh/direct/parrot/ parrot main contrib non-free
 
-## Wordlwide - Bunny CDN - Uses the Bunny CDN platform
+## Wordlwide - Bunny - Uses the Bunny CDN platform
 #deb https://bunny.deb.parrot.sh/parrot/ parrot main contrib non-free
+
+## Wordlwide - GCore - Uses the G-Core CDN platform
+#deb https://gcore.deb.parrot.sh/parrot/ parrot main contrib non-free
+
+## Wordlwide - Azure - Uses the Microsoft Azure CDN platform
+#deb https://azure.deb.parrot.sh/parrot/ parrot main contrib non-free
 
 ## Wordlwide - Aliyun - Uses the AlibabaCloud mirrors behind their worldwide CDN
 #deb deb https://mirrors.aliyun.com/parrot parrot main contrib non-free
@@ -136,6 +140,9 @@ deb https://deb.parrot.sh/parrot parrot-backports main contrib non-free
 
 ## US Virginia - Leaseweb
 #deb https://mirror.wdc1.us.leaseweb.net/parrot parrot main contrib non-free
+
+## Germany - Leaseweb
+#deb https://mirror.fra10.de.leaseweb.net/parrot parrot main contrib non-free
 
 ## Germany - Halifax RWTH-Aachen University
 #deb https://ftp.halifax.rwth-aachen.de/parrotsec/ parrot main contrib non-free
@@ -152,11 +159,17 @@ deb https://deb.parrot.sh/parrot parrot-backports main contrib non-free
 ## Brazil - Sao Paulo University
 #deb http://sft.if.usp.br/parrot/ parrot main contrib non-free
 
+## Taiwan - NCHC
+#deb https://free.nchc.org.tw/parrot/ parrot main contrib non-free
+
 ## Singapore - 0x
 #deb https://mirror.0x.sg/parrot/ parrot main contrib non-free
 
 ## China - USTC University
-#deb http://mirrors.ustc.edu.cn/parrot parrot main contrib non-free
+#deb https://mirrors.ustc.edu.cn/parrot/ parrot main contrib non-free
+
+## India - NxtGen 
+#deb https://mirrors.nxtgen.com/parrot-mirror parrot main contrib non-free
 
 
 ## We strongly invite you to visit https://www.parrotsec.org/docs/mirrors-list.html

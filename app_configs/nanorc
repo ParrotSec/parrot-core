@@ -1,15 +1,15 @@
 # https://www.nano-editor.org/dist/latest/nanorc.5.html
 # EDITOR CONFIG
 # Default basic configs
-set linenumbers # display line number (left column)
-set mouse # Enable mouse (similar to Vim)
+#set linenumbers # display line number (left column)
+#set mouse # Enable mouse (similar to Vim)
 set autoindent # Auto tabs / spaces in new line
 set tabsize 4 # Display tab by 4 spaces (no replacing)
 #set tabstospaces # Convert tabs to space. Comment only. User uncomment if needed
 #set minibar # Nano >= 5.5 only.
 # More custom configs
 set locking # Only 1 nano process is allowed to access file (similar to Vim)
-set softwrap # Text wrapping for very long lines
+#set softwrap # Text wrapping for very long lines
 set constantshow # Show line column, ... in status bar
 
 # Set brackets. User can use `Alt + ]` or `Esc` then `]` to jump to close / open brackets. Comment because it's as same as default settings
