@@ -281,3 +281,17 @@ Description: Meta package for i3 Window Manager
   This package is metapackage for i3 Window Manager
   on Parrot OS. It installs polybar, feh, font
   cantarell, font Awesome5 to user's system.
+
+
+Package: parrot-configs-zsh
+Architecture: all
+Depends: zsh
+Recommends: zsh-autocomplete, zsh-syntax-highlighting, zsh-autosuggestions
+Section: shells
+Priority: optional
+Homepage: https://www.parrotsec.org
+Description: Parrot ZSH configuration
+  This is Parrot Security,
+  a security focused GNU/Linux distribution.
+  .
+  This metapackage provides the plugins and settings for ZSH shell on Parrot.
