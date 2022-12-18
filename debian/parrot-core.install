@@ -5,6 +5,7 @@ skel usr/lib/parrot-skel/etc/
 
 app_configs/bash.bashrc /etc/
 app_configs/vimrc /etc/vim/
+app_configs/nanorc /etc/
 
 system_configs/etc/NetworkManager/conf.d/90-dns-none.conf etc/NetworkManager/conf.d/
 system_configs/Xsession.d/* etc/X11/Xsession.d/
