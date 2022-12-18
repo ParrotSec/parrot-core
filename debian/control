@@ -287,6 +287,7 @@ Package: parrot-configs-zsh
 Architecture: all
 Depends: zsh
 Recommends: zsh-autocomplete, zsh-syntax-highlighting, zsh-autosuggestions
+Replaces: zsh
 Section: shells
 Priority: optional
 Homepage: https://www.parrotsec.org
