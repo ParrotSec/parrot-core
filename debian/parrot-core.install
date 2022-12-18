@@ -7,6 +7,7 @@ app_configs/bash.bashrc /etc/
 app_configs/vimrc /etc/vim/
 app_configs/nanorc /etc/
 app_configs/Microsoft.PowerShell_profile.ps1 /opt/microsoft/powershell/7/
+app_configs/config.fish /etc/fish/
 
 system_configs/etc/NetworkManager/conf.d/90-dns-none.conf etc/NetworkManager/conf.d/
 system_configs/Xsession.d/* etc/X11/Xsession.d/
