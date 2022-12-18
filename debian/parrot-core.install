@@ -1,9 +1,9 @@
-.bashrc root/
-.bashrc etc/skel/
 bin/* usr/bin/
 localbin/* usr/local/bin/
 dconf usr/lib/parrot-skel/etc/
 skel usr/lib/parrot-skel/etc/
+
+app_configs/bash.bashrc /etc/
 
 system_configs/etc/NetworkManager/conf.d/90-dns-none.conf etc/NetworkManager/conf.d/
 system_configs/Xsession.d/* etc/X11/Xsession.d/
