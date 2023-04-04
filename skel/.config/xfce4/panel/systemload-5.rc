@@ -1,7 +1,7 @@
 [Main]
 Timeout=500
 Timeout_Seconds=1
-Click_Command=xfce4-taskmanager
+Click_Command=gnome-system-monitor
 
 [SL_Cpu]
 Enabled=true
