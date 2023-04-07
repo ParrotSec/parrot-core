@@ -8,4 +8,4 @@ apt update || echo failed to update index lists
 dpkg --configure -a || echo failed to fix interrupted upgrades
 apt --fix-broken --fix-missing install || echo failed to fix conflicts
 apt -y --fix-broken --fix-missing full-upgrade
-apt -y full-upgrade -t parrot-backports || true
+apt -y full-upgrade
