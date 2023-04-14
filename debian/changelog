@@ -1,3 +1,26 @@
+parrot-core (5.1.8) parrot-updates; urgency=medium
+
+  [ Nong Hoang Tu ]
+  * Improve bash syntax
+  * Reformat and move desktop packages
+  * Move all system config files / dirs in system_config dir
+  * New method to install .bashrc
+  * New way to install parrot-zsh
+  * Add replaces zsh to configs-zsh
+  * New way to install VImrc
+  * New way to install nanorc
+  * New way to install powershell settings
+  * New way to install fish rc
+  * Fix syntax error of target dirs
+  * Add fish to replaces
+  * New way to install nvim config
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * Update for parrot 5.2
+  * Rebuild package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Apr 2023 18:41:33 +0200
+
 parrot-core (5.1.7) parrot-updates; urgency=medium
 
   * Don't force backports repo in parrot-upgrade
