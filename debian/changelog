@@ -1,3 +1,9 @@
+parrot-core (5.1.9) parrot-updates; urgency=medium
+
+  * Fix vim-common conflict.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrot.rfc2549.it>  Sat, 22 Apr 2023 14:07:13 +0200
+
 parrot-core (5.1.8) parrot-updates; urgency=medium
 
   [ Nong Hoang Tu ]
