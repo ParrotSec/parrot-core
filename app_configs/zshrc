@@ -52,7 +52,8 @@ if [ -f /usr/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh ]; then
   source /usr/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
   # Select all suggestion instead of top on result only
   zstyle ':autocomplete:tab:*' insert-unambiguous yes
-  zstyle ':autocomplete:tab:*' widget-style menu-select
+  bindkey '\t' menu-select "$terminfo[kcbt]" menu-select
+  bindkey -M menuselect '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
   zstyle ':autocomplete:*' min-input 2
   bindkey $key[Up] up-line-or-history
   bindkey $key[Down] down-line-or-history
