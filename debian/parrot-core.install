@@ -1,12 +1,18 @@
-.bashrc root/
-.bashrc etc/skel/
-grub.default etc/default/grub.d/
-apt/* etc/apt/
-profile.d/* etc/profile.d/
-udev-rules/* etc/udev/rules.d/
-Xsession.d/* etc/X11/Xsession.d/
 bin/* usr/bin/
 localbin/* usr/local/bin/
 dconf usr/lib/parrot-skel/etc/
 skel usr/lib/parrot-skel/etc/
-etc/NetworkManager/conf.d/90-dns-none.conf etc/NetworkManager/conf.d/
+
+app_configs/bash.bashrc etc/
+app_configs/vimrc etc/vim/
+app_configs/nanorc etc/
+app_configs/Microsoft.PowerShell_profile.ps1 opt/microsoft/powershell/7/
+app_configs/config.fish etc/fish/
+app_configs/sysinit.vim etc/xdg/nvim/
+
+system_configs/etc/NetworkManager/conf.d/90-dns-none.conf etc/NetworkManager/conf.d/
+system_configs/Xsession.d/* etc/X11/Xsession.d/
+system_configs/udev-rules/* etc/udev/rules.d/
+system_configs/profile.d/* etc/profile.d/
+system_configs/apt/* etc/apt/
+system_configs/grub.default etc/default/grub.d/

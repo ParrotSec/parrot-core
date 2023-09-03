@@ -3,8 +3,8 @@
 set -e
 
 # Install python alias
-if [ $(which python3) ]; then
-    if [ ! $(update-alternatives --list python | grep python3) ]; then
+if [ "$(which python3)" ]; then
+    if ! update-alternatives --list python | grep -q python3; then
         update-alternatives --install /usr/bin/python python /usr/bin/python3 50
     fi
 fi
