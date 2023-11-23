@@ -376,7 +376,7 @@ y=742
 
 [org/mate/panel/toplevels/bottom/background]
 opacity=31575
-color='#262A33'
+color='#102030'
 type='color'
 
 [org/mate/panel/toplevels/top]
@@ -387,7 +387,7 @@ size=30
 
 [org/mate/panel/toplevels/top/background]
 opacity=48853
-color='#262A33'
+color='#102030'
 type='color'
 
 [org/mate/panel/objects/object_3]
@@ -472,7 +472,7 @@ object-type='applet'
 panel-right-stick=true
 
 [org/mate/panel/objects/object_7]
-launcher-location='/usr/share/applications/firefox-esr.desktop'
+launcher-location='/usr/share/applications/firefox-parrot.desktop'
 toplevel-id='top'
 position=251
 object-type='launcher'
@@ -489,6 +489,13 @@ panel-right-stick=false
 launcher-location='/usr/share/applications/pluma.desktop'
 toplevel-id='top'
 position=306
+object-type='launcher'
+panel-right-stick=false
+
+[org/mate/panel/objects/object_11]
+launcher-location='/usr/share/applications/codium.desktop'
+toplevel-id='top'
+position=326
 object-type='launcher'
 panel-right-stick=false
 

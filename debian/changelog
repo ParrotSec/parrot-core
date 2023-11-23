@@ -1,3 +1,37 @@
+parrot-core (6.0.3) lory-updates; urgency=medium
+
+  * Add conflict against r8168-dkms package to avoid upgrade errors.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 23 Nov 2023 18:45:59 +0100
+
+parrot-core (6.0.2) loru-updates; urgency=medium
+
+  * Update the parrot repo for all the users.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 23 Nov 2023 18:28:32 +0100
+
+parrot-core (6.0.1) lory; urgency=medium
+
+  * Override samba-common and xrdp in debian/control.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 06 Nov 2023 09:43:32 +0100
+
+parrot-core (6.0) lory; urgency=medium
+
+  * Update mate top/bottom panel colors.
+  * Add vscodium to the top panel apps.
+  * Update apt settings.
+  * Add pipewire settings.
+  * Update terminal aliases.
+  * Prevent burpsuite from checking for updates.
+  * Add cloud config for parrot.
+  * Re-add postgresql desktop configs.
+  * Add samba settings.
+  * Add xrdp settings.
+  * update grub defaults.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 06 Nov 2023 07:51:02 +0100
+
 parrot-core (5.1.9) parrot-updates; urgency=medium
 
   * Fix vim-common conflict.

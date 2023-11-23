@@ -21,6 +21,7 @@ Depends: bash-completion,
   wget,
   dconf-cli,
   rsync,
+  parrot-core-lite [armhf arm64 i386]
 Recommends: apparmor,
   apparmor-profiles,
   apparmor-profiles-extra,
@@ -33,10 +34,11 @@ Recommends: apparmor,
   figlet,
   plymouth,
   plymouth-themes,
+  parrot-apps-basics,
   parrot-core-lite [armhf arm64 i386]
 Suggests: parrot-drivers, parrot-core-lite [amd64]
-Replaces: bash, vim-common, base-files, xterm, parrot-skel, dnsmasq, parrot-interface-common, apt-parrot, vim, nano, powershell, fish, nvim
-Breaks: apt-parrot, parrot-skel
+Replaces: bash, vim-common, base-files, xterm, parrot-skel, dnsmasq, parrot-interface-common, apt-parrot, vim, nano, powershell, fish, nvim, samba-common, xrdp
+Breaks: apt-parrot, parrot-skel, r8168-dkms
 Conflicts: apt-parrot, parrot-skel
 Description: Core package for Parrot OS
   Core package for the Parrot Debian distribution.
@@ -88,7 +90,6 @@ Recommends: alsa-firmware-loaders,
             firmware-ralink,
             firmware-realtek,
             firmware-ti-connectivity,
-            r8168-dkms,
             realtek-rtl88xxau-dkms,
             realtek-rtl8814au-dkms,
             realtek-rtl8188eus-dkms,
@@ -134,9 +135,8 @@ Recommends: apparmor,
   apparmor-utils,
   parrot-hardened,
   neovim,
-  figlet,
-  parrot-core-lite [armhf arm64 i386]
-Suggest: moreutils,
+  figlet
+Suggests: moreutils,
   dconf-cli,
   screen,
   sysv-rc,
@@ -145,142 +145,6 @@ Suggest: moreutils,
   plymouth-themes
 Description: Basic applications for headless
   Install basic apps and configurations
-
-
-Package: parrot-desktop-xfce
-Architecture: all
-Depends:
-  xfce4,
-  xfce4-terminal,
-  xfce4-screenshooter,
-  xfce4-whiskermenu-plugin,
-  xfce4-places-plugin,
-  xfce4-screensaver,
-  xfce4-taskmanager,
-  xfce4-systemload-plugin,
-  xfce4-power-manager-plugins,
-  mousepad,
-  ristretto,
-  thunar,
-  network-manager-gnome,
-  parrot-displaymanager
-Recommends: network-manager-openvpn-gnome,
-  gtk2-engines-murrine,
-  thunar-archive-plugin,
-  engrampa,
-  fonts-cantarell,
-  mugshot,
-  menulibre,
-  atril
-Suggest: parrot-interface-common,
-  network-manager-fortisslvpn-gnome,
-  network-manager-l2tp-gnome,
-  network-manager-openconnect-gnome,
-  network-manager-pptp-gnome,
-  network-manager-vpnc-gnome,
-  network-manager-ssh-gnome,
-
-
-Package: parrot-desktop-gnome
-Architecture: all
-Depends: parrot-interface-common,
-  gnome-core,
-  gedit,
-  gnome-brave-icon-theme,
-  gnome-shell-extensions,
-  gnome-shell-extension-proxyswitcher,
-  gnome-shell-extension-dashtodock,
-  gnome-shell-extension-easyscreencast,
-  gnome-tweak-tool,
-  nautilus-wipe,
-  nautilus-gtkhash,
-  gnome-orca,
-  file-roller,
-  gnome-calculator
-Recommends: gdm3
-Description: GNOME based Parrot desktop
-  This metapackage installs a minimalistic GNOME desktop on Parrot Security OS.
-
-
-Package: parrot-desktop-kde
-Architecture: all
-Depends: parrot-interface-common,
-  kde-standard,
-  kde-plasma-desktop,
-  kde-spectacle,
-  plasma-nm,
-  parrot-displaymanager
-Suggests: lightdm-parrot
-Description: KDE based Parrot desktop
-  This metapackage installs a minimalistic KDE desktop on Parrot Security OS.
-
-
-Package: parrot-desktop-mate
-Architecture: all
-Depends: mate-core, parrot-interface-common, parrot-displaymanager
-Recommends: atril,
-  breeze-cursor-theme,
-  caja,
-  caja-actions,
-  caja-gksu,
-  caja-image-converter,
-  caja-open-terminal,
-  caja-sendto,
-  caja-share,
-  caja-xattr-tags,
-  engrampa,
-  eom,
-  gnome-system-tools,
-  mate-applets,
-  mate-applet-brisk-menu,
-  mate-applet-topmenu,
-  mate-calc,
-  mate-common,
-  mate-control-center,
-  mate-dock-applet,
-  mate-indicator-applet,
-  mate-media,
-  mate-menu,
-  mate-netspeed,
-  mate-notification-daemon,
-  mate-polkit-bin,
-  mate-power-manager,
-  mate-screensaver,
-  mate-sensors-applet,
-  mate-sensors-applet-nvidia,
-  mate-system-monitor,
-  mate-system-tools,
-  mate-tweak,
-  gtk3-engines-breeze,
-  mate-utils,
-  mozo,
-  network-manager-gnome,
-  network-manager-openvpn,
-  pluma
-Suggests: parrot-interface-full,
-  caja-gtkhash,
-  network-manager-fortisslvpn-gnome,
-  network-manager-l2tp-gnome,
-  network-manager-openconnect-gnome,
-  network-manager-pptp-gnome,
-  network-manager-vpnc-gnome,
-  network-manager-openvpn-gnome,
-  network-manager-ssh-gnome,
-Description: Parrot interface metapackage
-  metapackage that installs the graphic interface.
-
-
-Package: parrot-desktop-i3
-Architecture: all
-Depends: i3,
-  feh,
-  polybar,
-  fonts-cantarell,
-  fonts-font-awesome
-Description: Meta package for i3 Window Manager
-  This package is metapackage for i3 Window Manager
-  on Parrot OS. It installs polybar, feh, font
-  cantarell, font Awesome5 to user's system.
 
 
 Package: parrot-configs-zsh

@@ -15,4 +15,10 @@ system_configs/Xsession.d/* etc/X11/Xsession.d/
 system_configs/udev-rules/* etc/udev/rules.d/
 system_configs/profile.d/* etc/profile.d/
 system_configs/apt/* etc/apt/
+system_configs/xrdp/xrdp.ini etc/xrdp/
+system_configs/xrdp/parrot.bmp usr/share/xrdp/
 system_configs/grub.default etc/default/grub.d/
+system_configs/samba/smb.conf usr/share/samba/
+system_configs/pipewire/* lib/systemd/user/
+system_configs/postgresql/parrot_postgresql.conf usr/lib/systemd/system/postgresql@.service.d/
+system_configs/postgresql/postgresql_reduce_shared_buffers usr/share/parrot-core/

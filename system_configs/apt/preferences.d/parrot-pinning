@@ -1,17 +1,17 @@
 Package: *
-Pin: release a=lts
+Pin: release a=parrot6
 Pin-Priority: 600
 
 Package: *
-Pin: release a=lts-backports
+Pin: release a=parrot6-backports
 Pin-Priority: 599
 
 Package: *
-Pin: release a=lts-updates
+Pin: release a=parrot6-updates
 Pin-Priority: 600
 
 Package: *
-Pin: release a=lts-security
+Pin: release a=parrot6-security
 Pin-Priority: 600
 
 Package: *

@@ -126,6 +126,8 @@ alias em='emacs -nw'
 alias dd='dd status=progress'
 alias _='sudo'
 alias _i='sudo -i'
+alias fucking='sudo'
+alias please='sudo'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like

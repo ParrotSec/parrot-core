@@ -52,9 +52,8 @@ if [ -f /usr/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh ]; then
   source /usr/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
   # Select all suggestion instead of top on result only
   zstyle ':autocomplete:tab:*' insert-unambiguous yes
-  bindkey '\t' menu-select "$terminfo[kcbt]" menu-select
-  bindkey -M menuselect '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
-  zstyle ':autocomplete:*' min-input 1
+  zstyle ':autocomplete:tab:*' widget-style menu-select
+  zstyle ':autocomplete:*' min-input 2
   bindkey $key[Up] up-line-or-history
   bindkey $key[Down] down-line-or-history
 fi
@@ -69,5 +68,18 @@ setopt appendhistory
 # require install package "time" sudo apt install time
 # alias time="/usr/bin/time -f '\t%E real,\t%U user,\t%S sys,\t%K amem,\t%M mmem'"
 # Display last command interminal
+
+# some more ls aliases
+alias ll='ls -lh'
+alias la='ls -lha'
+alias l='ls -CF'
+alias em='emacs -nw'
+alias dd='dd status=progress'
+alias _='sudo'
+alias _i='sudo -i'
+alias fucking='sudo'
+alias please='sudo'
+
+
 echo -en "\e]2;Parrot Terminal\a"
 preexec () { print -Pn "\e]0;$1 - Parrot Terminal\a" }

@@ -19,4 +19,7 @@ ColumnCPU=TRUE
 ColumnPriority=FALSE
 SortColumn=0
 SortType=0
+WindowWidth=490
+WindowHeight=465
+HandlePosition=-1
 ProcessTreeView=FALSE

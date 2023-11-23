@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+if [ -r /proc/meminfo ]; then
+    mem_available=$(awk '/^MemAvailable:/ {print $2}' /proc/meminfo)
+fi
+if [ ${mem_available:-0} -lt 200000 ]; then
+  sed -i -e 's/shared_buffers = 128MB/shared_buffers = 64MB/' /etc/postgresql/$1/postgresql.conf
+fi
