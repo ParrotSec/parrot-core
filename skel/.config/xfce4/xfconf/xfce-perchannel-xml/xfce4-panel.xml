@@ -1,8 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <channel name="xfce4-panel" version="1.0">
+  <property name="plugins" type="empty">
+    <property name="plugin-1" type="string" value="whiskermenu"/>
+    <property name="plugin-2" type="string" value="places">
+      <property name="show-button-type" type="int" value="0"/>
+    </property>
+    <property name="plugin-3" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16739390961.desktop"/>
+        <value type="string" value="16729543421.desktop"/>
+        <value type="string" value="16729543422.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-4" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16729543423.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-5" type="string" value="systemload"/>
+    <property name="plugin-6" type="string" value="tasklist">
+      <property name="grouping" type="int" value="0"/>
+      <property name="include-all-monitors" type="bool" value="false"/>
+      <property name="include-all-workspaces" type="bool" value="false"/>
+      <property name="show-labels" type="bool" value="true"/>
+      <property name="show-only-minimized" type="bool" value="false"/>
+      <property name="show-wireframes" type="bool" value="false"/>
+      <property name="sort-order" type="int" value="4"/>
+      <property name="switch-workspace-on-unminimize" type="bool" value="true"/>
+    </property>
+    <property name="plugin-7" type="string" value="separator">
+      <property name="style" type="int" value="0"/>
+      <property name="expand" type="bool" value="true"/>
+    </property>
+    <property name="plugin-8" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="firefox.instance12378;firefox.instance12650;firefox.instance13577;firefox.instance1413;firefox.instance1422;firefox.instance1453;firefox.instance1455;firefox.instance1460;firefox.instance1467;firefox.instance1481;firefox.instance1482;firefox.instance1488;firefox.instance1497;firefox.instance1499;firefox.instance1514;firefox.instance1560;firefox.instance1576;firefox.instance1585;firefox.instance1591;firefox.instance1597;firefox.instance1602;firefox.instance1610;firefox.instance1612;firefox.instance1615;firefox.instance1619;firefox.instance1698;firefox.instance1748;firefox.instance1788;firefox.instance17913;firefox.instance1793;firefox.instance18403;firefox.instance1869;firefox.instance1885;firefox.instance1940;firefox.instance1973;firefox.instance2115;firefox.instance2117;firefox.instance2156;firefox.instance2159;firefox.instance23802;firefox.instance2486;firefox.instance2539;firefox.instance2643;firefox.instance26741;firefox.instance2861;firefox.instance2890;firefox.instance29347;firefox.instance2959;firefox.instance3030;firefox.instance3362;firefox.instance3423;firefox.instance3669;firefox.instance3942;firefox.instance4103;firefox.instance4747;firefox.instance5616;firefox.instance9082;vlc"/>
+    </property>
+    <property name="plugin-9" type="string" value="systray">
+      <property name="show-frame" type="bool" value="false"/>
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="ibus panel"/>
+        <value type="string" value="anonsurf-gtk"/>
+        <value type="string" value="task manager"/>
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="networkmanager applet"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="remmina-icon"/>
+        <value type="string" value="Microsoft Teams - Preview1"/>
+        <value type="string" value="teams-for-linux1"/>
+        <value type="string" value="discord1"/>
+        <value type="string" value="blueman"/>
+        <value type="string" value="vlc"/>
+        <value type="string" value="qBittorrent"/>
+        <value type="string" value="TelegramDesktop"/>
+        <value type="string" value="Fcitx"/>
+      </property>
+    </property>
+    <property name="plugin-10" type="string" value="clock">
+      <property name="mode" type="int" value="2"/>
+      <property name="digital-format" type="string" value="%H:%M"/>
+    </property>
+  </property>
   <property name="configver" type="int" value="2"/>
-  <property name="panels" type="uint" value="2">
+  <property name="panels" type="uint" value="1">
     <property name="panel-0" type="empty">
       <property name="autohide-behavior" type="int" value="0"/>
       <property name="disable-struts" type="int" value="0"/>
@@ -12,8 +74,8 @@
       <property name="nrows" type="int" value="1"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="size" type="int" value="32"/>
-      <property name="position" type="string" value="p=0;x=0;y=0"/>
-      <property name="output-name" type="string" value="Primary"/>
+      <property name="position" type="string" value="p=8;x=0;y=0"/>
+      <property name="output-name" type="string" value="eDP-1"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="1"/>
         <value type="int" value="2"/>
@@ -23,101 +85,9 @@
         <value type="int" value="6"/>
         <value type="int" value="7"/>
         <value type="int" value="8"/>
-      </property>
-    </property>
-    <property name="panel-1" type="empty">
-      <property name="autohide-behavior" type="int" value="0"/>
-      <property name="disable-struts" type="int" value="0"/>
-      <property name="length" type="int" value="100"/>
-      <property name="length-adjust" type="bool" value="true"/>
-      <property name="mode" type="int" value="0"/>
-      <property name="nrows" type="int" value="1"/>
-      <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="int" value="32"/>
-      <property name="position" type="string" value="p=8;x=0;y=0"/>
-      <property name="output-name" type="string" value="Primary"/>
-      <property name="plugin-ids" type="array">
         <value type="int" value="9"/>
         <value type="int" value="10"/>
-        <value type="int" value="11"/>
-        <value type="int" value="12"/>
-        <value type="int" value="13"/>
-        <value type="int" value="14"/>
-        <value type="int" value="15"/>
       </property>
-    </property>
-  </property>
-  <property name="plugins" type="empty">
-    <property name="plugin-1" type="string" value="applicationsmenu">
-      <property name="button-icon" type="string" value="distributor-logo-parrot"/>
-      <property name="button-title" type="string" value="Applications"/>
-      <property name="custom-menu" type="bool" value="false"/>
-      <property name="show-generic-names" type="bool" value="false"/>
-      <property name="show-tooltips" type="bool" value="true"/>
-    </property>
-    <property name="plugin-2" type="string" value="places">
-      <property name="show-button-type" type="int" value="2"/>
-    </property>
-    <property name="plugin-3" type="string" value="separator">
-      <property name="style" type="int" value="0"/>
-      <property name="expand" type="bool" value="true"/>
-    </property>
-    <property name="plugin-4" type="string" value="clock">
-      <property name="mode" type="int" value="2"/>
-      <property name="digital-format" type="string" value="%a %H:%M"/>
-    </property>
-    <property name="plugin-5" type="string" value="separator">
-      <property name="style" type="int" value="0"/>
-      <property name="expand" type="bool" value="true"/>
-    </property>
-    <property name="plugin-6" type="string" value="systemload"/>
-    <property name="plugin-7" type="string" value="pulseaudio">
-      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-    </property>
-    <property name="plugin-8" type="string" value="systray">
-      <property name="show-frame" type="bool" value="false"/>
-      <property name="known-legacy-items" type="array">
-        <value type="string" value="networkmanager applet"/>
-      </property>
-      <property name="known-items" type="array">
-        <value type="string" value="blueman"/>
-      </property>
-    </property>
-    <property name="plugin-9" type="string" value="whiskermenu"/>
-    <property name="plugin-10" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="16321537241.desktop"/>
-        <value type="string" value="16321537242.desktop"/>
-        <value type="string" value="16321537243.desktop"/>
-        <value type="string" value="16321537244.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-11" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="16321537245.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-12" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="16321537246.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-13" type="string" value="tasklist">
-      <property name="grouping" type="int" value="0"/>
-      <property name="include-all-monitors" type="bool" value="true"/>
-      <property name="include-all-workspaces" type="bool" value="false"/>
-      <property name="show-labels" type="bool" value="true"/>
-      <property name="show-only-minimized" type="bool" value="false"/>
-      <property name="show-wireframes" type="bool" value="false"/>
-      <property name="sort-order" type="int" value="4"/>
-      <property name="switch-workspace-on-unminimize" type="bool" value="true"/>
-    </property>
-    <property name="plugin-14" type="string" value="separator">
-      <property name="style" type="int" value="0"/>
-      <property name="expand" type="bool" value="true"/>
-    </property>
-    <property name="plugin-15" type="string" value="pager">
-      <property name="rows" type="int" value="2"/>
     </property>
   </property>
 </channel>

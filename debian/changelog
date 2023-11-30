@@ -1,3 +1,10 @@
+parrot-core (6.0.4) lory; urgency=medium
+
+  * Re-enable os-prober on grub config.
+  * rename grub config to grub.cfg.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 30 Nov 2023 06:00:02 +0100
+
 parrot-core (6.0.3) lory-updates; urgency=medium
 
   * Add conflict against r8168-dkms package to avoid upgrade errors.
