@@ -38,7 +38,7 @@ Recommends: apparmor,
   parrot-core-lite [armhf arm64 i386]
 Suggests: parrot-drivers, parrot-core-lite [amd64]
 Replaces: bash, vim-common, base-files, xterm, parrot-skel, dnsmasq, parrot-interface-common, apt-parrot, vim, nano, powershell, fish, nvim, samba-common, xrdp
-Breaks: apt-parrot, parrot-skel, r8168-dkms
+Breaks: apt-parrot, parrot-skel, r8168-dkms, realtek-rtl8723cs-dkms
 Conflicts: apt-parrot, parrot-skel
 Description: Core package for Parrot OS
   Core package for the Parrot Debian distribution.

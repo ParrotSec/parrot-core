@@ -1,3 +1,9 @@
+parrot-core (6.0.5) lory-updates; urgency=medium
+
+  * Add conflict against realtek-rtl8723cs-dkms to avoid upgrade errors.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 05 Dec 2023 11:39:31 +0100
+
 parrot-core (6.0.4) lory; urgency=medium
 
   * Re-enable os-prober on grub config.
