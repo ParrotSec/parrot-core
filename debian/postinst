@@ -20,7 +20,7 @@ dconf compile /etc/skel/.config/dconf/user /etc/dconf/db/local.d/
 rsync -a --delete /usr/lib/parrot-skel/etc/skel/ /etc/skel/
 rsync -a /etc/skel/ /root/
 
-if [ "$1" = "configure" ] && dpkg --compare-versions "$2" le "6.0.2"; then
+if [ "$1" = "configure" ] && dpkg --compare-versions "$2" le "6.0.6"; then
 	echo "## This file provides the default APT repositories for Parrot Security
 ## These repositories are used to fetch new software and system updates
 
