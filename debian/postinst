@@ -17,8 +17,10 @@ cp -r /usr/lib/parrot-skel/etc/dconf/db/local.d/parrot-skel /etc/dconf/db/local.
 dconf compile /etc/dconf/db/local /etc/dconf/db/local.d/
 dconf compile /etc/skel/.config/dconf/user /etc/dconf/db/local.d/
 
-rsync -a --delete /usr/lib/parrot-skel/etc/skel/ /etc/skel/
-rsync -a /etc/skel/ /root/
+if [ ! -f /etc/its-a-pwnbox ]; then
+    rsync -a --delete /usr/lib/parrot-skel/etc/skel/ /etc/skel/
+    rsync -a /etc/skel/ /root/
+fi
 
 if [ "$1" = "configure" ] && dpkg --compare-versions "$2" le "6.0.6"; then
 	echo "## This file provides the default APT repositories for Parrot Security

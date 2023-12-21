@@ -24,7 +24,7 @@ case "$1" in
 # if the default servers are too slow
 # open /etc/apt/sources.list.d/parrot.list
 # and follow the instructions to choose faster servers
-# or read https://www.parrotsec.org/docs/mirrors-list.html for more info
+# or read https://www.parrotsec.org/docs/mirrors/mirrors-list/ for more info
 " > /etc/apt/sources.list
         ;;
 esac

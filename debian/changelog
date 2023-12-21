@@ -1,3 +1,9 @@
+parrot-core (6.0.7) lory-updates; urgency=medium
+
+  * Fix missing firefox launcher in dconf.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 21 Dec 2023 16:00:16 +0100
+
 parrot-core (6.0.6) lory-updates; urgency=medium
 
   * Rebuild package on new build workers.

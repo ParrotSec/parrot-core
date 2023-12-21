@@ -24,7 +24,7 @@ pack-type='start'
 toplevel-id='top-panel-0'
 
 [org/gnome/gnome-panel/layout/objects/browser/instance-config]
-location='/usr/share/applications/firefox.desktop'
+location='/usr/share/applications/firefox-esr.desktop'
 
 [org/gnome/gnome-panel/layout/objects/terminal]
 object-iid='PanelInternalFactory::Launcher'
