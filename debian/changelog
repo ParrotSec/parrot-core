@@ -1,3 +1,9 @@
+parrot-core (6.0.8) lory-updates; urgency=medium
+
+  * Fix missing firefox launcher for mate too.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 26 Dec 2023 15:59:45 +0100
+
 parrot-core (6.0.7) lory-updates; urgency=medium
 
   * Fix missing firefox launcher in dconf.
