@@ -1,3 +1,9 @@
+parrot-core (6.0.9) lory-updates; urgency=medium
+
+  * Add GRUB_ENABLE_CRYPTODISK=y option to grub config.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 08 Jan 2024 13:13:37 +0100
+
 parrot-core (6.0.8) lory-updates; urgency=medium
 
   * Fix missing firefox launcher for mate too.
