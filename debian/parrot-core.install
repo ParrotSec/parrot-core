@@ -3,7 +3,6 @@ localbin/* usr/local/bin/
 dconf usr/lib/parrot-skel/etc/
 skel usr/lib/parrot-skel/etc/
 
-app_configs/bash.bashrc etc/
 app_configs/vimrc etc/vim/
 app_configs/nanorc etc/
 app_configs/Microsoft.PowerShell_profile.ps1 opt/microsoft/powershell/7/

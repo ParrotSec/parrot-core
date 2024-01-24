@@ -1,3 +1,9 @@
+parrot-core (6.0.10) lory-updates; urgency=medium
+
+  * Update bashrc and sync with base-files.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 24 Jan 2024 14:41:59 +0100
+
 parrot-core (6.0.9) lory-updates; urgency=medium
 
   * Add GRUB_ENABLE_CRYPTODISK=y option to grub config.
