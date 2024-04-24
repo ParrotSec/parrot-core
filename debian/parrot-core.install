@@ -5,7 +5,7 @@ skel usr/lib/parrot-skel/etc/
 
 app_configs/vimrc etc/vim/
 app_configs/nanorc etc/
-app_configs/openssl.conf etc/ssl/
+app_configs/openssl.cnf etc/ssl/
 app_configs/Microsoft.PowerShell_profile.ps1 opt/microsoft/powershell/7/
 app_configs/config.fish etc/fish/
 app_configs/sysinit.vim etc/xdg/nvim/
