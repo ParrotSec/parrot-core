@@ -1,3 +1,9 @@
+parrot-core (6.0.13) lory-updates; urgency=medium
+
+  * Use official Microsoft store on VSCodium.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 31 May 2024 23:56:34 +0200
+
 parrot-core (6.0.12) lory-updates; urgency=medium
 
   * Move custom openssl configuration to the proper location.
