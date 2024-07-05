@@ -1,3 +1,9 @@
+parrot-core (6.0.14) lory-updates; urgency=medium
+
+  * Override fish-common preferences.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 05 Jul 2024 12:55:19 +0200
+
 parrot-core (6.0.13) lory-updates; urgency=medium
 
   * Use official Microsoft store on VSCodium.
