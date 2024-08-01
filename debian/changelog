@@ -1,3 +1,9 @@
+parrot-core (6.2.0) lory; urgency=medium
+
+  * Update package for parrot 6.2.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 01 Aug 2024 18:13:09 +0200
+
 parrot-core (6.0.15) lory-updates; urgency=medium
 
   * typo.

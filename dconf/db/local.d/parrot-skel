@@ -24,7 +24,7 @@ pack-type='start'
 toplevel-id='top-panel-0'
 
 [org/gnome/gnome-panel/layout/objects/browser/instance-config]
-location='/usr/share/applications/firefox-esr.desktop'
+location='/usr/share/applications/firefox.desktop'
 
 [org/gnome/gnome-panel/layout/objects/terminal]
 object-iid='PanelInternalFactory::Launcher'
@@ -472,7 +472,7 @@ object-type='applet'
 panel-right-stick=true
 
 [org/mate/panel/objects/object_7]
-launcher-location='/usr/share/applications/firefox-esr.desktop'
+launcher-location='/usr/share/applications/firefox.desktop'
 toplevel-id='top'
 position=251
 object-type='launcher'
