@@ -12,7 +12,7 @@ fi
 
 mkdir -p /etc/dconf/db/local.d/
 mkdir -p /etc/skel/.config/dconf/
-cp -r /usr/lib/parrot-skel/etc/dconf/db/local.d/parrot-skel /etc/dconf/db/local.d/parrot-skel
+cp -r /usr/lib/parrot-skel/etc/dconf/db/local.d/* /etc/dconf/db/local.d/
 
 dconf compile /etc/dconf/db/local /etc/dconf/db/local.d/
 dconf compile /etc/skel/.config/dconf/user /etc/dconf/db/local.d/

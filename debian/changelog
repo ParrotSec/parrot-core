@@ -1,3 +1,9 @@
+parrot-core (6.2.1) lory; urgency=medium
+
+  * Add new hackthebox dconf settings to parrot-core-htb.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 06 Sep 2024 23:21:12 +0200
+
 parrot-core (6.2.0) lory; urgency=medium
 
   * Update package for parrot 6.2.

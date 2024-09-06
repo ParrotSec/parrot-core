@@ -55,6 +55,15 @@ Description: Lightweight MATE settings for Parrot Core
   This package provides additional configuration for
   low power and memory constrained systemd.
 
+Package: parrot-core-htb
+Architecture: all
+Depends: parrot-core
+Description: HackTheBox Configs for Parrot Core.
+  Core package for the Parrot Debian distribution.
+  .
+  This package provides additional configuration for
+  the HackTheBox Pwnbox edition.
+
 
 Package: parrot-drivers
 Architecture: all

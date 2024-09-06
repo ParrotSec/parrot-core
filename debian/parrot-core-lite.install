@@ -1,1 +1,1 @@
-dconf-lite usr/lib/parrot-skel/etc/
+dconf-lite/db/local.d/lite-config usr/lib/parrot-skel/etc/dconf/db/local.d/
