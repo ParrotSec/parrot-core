@@ -10,3 +10,4 @@ elif [ -e /usr/bin/firefox-esr ]; then
 else
     echo "firefox not installed"
     zenity --error --text="firefox not installed"
+fi
