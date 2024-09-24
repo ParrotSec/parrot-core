@@ -1,3 +1,9 @@
+parrot-core (6.2.2) lory-updates; urgency=medium
+
+  * Create firefox selector launcher.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 24 Sep 2024 11:31:14 +0200
+
 parrot-core (6.2.1) lory; urgency=medium
 
   * Add new hackthebox dconf settings to parrot-core-htb.

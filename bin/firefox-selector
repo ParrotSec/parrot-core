@@ -1,0 +1,12 @@
+#!/bin/bash
+set -e
+
+if [ -e /usr/bin/firefox ]; then
+    /usr/bin/firefox
+elif [ -e /usr/bin/firefox.real ]; then
+    /usr/bin/firefox.real
+elif [ -e /usr/bin/firefox-esr ]; then
+    /usr/bin/firefox-esr
+else
+    echo "firefox not installed"
+    zenity --error --text="firefox not installed"
