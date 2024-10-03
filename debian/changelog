@@ -1,3 +1,13 @@
+parrot-core (6.2.3) lory-updates; urgency=medium
+
+  [ danterolle ]
+  * fix: close if-else statement in Firefox check script
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * Publish package
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 03 Oct 2024 17:12:11 +0200
+
 parrot-core (6.2.2) lory-updates; urgency=medium
 
   * Create firefox selector launcher.
