@@ -22,4 +22,4 @@ system_configs/samba/smb.conf usr/share/samba/
 system_configs/pipewire/* lib/systemd/user/
 system_configs/postgresql/parrot_postgresql.conf usr/lib/systemd/system/postgresql@.service.d/
 system_configs/postgresql/postgresql_reduce_shared_buffers usr/share/parrot-core/
-system_configs/applications/ usr/share/applications/
+system_configs/applications/ usr/share/

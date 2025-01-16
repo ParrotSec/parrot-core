@@ -1,3 +1,9 @@
+parrot-core (6.2.4) lory-updates; urgency=medium
+
+  * Move firefox-selector launcher to the proper location.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 16 Jan 2025 16:41:41 +0100
+
 parrot-core (6.2.3) lory-updates; urgency=medium
 
   [ danterolle ]
