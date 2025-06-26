@@ -1,3 +1,10 @@
+parrot-core (6.4.2) lory; urgency=medium
+
+  [ Maysec ]
+  * Fix $HOME and /root from being world-readable
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 26 Jun 2025 15:18:29 +0200
+
 parrot-core (6.4.1) lory; urgency=medium
 
   * Make sure parrot /etc/profile script is executed last (fixes inconsistent $PATH).
