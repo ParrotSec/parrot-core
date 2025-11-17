@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Parrot Dev Team <team@parrotsec.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
 Standards-Version: 4.2.0
-Build-Depends: debhelper (>= 11), dconf-cli
+Build-Depends: debhelper (>= 13), dconf-cli
 Homepage: https://www.parrotsec.org/
 
 Package: parrot-core

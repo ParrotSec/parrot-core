@@ -1,3 +1,15 @@
+parrot-core (7.0.2) echo; urgency=medium
+
+  * Fix typo in repo.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 17 Nov 2025 23:47:37 +0100
+
+parrot-core (7.0.1) echo; urgency=medium
+
+  * Change ownership in d/*.install instead of chowning in Makefile.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 17 Nov 2025 20:30:42 +0100
+
 parrot-core (7.0.0) echo; urgency=medium
 
   * Initial draft for Parrot 7.

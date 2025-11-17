@@ -1,0 +1,17 @@
+usr/lib/parrot-skel/etc/skel/
+usr/lib/parrot-skel/etc/dconf/db/local.d/
+etc/vim/
+etc/ssl/
+opt/microsoft/powershell/7/
+etc/fish/
+etc/xdg/nvim/
+etc/NetworkManager/conf.d/
+etc/X11/Xsession.d/
+etc/udev/rules.d/
+etc/xrdp/
+usr/share/xrdp/
+etc/default/grub.d/
+usr/share/samba/
+lib/systemd/user/
+usr/lib/systemd/system/postgresql@.service.d/
+usr/share/parrot-core/
