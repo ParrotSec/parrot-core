@@ -14,7 +14,7 @@ set guicursor=
 inoremap <S-Tab> <C-d>
 
 "See invisible characters
-set list listchars=tab:>\ ,trail:+,eol:$
+"set list listchars=tab:>\ ,trail:+,eol:$
 
 "wrap to next line when end of line is reached
 set whichwrap+=<,>,[,]

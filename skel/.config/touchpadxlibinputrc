@@ -1,0 +1,10 @@
+[SynPS/2 Synaptics TouchPad]
+tapToClick=true
+
+[Synaptics tm2964-001]
+tapToClick=true
+
+[HTX USB HID Device HTX HID Device Touchpad]
+disableWhileTyping=false
+enabled=false
+tapDragLock=true

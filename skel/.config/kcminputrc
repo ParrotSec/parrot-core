@@ -1,2 +1,5 @@
-[Mouse]
-cursorTheme=breeze_cursors
+[Keyboard]
+KeyRepeat=repeat
+NumLock=0
+RepeatDelay=600
+RepeatRate=25

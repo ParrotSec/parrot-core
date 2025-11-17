@@ -1,0 +1,13 @@
+[General]
+AutoExpandFolders=true
+ShowToolTips=true
+ShowZoomSlider=false
+EditableUrl=true
+FilterBar=true
+OpenExternallyCalledFolderInNewTab=false
+ShowCopyMoveMenu=true
+ShowFullPath=true
+ShowFullPathInTitlebar=true
+
+[MainWindow]
+MenuBar=Disabled

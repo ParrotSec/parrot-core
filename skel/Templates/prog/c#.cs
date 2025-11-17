@@ -1,5 +1,3 @@
-class HelloWorld {
-    static void Main() {
-        System.Console.WriteLine("give me a bottle of rum!");
-    }
-}
+using System;
+
+Console.WriteLine("Give me a bottle of rum!");

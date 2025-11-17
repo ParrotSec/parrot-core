@@ -1,12 +1,11 @@
-[$Version]
-update_info=kscreenlocker.upd:0.1-autolock
-
 [Daemon]
-LockGrace=20
+Autolock=true
+LockGrace=60
 Timeout=20
 
 [Greeter]
-Theme=org.kde.breezedark.desktop
+Theme=Echo
+WallpaperPlugin=org.kde.image
 
 [Greeter][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/desktop-base/parrot-theme/wallpaper/contents/images/1920x1080.png
+Image=/usr/share/wallpapers/background.jpg

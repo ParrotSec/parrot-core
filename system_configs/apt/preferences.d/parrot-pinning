@@ -1,17 +1,17 @@
 Package: *
-Pin: release a=parrot6
+Pin: release a=echo
 Pin-Priority: 600
 
 Package: *
-Pin: release a=parrot6-backports
+Pin: release a=echo-backports
 Pin-Priority: 599
 
 Package: *
-Pin: release a=parrot6-updates
+Pin: release a=echo-updates
 Pin-Priority: 600
 
 Package: *
-Pin: release a=parrot6-security
+Pin: release a=echo-security
 Pin-Priority: 600
 
 Package: *

@@ -1,8 +1,12 @@
 [Desktop Entry]
-DefaultProfile=Profile 3.profile
+DefaultProfile=Echo.profile
 
-[Favorite Profiles]
-Favorites=
+[KonsoleWindow]
+SaveGeometryOnExit=true
+ShowMenuBarByDefault=false
 
-[Notification Messages]
-ShowPasteHugeTextWarning=false
+[MainWindow]
+MenuBar=Disabled
+RestorePositionForNextInstance=true
+State=AAAA/wAAAAD9AAAAAAAAA4EAAAIEAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAwAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAHABzAGUAcwBzAGkAbwBuAFQAbwBvAGwAYgBhAHIAAAAAAAAAAfsAAAAAAAAAAA==
+StatusBar=Disabled

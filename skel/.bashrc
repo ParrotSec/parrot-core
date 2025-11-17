@@ -87,6 +87,18 @@ alias _i='sudo -i'
 alias fucking='sudo'
 alias please='sudo'
 
+alias tarnow='tar -acf '
+alias untar='tar -zxvf '
+alias wget='wget -c '
+alias rmpkg="sudo pacman -Rdd"
+alias psmem='ps auxf | sort -nr -k 4'
+alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..
+
 # Set 'man' colors
 if [ "$color_prompt" = yes ]; then
 	man() {
