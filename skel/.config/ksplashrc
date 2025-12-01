@@ -1,3 +1,3 @@
 [KSplash]
 Engine=KSplashQML
-Theme=org.kde.breeze.desktop
+Theme=org.echo.desktop

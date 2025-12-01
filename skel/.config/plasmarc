@@ -5,7 +5,7 @@ Enabled=true
 Delay=0.7
 
 [Theme]
-name=breeze-dark
+name=Echo
 
 [Wallpapers]
 usersWallpapers=/usr/share/backgrounds/default.jpg
