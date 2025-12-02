@@ -1,3 +1,9 @@
+parrot-core (7.0.3) echo; urgency=medium
+
+  * Import new skel configs for KDE.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 02 Dec 2025 14:46:08 +0100
+
 parrot-core (7.0.2) echo; urgency=medium
 
   * Fix typo in repo.
