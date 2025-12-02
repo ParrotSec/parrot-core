@@ -1,3 +1,9 @@
+parrot-core (7.0.4) echo; urgency=medium
+
+  * Update bashrc.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 02 Dec 2025 21:37:47 +0100
+
 parrot-core (7.0.3) echo; urgency=medium
 
   * Import new skel configs for KDE.
