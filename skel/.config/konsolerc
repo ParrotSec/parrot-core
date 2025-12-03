@@ -1,12 +1,17 @@
 [Desktop Entry]
-DefaultProfile=Echo.profile
+DefaultProfile=Parrot.profile
+
+[General]
+ConfigVersion=1
 
 [KonsoleWindow]
-SaveGeometryOnExit=true
+RememberWindowSize=true
 ShowMenuBarByDefault=false
 
 [MainWindow]
-MenuBar=Disabled
+MenuBar=Enabled
 RestorePositionForNextInstance=true
-State=AAAA/wAAAAD9AAAAAAAAA4EAAAIEAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAwAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAHABzAGUAcwBzAGkAbwBuAFQAbwBvAGwAYgBhAHIAAAAAAAAAAfsAAAAAAAAAAA==
 StatusBar=Disabled
+
+[UiSettings]
+ColorScheme=

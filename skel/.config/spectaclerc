@@ -1,2 +1,8 @@
 [$Version]
 update_info=spectacle_newConfig.upd:spectacle-new-config
+
+[ImageSave]
+translatedScreenshotsFolder=Screenshots
+
+[VideoSave]
+translatedScreencastsFolder=Screencasts

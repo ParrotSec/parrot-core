@@ -1,0 +1,17 @@
+[Show]
+addToCollection=false
+compressfileitemaction=true
+extractfileitemaction=true
+forgetfileitemaction=true
+installFont=true
+kactivitymanagerd_fileitem_linking_plugin=true
+kdeconnectfileitemaction=true
+makefileactions=true
+mountisoaction=true
+movetonewfolderitemaction=true
+plasmavaultfileitemaction=true
+runInKonsole=true
+sharefileitemaction=true
+slideshowfileitemaction=true
+tagsfileitemaction=true
+wallpaperfileitemaction=true

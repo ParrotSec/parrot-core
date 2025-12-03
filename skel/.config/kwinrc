@@ -1,3 +1,14 @@
+[Activities][LastVirtualDesktop]
+dc17d32f-1373-47d8-ae9a-2ad6edac185d=aa327ce5-6ce0-433d-8e79-821b902b87b7
+
+[Desktops]
+Id_1=aa327ce5-6ce0-433d-8e79-821b902b87b7
+Id_2=f5ff560f-70f6-4251-b28d-828845d042a7
+Id_3=38722093-7a9d-484e-9d81-cd95e31b4149
+Id_4=c4798b14-8dcd-4ad3-a302-5d529c31747a
+Number=4
+Rows=1
+
 [Effect-blurplus]
 BlurDecorations=true
 BlurMatching=false
@@ -23,8 +34,8 @@ fadeEnabled=true
 flipswitchEnabled=true
 forceblurEnabled=true
 magiclampEnabled=true
-squashEnabled=false
 scaleEnabled=false
+squashEnabled=false
 wobblywindowsEnabled=true
 
 [Round-Corners]
@@ -46,8 +57,15 @@ PopupHideDelay=2000
 [TabBox]
 LayoutName=coverswitch
 
+[Tiling]
+padding=4
+
+[Tiling][c59323a7-6c7c-5999-ba78-4b8c03a908f2]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Windows]
 BorderlessMaximizedWindows=true
+RollOverDesktops=true
 
 [Xwayland]
 Scale=1

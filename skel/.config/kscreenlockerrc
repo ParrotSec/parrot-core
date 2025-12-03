@@ -1,6 +1,7 @@
 [Daemon]
 Autolock=true
-LockGrace=60
+LockGrace=0
+LockOnResume=false
 Timeout=20
 
 [Greeter]

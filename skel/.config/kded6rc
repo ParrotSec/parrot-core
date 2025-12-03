@@ -2,7 +2,7 @@
 autoload=true
 
 [Module-baloosearchmodule]
-autoload=true
+autoload=false
 
 [Module-bluedevil]
 autoload=true

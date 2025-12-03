@@ -1,10 +1,9 @@
 [Appearance]
-ColorScheme=Echo
-#Font=FiraCode Nerd Font Mono,12,-1,5,50,0,0,0,0,0
+ColorScheme=GreenOnBlack
 UseFontLineChararacters=true
 
 [Cursor Options]
-CursorShape=2
+CursorShape=0
 CustomCursorColor=255,0,0
 UseCustomCursorColor=true
 
@@ -23,7 +22,7 @@ UnderlineFilesEnabled=true
 KeyBindings=default
 
 [Scrolling]
-HistoryMode=1
+HistoryMode=2
 
 [Terminal Features]
 BlinkingCursorEnabled=true

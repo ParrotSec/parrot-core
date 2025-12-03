@@ -1,13 +1,29 @@
 [General]
 AutoExpandFolders=true
-ShowToolTips=true
-ShowZoomSlider=false
+DoubleClickViewAction=show_hidden_files
 EditableUrl=true
 FilterBar=true
 OpenExternallyCalledFolderInNewTab=false
 ShowCopyMoveMenu=true
 ShowFullPath=true
 ShowFullPathInTitlebar=true
+ShowToolTips=true
+ShowZoomSlider=false
+Version=202
+ViewPropsTimestamp=2025,12,3,3,1,57.312
+
+[InformationPanel]
+dateFormat=ShortFormat
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
 
 [MainWindow]
 MenuBar=Disabled
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mobithumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,svgthumbnail,ffmpegthumbs,gdk-pixbuf-thumbnailer
+
+[VersionControl]
+enabledPlugins=Git
