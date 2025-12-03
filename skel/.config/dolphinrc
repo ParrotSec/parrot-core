@@ -1,9 +1,11 @@
+MenuBar=Disabled
+
 [General]
 AutoExpandFolders=true
 DoubleClickViewAction=show_hidden_files
-EditableUrl=true
-FilterBar=true
+FilterBar=false
 OpenExternallyCalledFolderInNewTab=false
+RememberOpenedTabs=false
 ShowCopyMoveMenu=true
 ShowFullPath=true
 ShowFullPathInTitlebar=true

@@ -1,3 +1,9 @@
+parrot-core (7.0.6) echo; urgency=medium
+
+  * Update dolphin, konsole and plasma background configs.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 03 Dec 2025 18:26:23 +0100
+
 parrot-core (7.0.5) echo; urgency=medium
 
   * Update KDE config.

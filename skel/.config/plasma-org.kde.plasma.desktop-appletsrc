@@ -8,6 +8,29 @@ RightButton;NoModifier=org.kde.contextmenu
 [Containments][1][Configuration]
 PreloadWeight=42
 
+[Containments][107]
+ItemGeometries-1280x800=
+ItemGeometriesHorizontal=
+activityId=de1987ee-2aac-4be1-b10c-73de3176b9c9
+formfactor=0
+immutability=1
+lastScreen=0
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][107][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][107][General]
+positions={"1280x800":[]}
+
+[Containments][107][Wallpaper][org.kde.image][General]
+Image=/usr/share/wallpapers/EchoWallpaper/
+PreviewImage=/usr/share/wallpapers/EchoWallpaper/
+SlidePaths=/usr/share/wallpapers/
+
 [Containments][2][Applets][3][Configuration]
 PreloadWeight=92
 
@@ -55,24 +78,6 @@ PreloadWeight=42
 
 [Containments][7][Configuration]
 PreloadWeight=42
-
-[Containments][70]
-ItemGeometries-1920x1200=
-ItemGeometriesHorizontal=
-activityId=dc17d32f-1373-47d8-ae9a-2ad6edac185d
-formfactor=0
-immutability=1
-lastScreen=0
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
-
-[Containments][70][General]
-positions={"1280x800":[],"1920x1200":[]}
-
-[Containments][70][Wallpaper][org.kde.image][General]
-Image=/usr/share/wallpapers/EchoWallpaper/
-SlidePaths=/usr/share/wallpapers/
 
 [Containments][73]
 activityId=
@@ -345,4 +350,4 @@ knownItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.pla
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/README.license,0,dc17d32f-1373-47d8-ae9a-2ad6edac185d
+screenMapping=desktop:/calamares-install-parrot.desktop,0,de1987ee-2aac-4be1-b10c-73de3176b9c9,desktop:/README.license,0,dc17d32f-1373-47d8-ae9a-2ad6edac185d,desktop:/README.license,0,de1987ee-2aac-4be1-b10c-73de3176b9c9
