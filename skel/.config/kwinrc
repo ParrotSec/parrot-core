@@ -10,7 +10,7 @@ Number=4
 Rows=1
 
 [Effect-blurplus]
-BlurDecorations=true
+BlurDecorations=false
 BlurMatching=false
 BlurNonMatching=true
 BottomCornerRadius=20
@@ -36,7 +36,7 @@ forceblurEnabled=true
 magiclampEnabled=true
 scaleEnabled=false
 squashEnabled=false
-wobblywindowsEnabled=true
+wobblywindowsEnabled=false
 
 [Round-Corners]
 ActiveOutlineAlpha=255
@@ -64,7 +64,7 @@ padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Windows]
-BorderlessMaximizedWindows=true
+BorderlessMaximizedWindows=false
 RollOverDesktops=true
 
 [Xwayland]

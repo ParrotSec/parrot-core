@@ -1,3 +1,10 @@
+parrot-core (7.0.7) echo; urgency=medium
+
+  * Disable wobbly windows.
+  * Disable borderless maximized windows.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 09 Dec 2025 15:20:07 +0100
+
 parrot-core (7.0.6) echo; urgency=medium
 
   * Update dolphin, konsole and plasma background configs.
