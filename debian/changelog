@@ -1,3 +1,11 @@
+parrot-core (7.0.8) echo; urgency=medium
+
+  * Update basic home folders.
+  * Update file templates.
+  * Update and cleanup tools provided by parrot-apps-basics.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 12 Dec 2025 10:43:40 +0100
+
 parrot-core (7.0.7) echo; urgency=medium
 
   * Disable wobbly windows.
