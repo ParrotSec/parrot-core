@@ -1,3 +1,9 @@
+parrot-core (7.0.9) echo; urgency=medium
+
+  * Fix opening links with firefox-selector.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 14 Dec 2025 23:50:48 +0100
+
 parrot-core (7.0.8) echo; urgency=medium
 
   * Update basic home folders.
