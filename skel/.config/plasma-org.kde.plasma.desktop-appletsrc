@@ -24,6 +24,8 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][107][General]
+arrangement=1
+popups=false
 positions={"1280x800":[]}
 
 [Containments][107][Wallpaper][org.kde.image][General]

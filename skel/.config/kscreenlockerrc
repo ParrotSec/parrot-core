@@ -1,8 +1,8 @@
 [Daemon]
 Autolock=true
 LockGrace=0
-LockOnResume=false
-Timeout=20
+LockOnResume=true
+Timeout=10
 
 [Greeter]
 Theme=Echo

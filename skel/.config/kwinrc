@@ -1,5 +1,6 @@
 [Activities][LastVirtualDesktop]
 dc17d32f-1373-47d8-ae9a-2ad6edac185d=aa327ce5-6ce0-433d-8e79-821b902b87b7
+de1987ee-2aac-4be1-b10c-73de3176b9c9=c4798b14-8dcd-4ad3-a302-5d529c31747a
 
 [Desktops]
 Id_1=aa327ce5-6ce0-433d-8e79-821b902b87b7
@@ -21,10 +22,16 @@ PaintAsTranslucent=true
 TopCornerRadius=20
 WindowClasses=xwaylandvideobridge
 
+[Effect-overview]
+BorderActivate=1
+
 [Effect-wobblywindows]
 Drag=85
 Stiffness=10
 WobblynessLevel=1
+
+[ElectricBorders]
+TopLeft=ApplicationLauncher
 
 [Plugins]
 blurEnabled=false
@@ -52,7 +59,7 @@ SecondOutlineThickness=0.25
 Size=20
 
 [Script-desktopchangeosd]
-PopupHideDelay=2000
+PopupHideDelay=100
 
 [TabBox]
 LayoutName=coverswitch
@@ -60,15 +67,18 @@ LayoutName=coverswitch
 [Tiling]
 padding=4
 
+[Tiling][6b4f3ebd-415b-5933-bf6b-21906b3505ab]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][c59323a7-6c7c-5999-ba78-4b8c03a908f2]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][ed39b2a4-1e89-575d-8f80-864a4608c8f4]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Windows]
 BorderlessMaximizedWindows=false
 RollOverDesktops=true
-
-[Xwayland]
-Scale=1
 
 [org.kde.kdecoration2]
 BorderSizeAuto=false
