@@ -1,3 +1,9 @@
+parrot-core (7.0.11) echo; urgency=medium
+
+  * Add missing home folders
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 02 Jan 2026 17:16:09 +0100
+
 parrot-core (7.0.10) echo; urgency=medium
 
   * Lock after wakeup
