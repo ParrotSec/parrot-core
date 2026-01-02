@@ -1,3 +1,14 @@
+parrot-core (7.1.0) echo; urgency=medium
+
+  * Update mirror list
+  * make profiles.d scritp export PATH
+  * Bump version for parrot 7.1
+  * Enable natural scrolling
+  * Add kde post-login splash screen
+  * Add sddm theme
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 02 Jan 2026 17:29:36 +0100
+
 parrot-core (7.0.11) echo; urgency=medium
 
   * Add missing home folders

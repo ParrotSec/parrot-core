@@ -114,6 +114,9 @@ ShowDeleteCommand=false
 EnableRemoteFolderThumbnail=false
 MaximumRemoteSize=0
 
+[Sounds]
+Theme=freedesktop
+
 [WM]
 activeBackground=49,54,59
 activeBlend=46,204,113

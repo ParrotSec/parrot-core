@@ -123,12 +123,6 @@ deb https://deb.parrot.sh/parrot echo-backports main contrib non-free non-free-f
 ## Wordlwide - Bunny - Uses the Bunny CDN platform
 #deb https://bunny.deb.parrot.sh/parrot/ echo main contrib non-free non-free-firmware
 
-## Wordlwide - GCore - Uses the G-Core CDN platform
-#deb https://gcore.deb.parrot.sh/parrot/ echo main contrib non-free non-free-firmware
-
-## Wordlwide - Azure - Uses the Microsoft Azure CDN platform
-#deb https://azure.deb.parrot.sh/parrot/ echo main contrib non-free non-free-firmware
-
 ## Wordlwide - Aliyun - Uses the AlibabaCloud mirrors behind their worldwide CDN
 #deb deb https://mirrors.aliyun.com/parrot echo main contrib non-free non-free-firmware
 
@@ -138,14 +132,8 @@ deb https://deb.parrot.sh/parrot echo-backports main contrib non-free non-free-f
 ## US California - OCF Berkekey University
 #deb https://mirrors.ocf.berkeley.edu/parrot/ echo main contrib non-free non-free-firmware
 
-## US Virginia - Leaseweb
-#deb https://mirror.wdc1.us.leaseweb.net/parrot echo main contrib non-free non-free-firmware
-
 ## Germany - Leaseweb
 #deb https://mirror.fra10.de.leaseweb.net/parrot echo main contrib non-free non-free-firmware
-
-## Germany - Halifax RWTH-Aachen University
-#deb https://ftp.halifax.rwth-aachen.de/parrotsec/ echo main contrib non-free non-free-firmware
 
 ## Italy - GARR Consortium
 #deb https://parrot.mirror.garr.it/mirrors/parrot/ echo main contrib non-free non-free-firmware

@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "KPackageStructure": "Plasma/LookAndFeel",
+  "KPlugin": {
+    "Authors": [
+      {
+        "Email": "andreiradoidev@gmail.com",
+        "Name": "ferretwithaberet"
+      },
+      {
+        "Email": "palinuro@parrotsec.org",
+        "Name": "Lorenzo Faletra"
+      }
+    ],
+    "Category": "",
+    "Description": "Parrot Security splash screen for Plasma 6",
+    "Id": "Parrot_Theme",
+    "License": "GPLv2+",
+    "Name": "Parrot",
+    "Website": "https://gitlab.com/parrotsec/packages/parrot-core"
+  },
+  "Keywords": "Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;Watch;Dogs;Watchdogs;",
+  "X-Plasma-APIVersion": "2"
+}

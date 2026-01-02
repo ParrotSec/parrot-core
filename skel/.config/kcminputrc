@@ -4,5 +4,15 @@ NumLock=0
 RepeatDelay=600
 RepeatRate=25
 
+[Libinput][12972][6][FRMW0004:00 32AC:0006 Consumer Control]
+NaturalScroll=true
+
+[Libinput][2362][628][PIXA3854:00 093A:0274 Touchpad]
+DisableWhileTyping=false
+NaturalScroll=true
+
+[Libinput]
+NaturalScroll=true
+
 [Mouse]
 cursorTheme=breeze_cursors
