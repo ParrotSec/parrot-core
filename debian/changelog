@@ -1,3 +1,9 @@
+parrot-core (7.1.1) echo; urgency=medium
+
+  * Update screen locker wallpaper
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 02 Jan 2026 18:49:32 +0100
+
 parrot-core (7.1.0) echo; urgency=medium
 
   * Update mirror list

@@ -9,4 +9,5 @@ Theme=Echo
 WallpaperPlugin=org.kde.image
 
 [Greeter][Wallpaper][org.kde.image][General]
-Image=/usr/share/wallpapers/background.jpg
+Image=/usr/share/wallpapers/EchoWallpaper/
+PreviewImage=/usr/share/wallpapers/EchoWallpaper/
