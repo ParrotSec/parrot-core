@@ -22,7 +22,7 @@ if [ ! -f /etc/its-a-pwnbox ]; then
     rsync -a /etc/skel/ /root/
 fi
 
-if [ "$1" = "configure" ] && dpkg --compare-versions "$2" le "7.0.1"; then
+if [ "$1" = "configure" ] && dpkg --compare-versions "$2" le "7.1.0"; then
 	echo "## This file provides the default APT repositories for Parrot Security
 ## These repositories are used to fetch new software and system updates
 
@@ -223,4 +223,17 @@ deb https://deb.parrot.sh/parrot echo-backports main contrib non-free non-free-f
 # and follow the instructions to choose faster servers
 # or read https://www.parrotsec.org/docs/mirrors/mirrors-list/ for more info
 " > /etc/apt/sources.list
+fi
+
+
+# migrate home config from parrot 6.4 and 7.0 to 7.x
+if [ "$1" = "configure" ] && dpkg --compare-versions "$2" le "7.1.2"; then
+	echo "parrot-core: [SKEL] Syncing new configs to home folder"
+	for user in $(cd /home; ls); do
+		$TEMP = $(mktemp -d)
+		rsync -a /etc/skel/ $TEMP/
+		chown $(user):$(user) -R $TEMP/
+		rsync -Pahv $TEMP/ /home/$(user)/
+		rm -d $TEMP
+	done
 fi

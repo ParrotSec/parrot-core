@@ -5,6 +5,8 @@ parrot-core (7.1.2) echo; urgency=medium
 
   [ Lorenzo "Palinuro" Faletra ]
   * Update drivers metapackage
+  * re-add missing home folders
+  * add postinst script to sync home folders with skel
 
  -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 08 Jan 2026 19:46:16 +0100
 

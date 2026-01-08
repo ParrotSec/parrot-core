@@ -15,3 +15,8 @@ usr/share/samba/
 lib/systemd/user/
 usr/lib/systemd/system/postgresql@.service.d/
 usr/share/parrot-core/
+/usr/lib/parrot-skel/etc/skel/Documents
+/usr/lib/parrot-skel/etc/skel/Downloads
+/usr/lib/parrot-skel/etc/skel/Music
+/usr/lib/parrot-skel/etc/skel/Pictures
+/usr/lib/parrot-skel/etc/skel/Videos
