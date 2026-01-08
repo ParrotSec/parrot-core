@@ -1,3 +1,13 @@
+parrot-core (7.1.2) echo; urgency=medium
+
+  [ Neny ]
+  * fix gtk kde_settings.conf
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * Update drivers metapackage
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 08 Jan 2026 19:46:16 +0100
+
 parrot-core (7.1.1) echo; urgency=medium
 
   * Update screen locker wallpaper
