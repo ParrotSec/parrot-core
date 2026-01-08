@@ -227,16 +227,14 @@ fi
 
 
 # migrate home config from parrot 6.4 and 7.0 to 7.x
-if [ "$1" = "configure" ] && dpkg --compare-versions "$2" le "7.1.4"; then
+if [ "$1" = "configure" ] && dpkg --compare-versions "$2" le "7.1.2"; then
 	echo "parrot-core: [SKEL] Syncing new configs to home folder"
 	for user in $(cd /home; ls); do
 		TEMP=$(mktemp -d) || exit 100
 		rsync -a /etc/skel/ $TEMP/ || exit 101
-		chown $user:$user -R $TEMP/ || exit 102
-		if [ -n "$user" ]; then
-			rsync -Pahv "$TEMP/" "/home/$user/" || exit 103
-		fi
-			rm -r $TEMP
+		chown $(user):$(user) -R $TEMP/ || exit 102
+		rsync -Pahv $TEMP/ /home/$(user)/ || exit 103
+		rm -r $TEMP
 	done
-	echo "parrot-core: [SKEL] Parrot configs updated"
+	echo "parrot-core: [SKEL] Parrot configs synchronized"
 fi
