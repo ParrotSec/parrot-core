@@ -87,7 +87,6 @@ Recommends: firmware-linux-nonfree,
             firmware-intel-graphics,
             firmware-intel-misc,
             firmware-intel-sound,
-            firmware-ipw2x00,
             firmware-iwlwifi,
             firmware-libertas,
             firmware-marvell-prestera,
@@ -117,6 +116,7 @@ Recommends: firmware-linux-nonfree,
             reiserfsprogs,
             xfsdump,
             xfsprogs,
+Suggests: firmware-ipw2x00
 Priority: optional
 Description: Parrot drivers metapackage.
   This metapackage installs all the free and non-free drivers to make Parrot OS

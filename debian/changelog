@@ -1,3 +1,9 @@
+parrot-core (7.1.5) echo; urgency=medium
+
+  * move firmware-ipw2x00 back to suggests.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 08 Jan 2026 23:10:51 +0100
+
 parrot-core (7.1.4) echo-updates; urgency=medium
 
   * add rudimentary error checks to migration script
