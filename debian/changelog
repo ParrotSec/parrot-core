@@ -1,3 +1,9 @@
+parrot-core (7.1.6) echo; urgency=medium
+
+  * kwin shortcut: move windows between desktops
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 10 Jan 2026 02:31:25 +0100
+
 parrot-core (7.1.5) echo; urgency=medium
 
   * move firmware-ipw2x00 back to suggests.
