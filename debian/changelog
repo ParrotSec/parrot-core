@@ -1,3 +1,9 @@
+parrot-core (7.1.7) echo; urgency=medium
+
+  * Bump version to aligh with parrot-interface
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 19 Jan 2026 20:27:20 +0100
+
 parrot-core (7.1.6) echo; urgency=medium
 
   * kwin shortcut: move windows between desktops
