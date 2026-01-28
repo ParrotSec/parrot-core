@@ -1,3 +1,9 @@
+parrot-core (7.1.8) echo; urgency=medium
+
+  * Add lxqt configuration
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 28 Jan 2026 03:03:40 +0100
+
 parrot-core (7.1.7) echo; urgency=medium
 
   * Bump version to aligh with parrot-interface
