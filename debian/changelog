@@ -1,3 +1,15 @@
+parrot-core (7.1.11) echo; urgency=medium
+
+  * Update htb dconf config
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 23 Mar 2026 11:20:26 +0100
+
+parrot-core (7.1.10) echo; urgency=medium
+
+  * fix missing htb edition config files
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 28 Jan 2026 16:09:48 +0100
+
 parrot-core (7.1.9) echo-updaes; urgency=medium
 
   * Use ARK-Dark as gtk theme

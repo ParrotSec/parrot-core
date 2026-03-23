@@ -1,1 +1,2 @@
-dconf-htb/db/local.d/htb-config usr/lib/parrot-skel/etc/dconf/db/local.d/
+dconf-htb/db/local.d/htb-config /usr/lib/parrot-skel/etc/dconf/db/local.d/
+dconf-htb/db/local.d/htb-config /usr/lib/parrot-skel/etc/dconf-htb/db/local.d/

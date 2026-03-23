@@ -63,7 +63,7 @@ input-feedback-sounds=true
 [org/gnome/desktop/wm/preferences]
 button-layout='close,maximize,minimize:appmenu'
 resize-with-right-button=true
-theme='ARK-Dark'
+theme='HackTheBox'
 
 [org/gnome/terminal/legacy]
 dark-theme=true
@@ -202,8 +202,8 @@ col-13-width=0
 gtk-decoration-layout='close,maximize,minimize:menu'
 gtk-color-scheme='fg_color:#EEEEEE\nbg_color:#2d2d2d\ntext_color:#BBBBBB\nbase_color:#292929\nselected_fg_color:#f9f9f9\nselected_bg_color:#5179a6\ntooltip_fg_color:#dedede\ntooltip_bg_color:#2d2d2d'
 menubar-detachable=true
-icon-theme='ara'
-gtk-theme='ARK-Dark'
+icon-theme='hackthebox'
+gtk-theme='HackTheBox'
 
 [org/mate/desktop/keybindings/custom5]
 action='mate-terminal -x vim'
@@ -326,8 +326,8 @@ center-new-windows=false
 button-layout='close,maximize,minimize:menu'
 side-by-side-tiling=true
 compositing-manager=true
-theme='ARK-Dark'
-num-workspaces=4
+theme='Icy-Dark'
+num-workspaces=2
 visual-bell=true
 
 [org/mate/marco/global-keybindings]

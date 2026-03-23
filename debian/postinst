@@ -14,8 +14,15 @@ mkdir -p /etc/dconf/db/local.d/
 mkdir -p /etc/skel/.config/dconf/
 cp -r /usr/lib/parrot-skel/etc/dconf/db/local.d/* /etc/dconf/db/local.d/
 
-dconf compile /etc/dconf/db/local /etc/dconf/db/local.d/
-dconf compile /etc/skel/.config/dconf/user /etc/dconf/db/local.d/
+
+if [ ! -f /usr/lib/parrot-skel/etc/dconf-htb/db/local.d/htb-config ]; then
+	dconf compile /etc/dconf/db/local /etc/dconf/db/local.d/
+	dconf compile /etc/skel/.config/dconf/user /etc/dconf/db/local.d/
+fi
+if [ -f /usr/lib/parrot-skel/etc/dconf-htb/db/local.d/htb-config ]; then
+	dconf compile /etc/dconf/db/local /etc/dconf-htb/db/local.d/
+	dconf compile /etc/skel/.config/dconf/user /etc/dconf-htb/db/local.d/
+fi
 
 if [ ! -f /etc/its-a-pwnbox ]; then
     rsync -a --delete /usr/lib/parrot-skel/etc/skel/ /etc/skel/
@@ -200,6 +207,7 @@ deb https://deb.parrot.sh/parrot echo-backports main contrib non-free non-free-f
 ## We strongly invite you to visit https://www.parrotsec.org/docs/mirrors/mirrors-list/
 ## to find the mirror that better fits your needs" > /etc/apt/sources.list.d/parrot.list
     cat /etc/apt/sources.list > /etc/apt/sources.list.old || true
+
     echo "# This file is empty, feel free to
 # add here your custom APT repositories
 
@@ -223,6 +231,7 @@ deb https://deb.parrot.sh/parrot echo-backports main contrib non-free non-free-f
 # and follow the instructions to choose faster servers
 # or read https://www.parrotsec.org/docs/mirrors/mirrors-list/ for more info
 " > /etc/apt/sources.list
+
 fi
 
 
