@@ -14,19 +14,18 @@ mkdir -p /etc/dconf/db/local.d/
 mkdir -p /etc/skel/.config/dconf/
 cp -r /usr/lib/parrot-skel/etc/dconf/db/local.d/* /etc/dconf/db/local.d/
 
+if [ ! -f /etc/its-a-pwnbox ]; then
+    rsync -a --delete /usr/lib/parrot-skel/etc/skel/ /etc/skel/
+    rsync -a /etc/skel/ /root/
+fi
 
 if [ ! -f /usr/lib/parrot-skel/etc/dconf-htb/db/local.d/htb-config ]; then
 	dconf compile /etc/dconf/db/local /etc/dconf/db/local.d/
 	dconf compile /etc/skel/.config/dconf/user /etc/dconf/db/local.d/
 fi
 if [ -f /usr/lib/parrot-skel/etc/dconf-htb/db/local.d/htb-config ]; then
-	dconf compile /etc/dconf/db/local /etc/dconf-htb/db/local.d/
-	dconf compile /etc/skel/.config/dconf/user /etc/dconf-htb/db/local.d/
-fi
-
-if [ ! -f /etc/its-a-pwnbox ]; then
-    rsync -a --delete /usr/lib/parrot-skel/etc/skel/ /etc/skel/
-    rsync -a /etc/skel/ /root/
+	dconf compile /etc/dconf/db/local /usr/lib/parrot-skel/etc/dconf-htb/db/local.d/
+	dconf compile /etc/skel/.config/dconf/user /usr/lib/parrot-skel/etc/dconf-htb/db/local.d/
 fi
 
 if [ "$1" = "configure" ] && dpkg --compare-versions "$2" le "7.1.0"; then
