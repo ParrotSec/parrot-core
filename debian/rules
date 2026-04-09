@@ -6,3 +6,6 @@
 override_dh_usrlocal:
 
 override_dh_fixperms:
+	dh_fixperms
+	chmod 755 debian/parrot-core/usr/share/parrot-core/postgresql_reduce_shared_buffers
+	chmod 755 debian/parrot-core/usr/lib/parrot-skel/etc/skel/.config/polybar/launch.sh
