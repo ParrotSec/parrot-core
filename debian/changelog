@@ -1,3 +1,9 @@
+parrot-core (7.2.0) echo; urgency=medium
+
+  * Prepare for release
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 14 Apr 2026 13:53:30 +0200
+
 parrot-core (7.1.12) echo; urgency=medium
 
   * Update dconf path for htb edition
