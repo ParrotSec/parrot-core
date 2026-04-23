@@ -1,3 +1,9 @@
+parrot-core (7.2.1) echo; urgency=medium
+
+  * automatically update flatpaks with parrot-upgrade
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 23 Apr 2026 19:50:07 +0200
+
 parrot-core (7.2.0) echo; urgency=medium
 
   * Prepare for release
