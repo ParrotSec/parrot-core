@@ -9,3 +9,9 @@ dpkg --configure -a || echo failed to fix interrupted upgrades
 apt --fix-broken --fix-missing install || echo failed to fix conflicts
 apt -y --fix-broken --fix-missing full-upgrade
 apt -y full-upgrade
+if [ -x /usr/bin/flatpak ]; then
+	echo upgrading flatpaks
+	flatpak update --assumeyes --noninteractive
+	echo uninstalling unused flatpaks
+	flatpak uninstall --unused --assumeyes --noninteractive
+fi
