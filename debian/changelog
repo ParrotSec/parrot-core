@@ -1,3 +1,10 @@
+parrot-core (7.2.2) echo; urgency=medium
+
+  [ Steev Klimaszewski ]
+  * d/postinst: Ignore lost+found and validate user before syncing skel
+
+ -- Dario "danterolle" Camonita <danterolle@parrotsec.org>  Tue, 28 Apr 2026 11:36:50 +0000
+
 parrot-core (7.2.1) echo; urgency=medium
 
   * automatically update flatpaks with parrot-upgrade
