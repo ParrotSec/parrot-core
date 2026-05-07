@@ -1,3 +1,9 @@
+parrot-core (7.2.3) echo; urgency=medium
+
+  * exclude dkms drivers incompatible with linux 6.19
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 07 May 2026 22:57:46 +0200
+
 parrot-core (7.2.2) echo; urgency=medium
 
   [ Steev Klimaszewski ]
