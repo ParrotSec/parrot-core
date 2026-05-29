@@ -5,7 +5,7 @@ DefaultProfile=Parrot.profile
 ConfigVersion=1
 
 [KonsoleWindow]
-RememberWindowSize=true
+RememberWindowSize=false
 ShowMenuBarByDefault=false
 
 [MainWindow]
@@ -13,5 +13,5 @@ MenuBar=Enabled
 RestorePositionForNextInstance=true
 StatusBar=Disabled
 
-[UiSettings]
-ColorScheme=
+[Notification Messages]
+CloseAllTabs=true

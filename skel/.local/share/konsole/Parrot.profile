@@ -14,7 +14,7 @@ TerminalColumns=110
 
 [Interaction Options]
 AutoCopySelectedText=true
-TrimLeadingSpacesInSelectedText=true
+TrimLeadingSpacesInSelectedText=false
 TrimTrailingSpacesInSelectedText=true
 UnderlineFilesEnabled=true
 
