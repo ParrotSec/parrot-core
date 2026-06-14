@@ -1,3 +1,9 @@
+parrot-core (7.3.0) echo; urgency=medium
+
+  * Add optimized repositories to apt configuration
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 14 Jun 2026 21:41:57 +0200
+
 parrot-core (7.2.3) echo; urgency=medium
 
   * exclude dkms drivers incompatible with linux 6.19
