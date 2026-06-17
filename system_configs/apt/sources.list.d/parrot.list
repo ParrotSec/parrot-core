@@ -33,6 +33,22 @@ deb https://deb.parrot.sh/parrot echo main contrib non-free non-free-firmware
 ## leaving you without security updates for a timespan outside of our control
 deb https://deb.parrot.sh/direct/parrot echo-security main contrib non-free non-free-firmware
 
+########################
+## Optimized packages ##
+########################
+## Parrot recompiles several programs and libraries using optimization flags.
+## Such build flags, when used on software written in C, CPP, Rust and similar languages
+## can result in binary files that make use of modern cpu instructions.
+## Such optimized programs can run up to 40% faster, but will be incompatible
+## with old CPUs that don't support those instructions.
+##
+## These repos target the amd64v3 and arm64v8.2 optimization levels.
+## Uncomment only the relevant architecture. Don't enable both!
+##
+## DON'T ENABLE THEM UNLESS YOU ARE SURE YOUR CPU SUPPORTS THEM
+#deb https://deb.parrot.sh/parrot echo amd64v3
+#deb https://deb.parrot.sh/parrot echo arm64v8.2
+
 ###############
 ## Backports ##
 ###############
