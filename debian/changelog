@@ -1,3 +1,23 @@
+parrot-core (7.4.1) echo; urgency=medium
+
+  * Ship KDE daemon and appearance defaults system-wide via /etc/xdg
+    instead of frozen per-user skel copies.
+  * Disable Baloo indexing globally and trim kded6 module autoload
+    defaults (donation nag, welcome wizard, browser reminder, vaults,
+    samba watcher, bolt, baloo modules).
+  * Select the org.echo.desktop look-and-feel globally and provide Echo
+    colors, Flat-Remix icons, breeze cursor, Sweet-Mars decoration and
+    splash as /etc/xdg defaults.
+  * Expose all parrot-wallpapers backgrounds in the wallpaper selector.
+  * Set the default wallpaper through the EchoWallpaper KPackage name
+    (no hardcoded path or resolution) and drop the hardcoded activity id
+    from the default layout.
+  * Remove obsolete per-user config: kdedefaults, .kde (KDE4 era),
+    kded5rc (Plasma 5), startupconfig (defunct mechanism), Parrot_Theme
+    splash (moved to echo-themes).
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 23 Sep 2026 16:27:02 +0200
+
 parrot-core (7.4.0) echo; urgency=medium
 
   * Update gtk icon theme.

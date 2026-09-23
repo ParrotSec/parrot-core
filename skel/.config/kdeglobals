@@ -107,7 +107,6 @@ ColorSchemeHash=e623d156ec2a4765f54011b035a845e94b2c3775
 
 [KDE]
 AnimationDurationFactor=0.08838834764831843
-LookAndFeelPackage=org.echo.desktop
 ShowDeleteCommand=false
 
 [PreviewSettings]

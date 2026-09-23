@@ -1,0 +1,4 @@
+# Parrot global KDE input defaults (fresh users; GUI changes override per-key
+# in ~/.config/kcminputrc).
+[Mouse]
+cursorTheme=breeze_cursors

@@ -13,6 +13,3 @@ NaturalScroll=true
 
 [Libinput]
 NaturalScroll=true
-
-[Mouse]
-cursorTheme=breeze_cursors

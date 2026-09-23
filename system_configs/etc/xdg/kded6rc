@@ -1,0 +1,50 @@
+# Parrot global KDE daemon defaults.
+# Location: /etc/xdg/kded6rc — system-wide KConfig defaults; users override per-key
+# via ~/.config/kded6rc (System Settings writes there). Modules NOT listed here keep
+# their upstream embedded autoload defaults, so this file only pins what we disable.
+# Module IDs are the kded6 plugin names in /usr/lib/<triplet>/qt6/plugins/kf6/kded/.
+# Verified against plasma-workspace 6.3.6 (Debian 13); review on Plasma major upgrades.
+
+# Baloo search (indexer disabled globally via /etc/xdg/baloofilerc)
+[Module-baloosearchmodule]
+autoload=false
+
+# KIO filename search provider backed by Baloo
+[Module-filenamesearchmodule]
+autoload=false
+
+# KDE donation nag dialog
+[Module-donationmessage]
+autoload=false
+
+# "Install browser extension" reminder
+[Module-browserintegrationreminder]
+autoload=false
+
+# Plasma welcome wizard
+[Module-kded_plasma-welcome]
+autoload=false
+
+# Only needed if Night Color is enabled (we ship it disabled)
+[Module-colorcorrectlocationupdater]
+autoload=false
+
+# Device accent color sync
+[Module-kameleon]
+autoload=false
+
+# Thunderbolt device management (rare hardware)
+[Module-kded_bolt]
+autoload=false
+
+# Encrypted Plasma Vaults (unused unless the user creates one)
+[Module-plasmavault]
+autoload=false
+
+# Samba share watcher
+[Module-smbwatcher]
+autoload=false
+
+# Removable media automounting
+[Module-device_automounter]
+autoload=false

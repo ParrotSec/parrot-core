@@ -1,5 +1,6 @@
 [Appearance]
 ColorScheme=GreenOnBlack
+Font=Hack,14,-1,7,400,0,0,0,0,0,0,0,0,0,0,1
 UseFontLineChararacters=true
 
 [Cursor Options]

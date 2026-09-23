@@ -1,0 +1,22 @@
+# Parrot global Plasma defaults.
+# usersWallpapers feeds the image wallpaper picker (parsed by the
+# org.kde.image plugin backend, plasma-workspace 6.3.6): each listed file
+# appears in the selector alongside the installed wallpaper KPackages.
+# The list mirrors the loose jpgs shipped by the parrot-wallpapers package
+# (symlinks default/default.jpg -> echo.jpg are excluded to avoid a duplicate
+# entry). Keep in sync when parrot-wallpapers changes its file list.
+
+[OSD]
+Enabled=true
+
+[PlasmaToolTips]
+Delay=0.7
+
+# There is no custom Plasma SVG theme named "Echo" in the Parrot repos
+# (echo-themes ships LnF/colors/aurorae/icons/wallpaper only), so the honest
+# value is the upstream default theme; the Parrot look comes from the LnF.
+[Theme]
+name=default
+
+[Wallpapers]
+usersWallpapers=/usr/share/backgrounds/MysticHorizon.jpg,/usr/share/backgrounds/cupertino.jpg,/usr/share/backgrounds/debri.jpg,/usr/share/backgrounds/dots.jpg,/usr/share/backgrounds/echo.jpg,/usr/share/backgrounds/fly-away.jpg,/usr/share/backgrounds/grid-lock.jpg,/usr/share/backgrounds/grid-parrot.jpg,/usr/share/backgrounds/grid.jpg,/usr/share/backgrounds/hackthebox-alt.jpg,/usr/share/backgrounds/hackthebox.jpg,/usr/share/backgrounds/lorikeet.jpg,/usr/share/backgrounds/lorikeet2.jpg,/usr/share/backgrounds/lowpoly-landscape.jpg,/usr/share/backgrounds/macaw-poly.jpg,/usr/share/backgrounds/macaw-poly2.jpg,/usr/share/backgrounds/macaw-vaporwave.jpg,/usr/share/backgrounds/macaw.jpg,/usr/share/backgrounds/nefelibata.jpg,/usr/share/backgrounds/nsa-glitch.jpg,/usr/share/backgrounds/outerspaceEarth.jpg,/usr/share/backgrounds/outerspaceHands.jpg,/usr/share/backgrounds/parrot-abstract.jpg,/usr/share/backgrounds/parrot-fly-grey.jpg,/usr/share/backgrounds/parrot-glitch.jpg,/usr/share/backgrounds/parrot-splash.jpg,/usr/share/backgrounds/rocket-planet.jpg,/usr/share/backgrounds/security-strategy.jpg,/usr/share/backgrounds/space.jpg,/usr/share/backgrounds/splash2.jpg,/usr/share/backgrounds/sub-urban.jpg,/usr/share/backgrounds/toxic.jpg,/usr/share/backgrounds/toxic2.jpg

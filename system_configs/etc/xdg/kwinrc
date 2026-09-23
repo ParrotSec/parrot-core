@@ -1,0 +1,7 @@
+# Parrot global KWin defaults (fresh users; GUI changes override per-key
+# in ~/.config/kwinrc).
+# Window decoration: Sweet Mars aurorae theme, shipped by the echo-themes
+# package (usr/share/aurorae/themes/Sweet-Mars).
+[org.kde.kdecoration2]
+library=org.kde.kwin.aurorae
+theme=__aurorae__svg__Sweet-Mars

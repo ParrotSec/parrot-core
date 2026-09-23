@@ -1,0 +1,6 @@
+# Parrot global KSplash default (fresh users; GUI changes override per-key
+# in ~/.config/ksplashrc).
+# org.echo.desktop ships the animated Parrot splash (contents/splash/) in the
+# echo-themes package.
+[KSplash]
+Theme=org.echo.desktop

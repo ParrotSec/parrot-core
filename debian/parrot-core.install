@@ -14,6 +14,7 @@ system_configs/etc/NetworkManager/conf.d/90-dns-none.conf etc/NetworkManager/con
 system_configs/Xsession.d/* etc/X11/Xsession.d/
 system_configs/udev-rules/* etc/udev/rules.d/
 system_configs/profile.d/* etc/profile.d/
+system_configs/etc/xdg/* etc/xdg/
 system_configs/apt/* etc/apt/
 system_configs/xrdp/xrdp.ini etc/xrdp/
 system_configs/xrdp/parrot.bmp usr/share/xrdp/

@@ -1,0 +1,20 @@
+# Parrot global KDE defaults (system-wide KConfig layer, /etc/xdg; users
+# override per-key via ~/.config when they change things in System Settings).
+#
+# LookAndFeelPackage selects the theme marked active in System Settings.
+# The remaining keys are the fresh-user appearance defaults, read directly by
+# the applications at runtime: Plasma 6.3.6 has NO kcminit hook that applies a
+# LookAndFeel package's contents/defaults automatically on first login, so the
+# distro defaults cannot rely on that mechanism. These values are mirrored in
+# echo-themes' org.echo.desktop/contents/defaults (used when a user clicks
+# "Apply" there) - keep the two files in sync.
+
+[General]
+ColorScheme=Echo
+
+[Icons]
+Theme=Flat-Remix-Green-Dark
+
+[KDE]
+widgetStyle=Breeze
+LookAndFeelPackage=org.echo.desktop

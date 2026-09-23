@@ -11,7 +11,6 @@ PreloadWeight=42
 [Containments][107]
 ItemGeometries-1280x800=
 ItemGeometriesHorizontal=
-activityId=de1987ee-2aac-4be1-b10c-73de3176b9c9
 formfactor=0
 immutability=1
 lastScreen=0
@@ -29,9 +28,7 @@ popups=false
 positions={"1280x800":[]}
 
 [Containments][107][Wallpaper][org.kde.image][General]
-Image=/usr/share/wallpapers/EchoWallpaper/
-PreviewImage=/usr/share/wallpapers/EchoWallpaper/
-SlidePaths=/usr/share/wallpapers/
+Image=EchoWallpaper
 
 [Containments][2][Applets][3][Configuration]
 PreloadWeight=92
@@ -51,8 +48,6 @@ PreloadWeight=42
 [Containments][2][Configuration]
 PreloadWeight=42
 
-[Containments][39][Wallpaper][org.kde.image][General]
-Image=file://usr/share/backgrounds/default.jpg
 
 [Containments][7][Applets][10][Configuration]
 PreloadWeight=42
