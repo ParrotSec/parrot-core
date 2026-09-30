@@ -13,13 +13,15 @@ Use apt safe-upgrade to perform a partial upgrade.
 
 
 "
-	/usr/bin/apt full-upgrade
+	/usr/bin/apt full-upgrade "${@:2}"
+	exit
 	;;
 	safe-upgrade)
-		/usr/bin/apt upgrade
+		/usr/bin/apt upgrade "${@:2}"
+		exit
 	;;
 	dup)
-		/usr/bin/apt dist-upgrade
+		/usr/bin/apt dist-upgrade "${@:2}"
 		exit
 	;;
 	u|up)
