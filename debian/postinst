@@ -258,12 +258,12 @@ if [ "$1" = "configure" ] && dpkg --compare-versions "$2" le "7.1.4"; then
 		  continue
 		fi
 		TEMP=$(mktemp -d) || exit 100
-		rsync -a /etc/skel/ $TEMP/ || exit 101
-		chown $user:$user -R $TEMP/ || exit 102
+		rsync -a /etc/skel/ "$TEMP/" || exit 101
+		chown "$user:$user" -R "$TEMP/" || exit 102
 		if [ -n "$user" ]; then
-			rsync -Pahv "$TEMP/" "/home/$user/" || exit 103
+			rsync -ah --ignore-existing "$TEMP/" "/home/$user/" || exit 103
 		fi
-		rm -r $TEMP
+		rm -rf "$TEMP"
 	done
 	echo "parrot-core: [SKEL] Parrot configs updated"
 fi
