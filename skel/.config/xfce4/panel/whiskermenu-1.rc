@@ -1,6 +1,6 @@
 favorites=update-reminder.desktop,mousepad.desktop,encryptpad.desktop,anon-gui.desktop,codium.desktop,org.remmina.Remmina.desktop,htop.desktop
 button-title=Menu
-button-icon=view-list
+button-icon=emblem-parrot
 button-single-row=false
 show-button-title=true
 show-button-icon=true
@@ -65,3 +65,4 @@ name=Run in Terminal
 pattern=!
 command=exo-open --launch TerminalEmulator %s
 regex=false
+
