@@ -15,7 +15,10 @@ mkdir -p /etc/skel/.config/dconf/
 cp -r /usr/lib/parrot-skel/etc/dconf/db/local.d/* /etc/dconf/db/local.d/
 
 if [ ! -f /etc/its-a-pwnbox ]; then
-    rsync -a --delete /usr/lib/parrot-skel/etc/skel/ /etc/skel/
+    rsync -a --delete \
+        --exclude='/.config/lxqt' \
+        --exclude='/.config/pcmanfm-qt' \
+        /usr/lib/parrot-skel/etc/skel/ /etc/skel/
     rsync -a /etc/skel/ /root/
 fi
 

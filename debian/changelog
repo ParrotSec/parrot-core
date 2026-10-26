@@ -1,3 +1,13 @@
+parrot-core (7.4.2) echo; urgency=medium
+
+  * Move the LXQt-specific skel configuration and LXQt branding
+    migration to the echo-themes-lxqt package, so it is applied only
+    when the LXQt desktop is installed.
+  * Exclude .config/lxqt and .config/pcmanfm-qt from the skel rsync,
+    leaving those paths to echo-themes-lxqt.
+
+ -- Dario "danterolle" Camonita <danterolle@parrotsec.org>  Tue, 20 Oct 2026 16:36:00 +0200
+
 parrot-core (7.4.1) echo; urgency=medium
 
   * Ship KDE daemon and appearance defaults system-wide via /etc/xdg
