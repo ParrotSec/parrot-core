@@ -4,6 +4,33 @@
   <property name="configver" type="int" value="2"/>
   <property name="panels" type="array">
     <value type="int" value="1"/>
+    <property name="panel-1" type="empty">
+      <property name="autohide-behavior" type="int" value="0"/>
+      <property name="disable-struts" type="bool" value="false"/>
+      <property name="length" type="int" value="100"/>
+      <property name="length-adjust" type="bool" value="true"/>
+      <property name="mode" type="int" value="0"/>
+      <property name="nrows" type="int" value="1"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="size" type="int" value="32"/>
+      <property name="position" type="string" value="p=6;x=0;y=0"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="1"/>
+        <value type="int" value="2"/>
+        <value type="int" value="3"/>
+        <value type="int" value="4"/>
+        <value type="int" value="11"/>
+        <value type="int" value="5"/>
+        <value type="int" value="6"/>
+        <value type="int" value="7"/>
+        <value type="int" value="9"/>
+        <value type="int" value="8"/>
+        <value type="int" value="12"/>
+        <value type="int" value="13"/>
+        <value type="int" value="10"/>
+        <value type="int" value="14"/>
+      </property>
+    </property>
   </property>
   <property name="plugins" type="empty">
     <property name="plugin-1" type="string" value="whiskermenu"/>
@@ -13,15 +40,17 @@
     <property name="plugin-3" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="16321537241.desktop"/>
-        <value type="string" value="16321537242.desktop"/>
-        <value type="string" value="16321537243.desktop"/>
-        <value type="string" value="16321537244.desktop"/>
       </property>
     </property>
     <property name="plugin-4" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="16321537245.desktop"/>
         <value type="string" value="16321537246.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-11" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="codium.desktop"/>
       </property>
     </property>
     <property name="plugin-5" type="string" value="systemload"/>
@@ -65,30 +94,16 @@
     </property>
     <property name="plugin-10" type="string" value="clock">
       <property name="mode" type="int" value="2"/>
-      <property name="digital-format" type="string" value="%H:%M"/>
+      <property name="digital-format" type="string" value="%a %d %b  %H:%M"/>
     </property>
-  </property>
-  <property name="panel-1" type="empty">
-    <property name="autohide-behavior" type="int" value="0"/>
-    <property name="disable-struts" type="int" value="0"/>
-    <property name="length" type="int" value="100"/>
-    <property name="length-adjust" type="bool" value="true"/>
-    <property name="mode" type="int" value="0"/>
-    <property name="nrows" type="int" value="1"/>
-    <property name="position-locked" type="bool" value="true"/>
-    <property name="size" type="int" value="32"/>
-    <property name="position" type="string" value="p=8;x=0;y=0"/>
-    <property name="plugin-ids" type="array">
-      <value type="int" value="1"/>
-      <value type="int" value="2"/>
-      <value type="int" value="3"/>
-      <value type="int" value="4"/>
-      <value type="int" value="5"/>
-      <value type="int" value="6"/>
-      <value type="int" value="7"/>
-      <value type="int" value="8"/>
-      <value type="int" value="9"/>
-      <value type="int" value="10"/>
+    <property name="plugin-12" type="string" value="notification-plugin"/>
+    <property name="plugin-13" type="string" value="power-manager-plugin"/>
+    <property name="plugin-14" type="string" value="actions">
+      <property name="appearance" type="uint" value="0"/>
+      <property name="ask-confirmation" type="bool" value="true"/>
+      <property name="items" type="array">
+        <value type="string" value="+lock-screen"/>
+      </property>
     </property>
   </property>
 </channel>
