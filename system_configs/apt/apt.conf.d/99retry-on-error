@@ -1,1 +1,1 @@
-Acquire::Retries "3";
+Acquire::Retries "4";
