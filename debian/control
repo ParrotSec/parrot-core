@@ -2,8 +2,9 @@ Source: parrot-core
 Section: parrot
 Priority: optional
 Maintainer: Parrot Dev Team <team@parrotsec.org>
-Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
-Standards-Version: 4.2.0
+Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>,
+           Dario "danterolle" Camonita <danterolle@parrotsec.org>
+Standards-Version: 4.7.0
 Build-Depends: debhelper (>= 13), dconf-cli
 Homepage: https://www.parrotsec.org/
 
@@ -31,10 +32,10 @@ Replaces: bash, vim-common, base-files, xterm, parrot-skel, dnsmasq, parrot-inte
 Breaks: apt-parrot, parrot-skel, r8168-dkms, realtek-rtl8723cs-dkms
 Conflicts: apt-parrot, parrot-skel
 Description: Core package for Parrot OS
-  Core package for the Parrot Debian distribution.
-  .
-  This package provides essential configuration files and base dependencies for
-  the Parrot Security operating system and its flavors.
+ Core package for the Parrot Debian distribution.
+ .
+ This package provides essential configuration files and base dependencies for
+ the Parrot Security operating system and its flavors.
 
 Package: parrot-core-lite
 Architecture: all

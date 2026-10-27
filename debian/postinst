@@ -15,7 +15,10 @@ mkdir -p /etc/skel/.config/dconf/
 cp -r /usr/lib/parrot-skel/etc/dconf/db/local.d/* /etc/dconf/db/local.d/
 
 if [ ! -f /etc/its-a-pwnbox ]; then
-    rsync -a --delete /usr/lib/parrot-skel/etc/skel/ /etc/skel/
+    rsync -a --delete \
+        --exclude='/.config/lxqt' \
+        --exclude='/.config/pcmanfm-qt' \
+        /usr/lib/parrot-skel/etc/skel/ /etc/skel/
     rsync -a /etc/skel/ /root/
 fi
 
@@ -258,12 +261,12 @@ if [ "$1" = "configure" ] && dpkg --compare-versions "$2" le "7.1.4"; then
 		  continue
 		fi
 		TEMP=$(mktemp -d) || exit 100
-		rsync -a /etc/skel/ $TEMP/ || exit 101
-		chown $user:$user -R $TEMP/ || exit 102
+		rsync -a /etc/skel/ "$TEMP/" || exit 101
+		chown "$user:$user" -R "$TEMP/" || exit 102
 		if [ -n "$user" ]; then
-			rsync -Pahv "$TEMP/" "/home/$user/" || exit 103
+			rsync -ah --ignore-existing "$TEMP/" "/home/$user/" || exit 103
 		fi
-		rm -r $TEMP
+		rm -rf "$TEMP"
 	done
 	echo "parrot-core: [SKEL] Parrot configs updated"
 fi

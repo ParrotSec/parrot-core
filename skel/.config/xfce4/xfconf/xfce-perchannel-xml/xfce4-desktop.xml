@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <channel name="xfce4-desktop" version="1.0">
+  <property name="last-settings-migration-version" type="uint" value="1"/>
+  <property name="backdrop" type="empty">
+    <property name="echo-default-wallpaper" type="string" value="/usr/share/backgrounds/echo-wallpaper.png"/>
+  </property>
   <property name="desktop-icons" type="empty">
     <property name="primary" type="bool" value="true"/>
     <property name="file-icons" type="empty">
