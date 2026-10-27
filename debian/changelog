@@ -1,3 +1,10 @@
+parrot-core (7.4.4) UNRELEASED; urgency=medium
+
+  * bump apt retry on error to 4.
+  * Switch to the new dep822 debian sources format.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 27 Oct 2026 15:05:11 +0100
+
 parrot-core (7.4.3) echo; urgency=medium
 
   * Fix the XFCE panel hierarchy and drop stale terminal launcher entries.
