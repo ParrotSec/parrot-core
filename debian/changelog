@@ -1,7 +1,8 @@
-parrot-core (7.4.4) UNRELEASED; urgency=medium
+parrot-core (7.4.4) echo; urgency=medium
 
   * bump apt retry on error to 4.
   * Switch to the new dep822 debian sources format.
+  * Add custom neovim configuration.
 
  -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 27 Oct 2026 15:05:11 +0100
 
