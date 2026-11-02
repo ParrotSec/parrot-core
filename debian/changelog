@@ -1,3 +1,9 @@
+parrot-core (7.4.5) echo; urgency=medium
+
+  * Migrate to new apt format.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 02 Nov 2026 10:43:32 +0100
+
 parrot-core (7.4.4) echo; urgency=medium
 
   * bump apt retry on error to 4.

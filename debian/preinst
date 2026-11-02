@@ -19,7 +19,7 @@ case "$1" in
 # The default Parrot repositories
 # are NOT here. If you want to
 # edit them, take a look into
-#    /etc/apt/sources.list.d/parrot.list
+#    /etc/apt/sources.list.d/parrot.sources
 
 # if the default servers are too slow
 # open /etc/apt/sources.list.d/parrot.list
