@@ -19,23 +19,34 @@ local lspconfig = require("lspconfig")
 lspconfig.clangd.setup({ on_attach = on_attach })
 lspconfig.rust_analyzer.setup({ on_attach = on_attach })
 lspconfig.gopls.setup({ on_attach = on_attach })
-lspconfig.pyright.setup({ on_attach = on_attach })
-lspconfig.ts_ls.setup({ on_attach = on_attach })
-lspconfig.kotlin_language_server.setup({ on_attach = on_attach })
-lspconfig.omnisharp.setup({ on_attach = on_attach, cmd = { "OmniSharp" } })
-lspconfig.jdtls.setup({
-  on_attach = on_attach,
-  on_new_config = function(config, root_dir)
-    -- Give each Java project its own workspace and configuration directory.
-    local cache = vim.fn.stdpath("cache") .. "/jdtls/"
-      .. vim.fn.sha256(root_dir or vim.fn.getcwd())
-    vim.fn.mkdir(cache, "p")
-    config.cmd = {
-      "jdtls", "-configuration", cache .. "/config", "-data", cache .. "/workspace",
-    }
-    config.init_options.workspace = cache .. "/workspace"
-  end,
-})
+
+if vim.fn.executable("pyright-langserver") == 1 then
+  lspconfig.pyright.setup({ on_attach = on_attach })
+end
+if vim.fn.executable("typescript-language-server") == 1 then
+  lspconfig.ts_ls.setup({ on_attach = on_attach })
+end
+if vim.fn.executable("kotlin-language-server") == 1 then
+  lspconfig.kotlin_language_server.setup({ on_attach = on_attach })
+end
+if vim.fn.executable("OmniSharp") == 1 then
+  lspconfig.omnisharp.setup({ on_attach = on_attach, cmd = { "OmniSharp" } })
+end
+if vim.fn.executable("jdtls") == 1 then
+  lspconfig.jdtls.setup({
+    on_attach = on_attach,
+    on_new_config = function(config, root_dir)
+      -- Give each Java project its own workspace and configuration directory.
+      local cache = vim.fn.stdpath("cache") .. "/jdtls/"
+        .. vim.fn.sha256(root_dir or vim.fn.getcwd())
+      vim.fn.mkdir(cache, "p")
+      config.cmd = {
+        "jdtls", "-configuration", cache .. "/config", "-data", cache .. "/workspace",
+      }
+      config.init_options.workspace = cache .. "/workspace"
+    end,
+  })
+end
 
 vim.diagnostic.config({ virtual_text = false })
 vim.g.gitgutter_map_keys = 0

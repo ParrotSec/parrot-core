@@ -1,3 +1,9 @@
+parrot-core (7.5.1) echo; urgency=medium
+
+  * Update neovim config to fail silently on missing LSP.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 02 Nov 2026 22:31:32 +0100
+
 parrot-core (7.5.0) echo; urgency=medium
 
   * Fix parrot.sources format (no inline comments supported).
