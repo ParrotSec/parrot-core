@@ -1,3 +1,9 @@
+parrot-core (7.5.2) echo; urgency=medium
+
+  * Final dep822 migration.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 06 Nov 2026 17:49:27 +0100
+
 parrot-core (7.5.1) echo; urgency=medium
 
   * Update neovim config to fail silently on missing LSP.
