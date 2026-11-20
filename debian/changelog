@@ -1,3 +1,10 @@
+parrot-core (7.5.3) echo; urgency=medium
+
+  [ i-am-durga ]
+  * Fix apt safe-upgrade and upgrade falling through to apt $@ (Closes: #20)
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 20 Nov 2026 09:53:23 +0100
+
 parrot-core (7.5.2) echo; urgency=medium
 
   * Final dep822 migration.
