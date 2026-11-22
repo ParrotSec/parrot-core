@@ -1,0 +1,97 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 38,
+  "spacing": 4,
+  "margin-top": 6,
+  "margin-left": 10,
+  "margin-right": 10,
+  "modules-left": ["image#parrot", "custom/apps", "ext/workspaces", "wlr/taskbar"],
+  "modules-center": ["clock"],
+  "modules-right": ["tray", "cpu", "memory", "network", "pulseaudio", "battery", "custom/settings", "custom/help", "custom/power"],
+  "image#parrot": {
+    "path": "/usr/share/icons/vendor/scalable/emblems/emblem-vendor.svg",
+    "size": 26,
+    "tooltip": false,
+    "on-click": "/usr/bin/cyberpunk-apps"
+  },
+  "custom/apps": {
+    "format": "Apps",
+    "tooltip-format": "Browse applications and Parrot tools\nSuper+Space: search · Right-click: files",
+    "on-click": "/usr/bin/cyberpunk-apps",
+    "on-click-right": "/usr/bin/thunar"
+  },
+  "ext/workspaces": {
+    "format": "{name}",
+    "on-click": "activate",
+    "sort-by-name": true,
+    "all-outputs": true
+  },
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 20,
+    "tooltip-format": "{title}\nClick: focus · Right-click: close",
+    "on-click": "activate",
+    "on-click-right": "close"
+  },
+  "clock": {
+    "format": "{:%a %H:%M}",
+    "format-alt": "{:%d %b %Y}",
+    "tooltip-format": "<tt>{calendar}</tt>"
+  },
+  "tray": {"icon-size": 18, "spacing": 8},
+  "cpu": {
+    "interval": 2,
+    "format": "CPU {usage}%",
+    "states": {"warning": 70, "critical": 90},
+    "tooltip-format": "{avg_frequency} GHz average\n{load1} · {load5} · {load15} load\n{usage0} · {usage1} · {usage2} · {usage3} cores",
+    "on-click": "kitty /usr/bin/btop"
+  },
+  "memory": {
+    "interval": 5,
+    "format": "RAM {percentage}%",
+    "states": {"warning": 75, "critical": 90},
+    "tooltip-format": "{used:0.1f}G/{total:0.1f}G · swap {swapPercentage}%",
+    "on-click": "kitty /usr/bin/btop"
+  },
+  "network": {
+    "interval": 2,
+    "format-wifi": "{bandwidthDownBytesCompact}↓ {bandwidthUpBytesCompact}↑",
+    "format-ethernet": "{bandwidthDownBytesCompact}↓ {bandwidthUpBytesCompact}↑",
+    "format-disconnected": "Offline",
+    "tooltip-format": "{ifname} · {ipaddr}\n{bandwidthDownBytesCompact}↓ {bandwidthUpBytesCompact}↑",
+    "tooltip-format-wifi": "{essid} · {signalStrength}% · {ipaddr}\n{bandwidthDownBytesCompact}↓ {bandwidthUpBytesCompact}↑",
+    "on-click": "/usr/bin/nm-connection-editor"
+  },
+  "pulseaudio": {
+    "format": "Vol {volume}%",
+    "format-muted": "Muted",
+    "on-click": "/usr/bin/pavucontrol",
+    "on-click-right": "/usr/bin/wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "scroll-step": 5,
+    "max-volume": 100,
+    "tooltip-format": "{desc} · Click for sound settings"
+  },
+  "battery": {
+    "states": {"warning": 25, "critical": 10},
+    "format": "Bat {capacity}%",
+    "format-charging": "+ {capacity}%",
+    "format-plugged": "AC {capacity}%",
+    "tooltip-format": "{timeTo}"
+  },
+  "custom/settings": {
+    "format": "Settings",
+    "tooltip-format": "Network, sound, displays and configuration",
+    "on-click": "cyberpunk-control"
+  },
+  "custom/help": {
+    "format": "?",
+    "tooltip-format": "Getting started · Super+F1",
+    "on-click": "cyberpunk-welcome"
+  },
+  "custom/power": {
+    "format": "⏻",
+    "tooltip-format": "Lock, suspend, log out or shut down",
+    "on-click": "cyberpunk-power"
+  }
+}

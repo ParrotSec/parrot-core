@@ -1,3 +1,11 @@
+parrot-core (7.5.4) echo; urgency=medium
+
+  * Add system-wide Hyprland (Cyberpunk) desktop configuration.
+  * Ship the Hyprland, Hypridle, Waybar, Kitty, Fuzzel and Mako settings
+    under /etc/xdg so they apply to every user.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 23 Nov 2026 00:59:14 +0100
+
 parrot-core (7.5.3) echo; urgency=medium
 
   [ i-am-durga ]
