@@ -45,8 +45,8 @@ Replaces: bash,
   xrdp,
   openssl,
   sddm,
-  waybar,
-  fuzzel,
+  waybar (<< 0.16.0-0parrot2),
+  fuzzel (<< 1.12.0+ds-1parrot1),
 Breaks: apt-parrot, parrot-skel, r8168-dkms, realtek-rtl8723cs-dkms
 Conflicts: apt-parrot, parrot-skel
 Description: Core package for Parrot OS

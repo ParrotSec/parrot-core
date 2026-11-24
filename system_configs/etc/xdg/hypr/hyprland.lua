@@ -1,7 +1,8 @@
 -- Parrot Cyberpunk — teal / midnight, using Hyprland's native Lua API.
 -- Super is the Windows/Command key. Super+F1 opens the offline guide.
--- This is the system-wide default (loaded through /etc/xdg). Personal overrides
--- live in $XDG_CONFIG_HOME/hypr/local.lua and are loaded last.
+-- Personal overrides live in $XDG_CONFIG_HOME/hypr/local.lua and load last.
+-- This is the shared distribution default, loaded from /etc/xdg when present.
+-- Packaged builds can also load the same file directly from /usr/share/hypr.
 
 hl.monitor({ output = "", mode = "preferred", position = "auto", scale = "auto" })
 
@@ -178,16 +179,19 @@ launch("XF86AudioPrev", "/usr/bin/playerctl previous", locked)
 -- Absolute user path: the personal file is the customization point, and
 -- keeping it last prevents its errors from discarding the core setup.
 local config_home = os.getenv("XDG_CONFIG_HOME")
-if not config_home or config_home == "" then
+if not config_home or config_home == "" or config_home:sub(1, 1) ~= "/" then
     local home = os.getenv("HOME")
-    config_home = home and (home .. "/.config") or nil
+    config_home = home and home:sub(1, 1) == "/" and (home .. "/.config") or nil
 end
 
 if config_home then
     local local_module = config_home .. "/hypr/local"
-    local local_file = io.open(local_module .. ".lua", "r")
+    -- Linux ENOENT is 2. Absence is optional; permission and I/O errors are not.
+    local local_file, open_error, open_errno = io.open(local_module .. ".lua", "r")
     if local_file then
         local_file:close()
         require(local_module)
+    elseif open_errno ~= 2 then
+        error(open_error, 0)
     end
 end
