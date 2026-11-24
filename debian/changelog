@@ -1,3 +1,10 @@
+parrot-core (7.5.6) echo; urgency=medium
+
+  * Load the optional per-user Hyprland local.lua only when it exists,
+    and tolerate missing HOME or XDG_CONFIG_HOME values.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 24 Nov 2026 12:02:44 +0100
+
 parrot-core (7.5.5) echo; urgency=medium
 
   * Replaces: waybar, fuzzel 

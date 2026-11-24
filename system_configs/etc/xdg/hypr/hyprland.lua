@@ -177,5 +177,17 @@ launch("XF86AudioPrev", "/usr/bin/playerctl previous", locked)
 
 -- Absolute user path: the personal file is the customization point, and
 -- keeping it last prevents its errors from discarding the core setup.
-local config_home = os.getenv("XDG_CONFIG_HOME") or (os.getenv("HOME") .. "/.config")
-require(config_home .. "/hypr/local")
+local config_home = os.getenv("XDG_CONFIG_HOME")
+if not config_home or config_home == "" then
+    local home = os.getenv("HOME")
+    config_home = home and (home .. "/.config") or nil
+end
+
+if config_home then
+    local local_module = config_home .. "/hypr/local"
+    local local_file = io.open(local_module .. ".lua", "r")
+    if local_file then
+        local_file:close()
+        require(local_module)
+    end
+end
