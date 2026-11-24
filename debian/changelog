@@ -1,3 +1,10 @@
+parrot-core (7.5.8) echo; urgency=medium
+
+  * Start Waybar and Hypridle from the Hyprland startup event while
+    keeping their systemd user units optional.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 24 Nov 2026 16:40:03 +0100
+
 parrot-core (7.5.7) echo; urgency=medium
 
   * Ignore only ENOENT for the optional Hyprland local.lua; report

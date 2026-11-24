@@ -6,9 +6,26 @@
 
 hl.monitor({ output = "", mode = "preferred", position = "auto", scale = "auto" })
 
--- Run once after the compositor creates its sockets, not on every config reload.
+-- Start the Parrot desktop components after the compositor creates its sockets.
+-- The packages ship systemd user units, but they are not enabled by default;
+-- this is the single startup path for Waybar and Hypridle.
+local function run_if_present(path, argument)
+    local file = io.open(path, "r")
+    if not file then
+        return
+    end
+    file:close()
+    if argument then
+        hl.exec_cmd(path .. " " .. argument)
+    else
+        hl.exec_cmd(path)
+    end
+end
+
 hl.on("hyprland.start", function()
-    hl.exec_cmd("/usr/lib/cyberpunk/session-ready")
+    run_if_present("/usr/lib/cyberpunk/session-ready")
+    run_if_present("/usr/lib/cyberpunk/autostart", "panel")
+    run_if_present("/usr/lib/cyberpunk/autostart", "idle")
 end)
 
 hl.config({
