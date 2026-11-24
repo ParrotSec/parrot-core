@@ -1,3 +1,9 @@
+parrot-core (7.5.5) echo; urgency=medium
+
+  * Replaces: waybar, fuzzel 
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 24 Nov 2026 05:31:33 +0100
+
 parrot-core (7.5.4) echo; urgency=medium
 
   * Add system-wide Hyprland (Cyberpunk) desktop configuration.
