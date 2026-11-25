@@ -1,3 +1,12 @@
+parrot-core (7.5.10) echo; urgency=medium
+
+  * Add display-off and suspend Hypridle listeners, and ship a user-
+    editable Hypridle configuration.
+  * Expand the skel local.lua with commented examples for common
+    Hyprland customizations.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 26 Nov 2026 00:31:14 +0100
+
 parrot-core (7.5.9) echo; urgency=medium
 
   * Ship a user-editable Hyprpaper configuration with the Parrot default
