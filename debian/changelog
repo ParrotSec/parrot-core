@@ -1,3 +1,10 @@
+parrot-core (7.5.9) echo; urgency=medium
+
+  * Ship a user-editable Hyprpaper configuration with the Parrot default
+    wallpaper and start Hyprpaper from the Hyprland startup event.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 26 Nov 2026 00:15:14 +0100
+
 parrot-core (7.5.8) echo; urgency=medium
 
   * Start Waybar and Hypridle from the Hyprland startup event while

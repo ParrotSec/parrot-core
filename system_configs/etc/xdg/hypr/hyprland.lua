@@ -8,7 +8,7 @@ hl.monitor({ output = "", mode = "preferred", position = "auto", scale = "auto" 
 
 -- Start the Parrot desktop components after the compositor creates its sockets.
 -- The packages ship systemd user units, but they are not enabled by default;
--- this is the single startup path for Waybar and Hypridle.
+-- this is the single startup path for Hyprpaper, Waybar and Hypridle.
 local function run_if_present(path, argument)
     local file = io.open(path, "r")
     if not file then
@@ -22,8 +22,24 @@ local function run_if_present(path, argument)
     end
 end
 
+local function file_exists(path)
+    local file = io.open(path, "r")
+    if not file then
+        return false
+    end
+    file:close()
+    return true
+end
+
 hl.on("hyprland.start", function()
     run_if_present("/usr/lib/cyberpunk/session-ready")
+    -- The complete desktop uses the packaged autostart helper; a bare
+    -- Hyprland installation can still start Hyprpaper directly.
+    if file_exists("/usr/lib/cyberpunk/autostart") then
+        run_if_present("/usr/lib/cyberpunk/autostart", "wallpaper")
+    else
+        run_if_present("/usr/bin/hyprpaper")
+    end
     run_if_present("/usr/lib/cyberpunk/autostart", "panel")
     run_if_present("/usr/lib/cyberpunk/autostart", "idle")
 end)
