@@ -1,0 +1,15 @@
+# Your Hyprland idle timeouts. Values are in seconds.
+#
+# Edit these values to customize when the session locks, the display turns
+# off and the system suspends. Set a value to 0 to disable that action.
+#
+# lock_timeout:
+#   Lock the session after this many seconds of no input.
+# display_timeout:
+#   Turn the display off after this many seconds of no input.
+# suspend_timeout:
+#   Suspend the system after this many seconds of no input.
+
+lock_timeout=600
+display_timeout=900
+suspend_timeout=1800

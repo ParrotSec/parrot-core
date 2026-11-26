@@ -1,0 +1,8 @@
+# Parrot Hyprland idle timeouts. Values are in seconds.
+#
+# Copy this file to ~/.config/hypr/hypridle.settings and edit the values below.
+# Set a value to 0 to disable that listener.
+
+lock_timeout=600
+display_timeout=900
+suspend_timeout=1800

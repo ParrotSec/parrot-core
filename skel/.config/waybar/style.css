@@ -1,0 +1,13 @@
+/* Load the Parrot Waybar theme, then add your own overrides below. */
+@import url("/etc/xdg/waybar/style.css");
+
+/* Examples:
+#workspaces button.active {
+    background: #39d5cf;
+    color: #101923;
+}
+
+#clock {
+    font-weight: bold;
+}
+*/

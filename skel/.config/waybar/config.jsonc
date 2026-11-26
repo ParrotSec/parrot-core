@@ -1,0 +1,16 @@
+{
+  // Parrot's Waybar configuration is loaded from the system defaults.
+  // Add your own overrides here; values in this file win over the include.
+  "include": ["/etc/xdg/waybar/config.jsonc"],
+
+  // Examples:
+  // "modules-right": ["pulseaudio", "network", "battery", "clock"],
+  // "clock": {
+  //   "format": "{:%H:%M}",
+  //   "tooltip-format": "{:%A %d %B %Y}"
+  // },
+  // "battery": {
+  //   "format": "{capacity}% {icon}",
+  //   "format-icons": ["", "", "", "", ""]
+  // }
+}
