@@ -21,8 +21,6 @@ alias la='ls -lha'
 alias l='ls -CF'
 alias em='emacs -nw'
 alias dd='dd status=progress'
-alias _='sudo'
-alias _i='sudo -i'
 alias fucking='sudo'
 alias please='sudo'
 

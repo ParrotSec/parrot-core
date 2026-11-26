@@ -1,3 +1,9 @@
+parrot-core (7.5.12) echo; urgency=medium
+
+  * fix broken fish aliases 
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 26 Nov 2026 03:17:43 +0100
+
 parrot-core (7.5.11) echo; urgency=medium
 
   * Replace full user config copies with include/source stubs, add local
